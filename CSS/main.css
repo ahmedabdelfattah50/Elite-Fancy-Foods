@@ -1,0 +1,1986 @@
+/* ######################### Start Global Sections #########################  */
+* {
+    margin: 0;
+    padding: 0;   
+}
+/* ============== Start Navbar =============== */
+.navbar {
+    transition: 0.3s ease-in-out;
+    z-index: 2000 !important;
+    background: #fff;
+}
+
+.navChange {
+    padding: 0;
+    position: fixed;
+    border-bottom: 4px solid #007C39;
+    transition: 0.3s ease-in-out;
+    z-index: 200 !important
+}
+
+.navChange .navbar-nav .nav-link {
+    color: #007C39 !important; 
+    border-color:#007C39 !important;
+    font-size: 15px;
+}
+
+.navChange .navbar-nav .nav-link:hover {
+    background: #007C39;
+    color: #fff !important;
+}
+
+.navChange .navbar-nav .nav-link.active {
+    color: #EBB300 !important;
+}
+
+.navChange .navbar-nav .nav-link.active:hover {
+    color: #fff !important; 
+}
+
+.navChange .navbar-brand {
+    padding: 0 !important;
+}
+
+.navChange img {
+    transform: scale(0.7,0.7);
+}
+
+.navChange img:hover {
+    transform: scale(0.8,0.8) !important;
+}
+
+.navbar .navbar-brand img {
+    height: 72.5px;
+    width: 125px;
+    transition: 0.3s ease-in-out;
+}   
+
+.navbar .navbar-brand img:hover {
+    transform: scale(1.1 , 1.1);
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    color: #007C39;
+    border-right: 2px solid #007C39;
+    padding: 0 7px;
+    transition: 0.2s ease-in-out;
+    font-weight: 600;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link.active {
+    color: #EBB300;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+    color: #EBB300;
+    border-color: #007C39;
+}
+
+.navbar-expand-lg .navbar-nav .whereToPageLink {
+    border-right: none;
+}
+
+.dropdown .dropdown-menu {
+    border: none;
+    border-bottom: 4px solid #007C39;
+    border-radius: 0;
+}
+
+.nav-item .dropdown-menu a:hover {
+    background: #007C39;
+    color: #fff;
+}
+/* ============== End Navbar =============== */
+/* ============== Start First_Navbar =============== */
+.First_Navbar {
+    padding: 5px 0;
+    background: #007C39;
+}
+
+.First_Navbar .navbar-nav .nav-link {
+    color: #fff !important;
+    border-right: 2px solid #fff !important;
+    padding: 0 7px;
+    transition: 0.2s ease-in-out;
+    font-weight: 600;
+}
+
+.First_Navbar .dropdown-toggle::after {
+    display: inline-block;
+}
+
+.First_Navbar .navbar-nav .nav-link.active {
+    color: #fff !important;
+}
+
+.First_Navbar .navbar-expand-lg .navbar-nav .nav-link:hover {
+    color: #EBB300;
+    border-color: #007C39;
+}
+
+.First_Navbar .navbar-nav .faceIconFirstNav {
+    border-right: none !important;
+    background: #fff;
+    color: #007C39 !important;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.First_Navbar .navbar-nav .faceIconFirstNav:hover {
+    color: #fff !important;
+    background: #EBB300 !important;
+}
+
+.First_Navbar .dropdown .dropdown-menu {
+    border: none;
+    border-bottom: 4px solid #007C39;
+    border-radius: 0;
+    z-index: 5000 !important;
+}
+
+.First_Navbar .nav-item .dropdown-menu a:hover {
+    background: #007C39;
+    color: #fff;
+}
+/* ============== End First_Navbar =============== */
+/* ============== Start header =============== */
+header {
+    background: #277e2bb2;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 70px 0;
+}
+
+header h1 {
+    color: #fff;
+    font-size: 55px;
+    padding: 0 400px;
+}
+/* ============== End header =============== */
+/* ============== Start go_up icon =============== */
+.go_up {
+    position: fixed;
+    z-index: 5;
+    right: 40px;
+    top: 90%;
+    padding: 15px 10px;
+    background: #007C39;
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+/* ============== End go_up icon =============== */
+/* ============== Start footer =============== */
+footer {
+    padding: 50px 0 20px;
+    box-shadow: 0 0 10px #ddd;
+}
+
+footer .footer_section {
+    padding: 10px 30px 0;
+    border-right: 2px solid #007C39;
+}
+
+footer .footer_section h2 {
+    font-size: 22px;
+    color: #EBB300;
+}
+
+footer .footer_section:nth-child(1) {
+    padding-left: 0;
+}
+
+footer .footer_section:nth-child(1) img {
+    height: 60px;
+    width: 111px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+footer .footer_section:nth-child(1) img:hover {
+    transform: scale(1.2);
+}
+
+footer .footer_section:nth-child(2) p {
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+footer .footer_section:nth-child(3) {
+    padding: 10px 15px 0 40px;
+}
+
+footer .footer_section:nth-child(3) i {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #007C39;
+    cursor: pointer;
+}
+
+footer .footer_section:nth-child(3) i:hover {
+    color: #EBB300;
+}
+
+footer .footer_section:nth-child(3) span {
+    font-size: 17px;
+    color: #007C39;
+    margin: 6px 0 0 15px;
+    font-weight: 600;
+}
+
+footer .footer_section:nth-child(3) i:nth-child(2) {
+    font-size: 25px
+}
+
+footer .footer_icons {
+    border: none;
+}
+
+footer .footer_section:nth-child(4) a {
+    color: #007C39;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 30px;
+    text-decoration: none;
+}
+
+footer .footer_section:nth-child(4) a:hover {
+    color: #EBB300;
+}
+
+footer .footer_section:nth-child(4) a.active {
+    color: #EBB300;
+}
+
+footer .footer_section:nth-child(5) i {
+    font-size: 30px;
+    color: #007C39;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: n;
+    margin: 0 5px;
+}
+
+footer .footer_section:nth-child(5) a {
+    text-decoration: none;
+}
+
+footer .footer_section:nth-child(5) i:hover {
+    box-shadow: 0 0 20px rgb(146, 145, 145);
+    color: #EBB300;
+    transform: rotate(360deg);
+}
+/* ============== End footer =============== */
+/* ============== Start secondFooter =============== */
+.secondFooter {
+    padding: 10px 0;
+    background: #007C39;
+}
+/* ============== End secondFooter =============== */
+
+/* ######################### End Global Sections ######################### */
+
+
+
+
+
+/* ######################### Start home Page ######################### */
+/* ============== Start homeMain =============== */
+.homeMain {
+    height: 700px;
+    background-image: url("../images/home/homeMain_Background.svg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    position: relative;
+}
+/* ============== End homeMain =============== */
+/* ============== Start homeMainProducts =============== */
+.homeMainProducts .totalHomeProducts {
+    position: relative;
+    margin-top: -45px;
+}
+
+.homeMainProducts .totalHomeProducts .productSection {
+    background-image: url("../images/home/productCard.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 185px;
+    height: 200px;
+    cursor: pointer;
+}
+
+.homeMainProducts .totalHomeProducts .productSection img {
+    width: 110px;
+    height: 110px;
+    transition: 0.3s ease-in-out;
+}
+
+.homeMainProducts .totalHomeProducts .productSection:hover img {
+    transform: scale(1.1) rotate(20deg);
+}
+
+.homeMainProducts .totalHomeProducts .productSection h2 {
+    font-size: 22px;
+}
+/* ============== End homeMainProducts =============== */
+/* ============== Start homeAboutUs =============== */
+.homeAboutUs {
+    padding: 70px 0;
+}
+
+.homeAboutUs .homeAboutUsHeader {
+    color: #007C39;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.homeAboutUs .homeAboutUsLeft {
+    padding-right: 20px;
+    padding-left: 0;
+}
+
+.homeAboutUs .homeAboutUsLeft img {
+    width: 100%;
+}
+
+.homeAboutUs .homeAboutUsRight {
+    padding-left: 20px;
+    padding-right: 0;
+}
+
+.homeAboutUs .homeAboutUsRight p {
+    font-weight: 600;
+    font-size: 18px;
+}
+/* ============== End homeAboutUs =============== */
+/* ============== Start whereToBuyProd =============== */
+.whereToBuyProd {
+    background-image: url("../images/home/homeWhereToBuyBackground.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 170px 0;
+    position: relative;
+}
+
+.whereToBuyProd h2 {
+    background: #fff;
+    padding: 20px 0;
+    font-size: 28px;
+    color: #EEBE42;
+}
+
+.whereToBuyProd .whereToBuyImg {
+    position: absolute;
+    width: 100%;
+    margin: 0 !important;
+    left: 0;
+}
+
+.whereToBuyProd .whereToBuyImg img {
+    width: 115px;
+    height: 130px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.whereToBuyProd .whereToBuyImg img:hover {
+    transform: scale(1.1) rotate(20deg);
+}
+/* ============== End whereToBuyProd =============== */
+/* ============== Start ourBlogs =============== */
+.ourBlogs h2 {
+    color: #007C39;
+    margin: 50px 0 -20px;
+    font-size: 35px;
+}
+.ourBlogs .carousel-caption {
+    padding-bottom: 0;
+}
+
+.ourBlogs .carousel-indicators {
+    display: none;
+    padding-bottom: 0;
+}
+
+.ourBlogs .carousel-control-prev img,
+.ourBlogs .carousel-control-next img {
+    height: 30px;
+    width: 30px;
+    transition: 0.3s ease-in-out;
+}
+
+.ourBlogs .carousel-control-prev:hover img ,
+.ourBlogs .carousel-control-next:hover img {
+    transform: scale(1.2);
+}
+
+.ourBlogs .carousel-control-prev, 
+.ourBlogs .carousel-control-next {
+    transition: 0.3s ease-in-out;
+}
+
+.ourBlogs .products_slider_ourBlogs {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    padding: 100px 0 200px 0;
+}
+
+.ourBlogs .products_slider_ourBlogs .parahSection {
+    margin-top: -250px;
+    padding: 0 250px;
+}
+
+.ourBlogs .row .owl-ourBlogs {
+    width: 100%;
+    margin-top: -50px;
+    padding-bottom: 10px;
+}
+
+.ourBlogs .owl-ourBlogs .item {
+    padding: 30px 15px; 
+    z-index: -2;
+}
+
+.ourBlogs .owl-ourBlogs img {
+    height: 200px;
+    transition: 0.3s ease-in-out;
+}
+
+.owl-carousel .owl-nav {
+    position: absolute;
+    display: flex !important;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.owl-carousel .owl-nav img {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.owl-carousel .owl-nav button:nth-child(1) {
+    margin-left: -40px;
+    margin-top: -250px;
+}
+
+.owl-carousel .owl-nav button:nth-child(2) {
+    margin-right: -40px;
+    margin-top: -250px;
+}
+
+.ourBlogs .owl-ourBlogs .owl-item {
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.ourBlogs .owl-ourBlogs .owl-item:hover {
+    transform: scale(1.2);
+    z-index: 50;
+}
+
+.ourBlogs .owl-theme .owl-dots {
+    display: none;
+} 
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background: none !important;
+    color: #000;
+}
+
+.owl-theme .owl-nav [class*=owl-]:focus {
+    outline: none;
+}
+/* ============== End ourBlogs =============== */
+/* ######################### End home Page ######################### */
+
+
+
+
+/* ######################### Start ourMonthlyPromotion Page ######################### */
+/* ============== Start header =============== */
+.ourMonthPromHeader {
+    background-image: url("../images/our_monthly_promotion/header_background.svg");
+}
+/* ============== End header =============== */
+/* ============== Start products_Sections =============== */
+.products_Sections {
+    padding: 70px 0 40px;
+    position: relative;
+}
+
+.products_Sections .productSection h2 {
+    background-image: url("../images/global/header_curve.png");
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 20%;
+    padding: 40px 0;
+    margin-top: -60px;
+    color: #007C39;
+    position: absolute;
+    font-size: 25px;
+}
+
+.products_Sections .productSection .total_products {
+    background-image: url("../images/our_monthly_promotion/total_products.svg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 70px 150px 75px;
+    margin: 80px 0 50px 0;
+}
+
+.products_Sections .productSection .total_products div {
+    padding: 50px;
+    background-image: url("../images/our_monthly_promotion/product_card.svg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.products_Sections .productSection .total_products img {
+    height: 100px; 
+    width: 93px; 
+    transition: 0.3s ease-in-out;
+}
+
+.products_Sections .productSection .total_products div:hover img {
+    transform: rotate(40deg) scale(1.3);
+}
+
+.products_Sections .productSection .readMoreProBtn {
+    position: absolute;
+    margin-top: -100px; 
+    background: #007C39;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 30px;
+    transition: 0.3s ease-in-out;
+}
+
+.products_Sections .productSection .readMoreProBtn:hover {
+    box-shadow: 0 0 20px #007C39;
+}
+/* ============== End products_Sections =============== */
+
+/* ######################### End ourMonthlyPromotion Page ######################### */
+
+
+
+
+
+
+/* ######################### Start our_monthly_CashVan , our_monthly_wholesale , our_monthly_HyperMarket Pages ######################### */
+/* ============== Start header =============== */
+.ourMonthCashVanHeader,
+.ourMonthWholeSaleHeader,
+.ourMonthHyperMarketHeader {
+    background-image: url("../images/our_monthly_promotion/header_background.svg");
+}
+/* ============== End header =============== */
+/* ============== Start cashVanHeader , wholeSaleHeader , HyperMarketHeader =============== */
+.cashVanHeader,
+.wholeSaleHeader,
+.HyperMarketHeader {
+    padding: 50px 0 40px;
+}
+
+.cashVanHeader .headerContaining,
+.wholeSaleHeader .headerContaining,
+.HyperMarketHeader .headerContaining {
+    position: absolute;
+    background-image: url("../images/global/header_curve.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 125px;
+    margin-top: 54px;
+}
+
+.cashVanHeader h2,
+.wholeSaleHeader h2,
+.HyperMarketHeader h2 {
+    position: relative;
+    margin: 45px 0 0 -10px;
+    color: #007C39;
+}
+/* ============== End cashVanHeader , wholeSaleHeader , HyperMarketHeader =============== */
+/* ============== Start products_CashVan_Sections , products_WholeSale_Sections , products_HyperMarket_Sections =============== */
+.products_CashVan_Sections {
+    padding: 100px 0 70px;
+    background-image: url("../images/our_monthly_CashVan/cashVanTotalBackground.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.products_WholeSale_Sections {
+    padding: 100px 0 70px;
+    background-image: url("../images/our_monthly_wholesale/wholesaleTotalBackground.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ########## change the background of this section ########## */
+.products_HyperMarket_Sections {
+    padding: 100px 0 70px;
+    background-image: url("../images/our_monthly_hyperMarket/hyperMarketTotalBackground.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.products_CashVan_Sections .cashVanProd .prodImg,
+.products_WholeSale_Sections .wholeSaleProd .prodImg,
+.products_HyperMarket_Sections .hyperMarketProd .prodImg {
+    background-image: url("../images/our_monthly_promotion/product_card.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 180px;
+    height: 180px;
+    cursor: pointer;
+}
+
+.products_CashVan_Sections .cashVanProd .prodImg img,
+.products_WholeSale_Sections .wholeSaleProd .prodImg img,
+.products_HyperMarket_Sections .hyperMarketProd .prodImg img {
+    width: 100px;
+    height: 130px;
+    transition: 0.3s ease-in-out;
+}
+
+.products_CashVan_Sections .cashVanProd .prodImg:hover img,
+.products_WholeSale_Sections .wholeSaleProd .prodImg:hover img,
+.products_HyperMarket_Sections .hyperMarketProd .prodImg:hover img {
+    transform: scale(1.2) rotate(20deg);
+}
+
+.products_CashVan_Sections .cashVanProd p,
+.products_WholeSale_Sections .wholeSaleProd p,
+.products_HyperMarket_Sections .hyperMarketProd p {
+    line-height: 20px;
+    font-weight: 600;
+    margin: 5px 0 10px -10px;
+}
+
+.products_CashVan_Sections .row:nth-child(2),
+.products_WholeSale_Sections .row:nth-child(2),
+.products_HyperMarket_Sections .row:nth-child(2) {
+    margin-top: 70px;
+}
+/* ============== End products_CashVan_Sections , products_WholeSale_Sections , products_HyperMarket_Sections =============== */
+/* ######################### Start our_monthly_CashVan , our_monthly_wholesale Pages ######################### */
+
+
+
+
+
+
+
+
+
+/* ######################### Start directContact Page ######################### */
+/* ============== Start header =============== */
+.directContact {
+    background-image: url("../images/direct_contact/header_background.svg");
+}
+
+.directContact h1 {
+    padding: 50px 30px;
+}
+/* ============== End header =============== */
+/* ============== Start ourBranches =============== */
+.ourBranches {
+    background-image: url("../images/direct_contact/our_Branches_Background.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0 20px;
+}
+
+.ourBranches .ourBranchesHeader {
+    font-size: 35px;
+    color: #007C39;
+    margin-bottom: 30px;
+}
+
+.ourBranches .total_info {
+    padding: 50px 60px;
+    background: #fff;
+    margin-top: 35px;
+}
+
+.ourBranches .total_info .info_left .allBranchesBtns button {
+    background: #007C39; 
+    color: #fff;
+    border: none;
+    margin: 7px;
+    padding: 7px 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.ourBranches .total_info .info_left {
+    padding-right: 30px;
+}
+
+.ourBranches .total_info .info_left .allBranchesBtns button.active {
+    color: #EBB300;
+}
+
+.ourBranches .total_info .info_left .allBranchesBtns button:hover {
+    color: #EBB300;
+}
+
+.ourBranches .total_info .info_left .branchInfo h2 {
+    color: #007C39;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.ourBranches .total_info .info_left .branchInfo i {
+    color: #007C39;
+    font-size: 25px;
+    position: absolute;
+    margin: 5px 0 0 -25px;
+}
+
+.ourBranches .total_info .info_left .branchInfo p {
+    color: #007C39;
+    font-size: 18px;
+    font-weight: 600;
+    width: 100% !important; 
+}
+
+.info_left .InfoPhones {
+    width: 55%;
+    margin-top: 20px;
+}
+
+.info_left .InfoPhones .InfoPhoneIcon {
+    border-right: 2px solid #007C39;
+    padding: 0 30px;
+}
+
+.info_left .InfoPhones .InfoPhoneIcon i {
+    font-size: 30px;
+    color: #007C39;
+}
+
+.info_left .InfoPhones .InfoPhonesNumber {
+    padding: 0 15px;
+}
+
+.info_left .InfoPhones .InfoPhonesNumber p {
+    font-size: 20px;
+    line-height: 5px;
+    margin-top: 15px;
+    font-weight: 600;
+    color: #007C39;
+}
+
+.ourBranches .total_info .info_right {
+    width: 100%;
+    padding: 0;
+    padding-left: 30px;
+}
+
+.ourBranches .total_info .info_right iframe {
+    height: 100%;
+    width: 100%;
+}
+
+.directContactFormSection {
+    padding: 60px 0;
+}
+
+.directContactFormSection h2 {
+    color: #007C39;
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+
+.directContactFormSection .directContactForm .form-group input {
+    color: #007C39;
+    font-weight: 600;
+    border-radius: 20px;
+}
+
+.directContactFormSection .directContactForm .form-group textarea {
+    color: #007C39;
+    border-radius: 10px;
+    font-weight: 600;
+    height:170px;
+}
+
+.directContactFormSection .directContactForm .form-group input::placeholder,
+.directContactFormSection .directContactForm .form-group textarea::placeholder {
+    color: #007C39;
+}
+
+.sendBtn input {
+    background: #007C39;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+    border: none;
+    padding: 5px 30px;
+}
+
+.sendBtn input:hover {
+    box-shadow: 0 0 10px #007C39;
+}
+/* ============== End ourBranches =============== */
+/* ######################### End directContact Page ######################### */
+
+
+
+
+
+
+/* ######################### Start ourSuccess Page ######################### */
+/* ============== Start ourStory =============== */
+.ourStory {
+    padding: 100px 0 50px;
+}
+
+.ourStory h1 {
+    color: #007C39;
+    font-size: 35px;
+    margin-bottom: 50px;
+}
+
+.ourStory .ourStoryInfo {
+    padding: 150px 100px;
+    background-image: url("../images/our_success/ourStory_Background.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+.ourStory .ourStoryInfo .ourStoryInfoLeft {
+    position: absolute;
+    top: 0;
+    left: 60px;
+    padding: 0 20px;
+    background: rgba(255, 255, 255, 0.418);
+    height: 100%;
+    width: 40%;
+}
+
+.ourStory .ourStoryInfo .ourStoryInfoLeft h2 {
+    color: #007C39;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: -5px;
+}
+
+.ourStory .ourStoryInfo .ourStoryInfoLeft h2:nth-child(2) {
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.ourStory .ourStoryInfo .ourStoryInfoLeft p {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.ourStory .ourStoryInfo .ourStoryRightOuter h2 {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.ourStory .ourStoryInfo .ourStoryRightOuter p {
+    font-size: 20px;
+    line-height: 30px;
+    color: #fff;
+}
+
+.ourStoryArticle {
+    padding: 40px 0;
+    font-size: 20px;
+}
+/* ============== End ourStory =============== */
+/* ============== Start ourMissionVision =============== */
+.ourMissionVision {
+    background-image: url("../images/our_success/ourMissionVision_Background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 50px 0;
+}
+
+.ourMissionVision .ourVision {
+    border-right: 2px solid #fff;
+    padding: 0 50px;
+}
+
+.ourMissionVision .ourMission {
+    padding: 0 50px;
+}
+
+.ourMissionVision .ourVision .imgContain ,
+.ourMissionVision .ourMission .imgContain  {
+    margin-bottom: -15px;
+}
+
+.ourMissionVision .ourVision .imgContain img ,
+.ourMissionVision .ourMission .imgContain img {
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.ourMissionVision .ourVision .imgContain img:hover ,
+.ourMissionVision .ourMission .imgContain img:hover {
+    transform: scale(1.2) rotate(360deg);
+}
+
+.ourMissionVision .ourVision h2,
+.ourMissionVision .ourMission h2 {
+    color: #fff;
+}
+
+.ourMissionVision .ourVision p,
+.ourMissionVision .ourMission p {
+    color: #fff;
+    line-height: 30px;
+    font-size: 20px;
+}
+/* ============== Start ourMissionVision =============== */
+/* ============== Start ourClients =============== */
+
+.ourClients {
+    padding: 70px 0;
+}
+
+.ourClients h2 {
+    color: #007C39;
+}
+
+.ourClients .clientSection {
+    background-image: url("../images/our_success/our_success_curve.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 170px;
+    height: 200px;
+}
+
+.ourClients .clientSection:nth-child(1) img {
+    width: 100px;
+    height: 70px;
+    margin-left: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.ourClients .clientSection:nth-child(2) img,
+.ourClients .clientSection:nth-child(3) img,
+.ourClients .clientSection:nth-child(4) img {
+    height: 120px;
+    margin-left: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.ourClients .clientSection:nth-child(5) img {
+    height: 120px;
+    width: 80px;
+    margin-left: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.ourClients .clientSection:nth-child(1):hover img,
+.ourClients .clientSection:nth-child(2):hover img,
+.ourClients .clientSection:nth-child(3):hover img,
+.ourClients .clientSection:nth-child(4):hover img,
+.ourClients .clientSection:nth-child(5):hover img {
+    transform: scale(1.1);
+}
+/* ============== End ourClients =============== */
+/* ######################### End ourSuccess Page ######################### */
+
+
+
+
+
+
+/* ################$$$$$ Start the responsive of the pages $$$$$################ */
+
+/* ################ Large devices (desktops, less than 1200px) ################ */
+@media (max-width: 1199.98px) {
+    /* ######################### Start Global Sections ######################### */
+    /* ============== Start Navbar =============== */
+    .navChange .navbar-nav .nav-link {
+        font-size: 14px;
+    }
+
+    .navbar .navbar-brand img {
+        height: 65px;
+        width: 110px;
+    }   
+
+    .navbar .navbar-brand img:hover {
+        transform: scale(1.1 , 1.1);
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+        font-size: 14px;
+    } 
+    /* ============== End Navbar ===============  */
+    /* ============== Start First_Navbar =============== */
+    .First_Navbar .dropdown .dropdown-menu {
+        left: -100% !important;
+        position: absolute !important;
+    }
+    /* ============== End First_Navbar =============== */
+    /* ============== Start header =============== */
+    header h1 {
+        font-size: 50px;
+        padding: 0 300px;
+    }
+    /* ============== End header =============== */
+    /* ============== Start go_up icon =============== */
+    .go_up {
+        right: 20px;
+    }
+    /* ============== End go_up icon =============== */
+    /* ============== Start footer =============== */
+    footer .footer_section {
+        padding: 10px 20px 0;
+    }
+
+    footer .footer_section h2 {
+        font-size: 20px;
+    }
+
+    footer .footer_section:nth-child(2) {
+        padding-right: 7px;
+        padding-left: 10px; 
+    }
+
+    footer .footer_section:nth-child(2) p {
+        font-size: 16px;
+    }
+
+    footer .footer_section:nth-child(3) {
+        padding: 10px 5px 0 20px;
+    }
+
+    footer .footer_section:nth-child(3) i {
+        font-size: 18px;
+    }
+
+    footer .footer_section:nth-child(3) span {
+        font-size: 16px;
+        margin: 5px 0 0 12px;
+    }
+
+    footer .footer_section:nth-child(3) i:nth-child(2) {
+        font-size: 22px
+    }
+
+    footer .footer_section:nth-child(4) a {
+        font-size: 16px;
+    }
+
+    footer .footer_section:nth-child(5) i {
+        font-size: 27px;
+    }
+    /* ============== End footer =============== */
+    /* ============== Start secondFooter =============== */
+    .secondFooter {
+        padding: 7px 0;
+    }
+    /* ============== End secondFooter =============== */
+    /* ######################### End Global Sections ######################### */
+
+
+
+    /* ######################### Start home Page ######################### */
+    /* ============== Start whereToBuyProd =============== */
+    .whereToBuyProd {
+        padding: 150px 0;
+    }
+    /* ============== End whereToBuyProd =============== */
+    /* ######################### End home Page ######################### */
+
+
+
+
+    /* ######################### Start ourMonthlyPromotion Page ######################### */
+    /* ============== Start products_Sections =============== */
+    .products_Sections {
+        padding: 20px 0 30px;
+    }
+
+    .products_Sections .productSection .total_products {
+        padding-top: 60px !important;
+    }
+
+    .products_Sections .productSection h2 {
+        font-size: 20px;
+    }
+
+    .products_Sections .productSection .total_products {
+        padding: 70px 100px 75px;
+    }
+    /* ============== End products_Sections =============== */
+    /* ######################### End ourMonthlyPromotion Page ######################### */
+
+
+    /* ######################### Start our_monthly_CashVan , our_monthly_wholesale , our_monthly_HyperMarket Pages ######################### */
+    /* ============== Start cashVanHeader , wholeSaleHeader , HyperMarketHeader =============== */
+    .cashVanHeader .headerContaining,
+    .wholeSaleHeader .headerContaining,
+    .HyperMarketHeader .headerContaining {
+        width: 270px;
+        height: 120px;
+        margin-top: 54px;
+    }
+
+    .cashVanHeader h2,
+    .wholeSaleHeader h2,
+    .HyperMarketHeader h2 {
+        margin: 45px 0 0 10px;
+        font-size: 28px;
+    }
+    /* ============== End cashVanHeader , wholeSaleHeader , HyperMarketHeader =============== */
+    /* ============== Start products_CashVan_Sections , products_WholeSale_Sections , products_HyperMarket_Sections =============== */
+    .products_CashVan_Sections .cashVanProd .prodImg,
+    .products_WholeSale_Sections .wholeSaleProd .prodImg,
+    .products_HyperMarket_Sections .hyperMarketProd .prodImg {
+        width: 170px;
+        height: 170px;
+    }
+
+    .products_CashVan_Sections .cashVanProd p,
+    .products_WholeSale_Sections .wholeSaleProd p,
+    .products_HyperMarket_Sections .hyperMarketProd p {
+        margin: 5px 0 10px -20px;
+    }
+    /* ============== End products_CashVan_Sections , products_WholeSale_Sections , products_HyperMarket_Sections =============== */
+    /* ######################### Start our_monthly_CashVan , our_monthly_wholesale , our_monthly_HyperMarket Pags ######################### */
+
+
+
+    /* ######################### Start directContact Page ######################### */
+    /* ============== Start ourBranches =============== */
+    .ourBranches {
+        padding: 70px 0 20px;
+    }
+
+    .ourBranches .total_info {
+        padding: 50px 30px;
+    }
+
+    .ourBranches .total_info .info_left .branchInfo h2,
+    .ourBranches .total_info .info_left .branchInfo i {
+        font-size: 22px;
+    }
+
+    .ourBranches .total_info .info_left .branchInfo p {
+        font-size: 17px;
+    }
+
+    .info_left .InfoPhones {
+        width: 60%;
+    }
+
+    .info_left .InfoPhones .InfoPhoneIcon i {
+        font-size: 28px;
+    }
+
+    .info_left .InfoPhones .InfoPhonesNumber p {
+        font-size: 18px;
+    }
+
+    .ourBranches .total_info .info_right {
+        padding-left: 15px;
+    }
+    /* ============== End ourBranches =============== */
+    /* ######################### End directContact Page ######################### */
+
+
+
+
+
+
+    /* ######################### Start ourSuccess Page ######################### */
+    /* ============== Start ourStory =============== */
+    .ourStory {
+        padding: 70px 0 20px;
+    }
+
+    .ourStory h1 {
+        font-size: 35px;
+        margin-bottom: 25px;
+    }
+
+    .ourStory .ourStoryInfo .ourStoryInfoLeft h2 {
+        font-size: 30px;
+    }
+
+    .ourStory .ourStoryInfo .ourStoryInfoLeft h2:nth-child(2) {
+        margin-bottom: 5px; 
+        font-size: 27px;
+    }
+
+    .ourStory .ourStoryInfo .ourStoryRightOuter h2 {
+        margin-bottom: 5px; 
+    }
+
+    .ourStory .ourStoryArticle {
+        padding: 30px 0;
+    }
+    /* ============== End ourStory =============== */
+    /* ============== Start ourMissionVision =============== */
+    .ourMissionVision .ourVision .imgContain img:hover ,
+    .ourMissionVision .ourMission .imgContain img:hover {
+        transform: scale(1.1) rotate(360deg);
+    }
+    /* ============== Start ourMissionVision =============== */
+    /* ######################### End ourSuccess Page #########################  */
+}
+
+/* ################ Medium devices (tablets, less than 992px) ################ */
+@media (max-width: 991.98px) { 
+    /* ######################### Start Global Sections ######################### */
+    /* ============== Start Navbar =============== */
+    .navbar .navbar-toggler {
+        border: 2.5px solid #007C39;
+        color: #007C39;
+    }
+
+    .navbar .navbar-toggler:focus {
+        outline: none;
+    }
+
+    .navbar .navbar-nav .nav-link {
+        color: #007C39 !important; 
+        border: none;
+        font-size: 18px !important;
+        padding: 5px 0 !important;
+    }
+
+    .navbar .navbar-nav .nav-link:hover {
+        background: #007C39;
+        color: #fff !important;
+        padding-left: 30px !important;
+    }
+
+    .dropdown .dropdown-menu {
+        border: none;
+        border-left: 4px solid #007C39;
+        border-radius: 0;
+    }
+    
+    .navbar .dropdown .dropdown-menu .dropdown-item {
+        font-size: 17px;
+        transition: 0.3s ease-in-out;
+        color: #007C39;
+    }
+    .navbar .dropdown .dropdown-menu .dropdown-item:hover {
+        padding-left: 40px;
+        color: #fff;
+        background: #007C39;
+    } 
+    /* ============== End Navbar =============== */
+    /* ============== Start header =============== */
+    header h1 {
+        font-size: 45px;
+        padding: 0 220px;
+    }
+    /* ============== End header =============== */
+    /* ============== Start footer =============== */
+    footer {
+        padding: 30px 0 10px;
+    }
+    footer .total_footer {
+        flex-wrap: wrap;
+    }
+
+    footer .footer_section {
+        margin: 20px 0;
+    }
+
+    footer .footer_section:nth-child(2) {
+        padding-left: 30px;
+    }
+
+    footer .footer_section:nth-child(3) span {
+        margin-top: 12px;
+    }
+
+    footer .footer_section:nth-child(3) span:nth-child(2) {
+        margin-top: 17px;
+    }
+
+    footer .footer_section:nth-child(3) span:nth-child(3) {
+        margin-top: 17px;
+    }
+
+    footer .footer_section .contact_info ul {
+        margin-top: 5px;
+    }
+
+    footer .footer_section .contact_info ul i {
+        font-size: 20px;
+    }
+    /* ============== End footer =============== */
+    /* ######################### End Global Sections ######################### */
+
+
+
+    /* ######################### Start home Page ######################### */
+    /* ============== Start homeMain =============== */
+    .homeMain {
+        height: 600px;
+    }
+    /* ============== End homeMain =============== */
+    /* ============== Start homeMainProducts =============== */
+    .homeMainProducts .totalHomeProducts .productSection img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .homeMainProducts .totalHomeProducts .productSection h2 {
+        font-size: 20px;
+    } 
+    /* ============== End homeMainProducts =============== */
+    /* ============== Start ourBlogs =============== */
+    .ourBlogs h2 {
+        font-size: 30px;
+    }
+    /* ============== End ourBlogs =============== */
+    /* ######################### End home Page ######################### */
+
+
+
+    /* ######################### Start ourMonthlyPromotion Page #########################  */
+    /* ============== Start products_Sections =============== */
+    .products_Sections {
+        padding: 70px 0 30px;
+    }
+
+    .products_Sections .productSection h2 {
+        font-size: 20px;
+        width: 200px;
+    }
+
+    .products_Sections .productSection .total_products {
+        padding: 70px 40px 75px;
+        margin: 50px 0;
+    }
+
+    .products_Sections .productSection .total_products div {
+        padding: 40px;
+    }
+
+    .products_Sections .productSection .total_products div:hover img {
+       transform: scale(1.1) rotate(20deg);
+    }
+    /* ============== End products_Sections =============== */
+    /* ######################### End ourMonthlyPromotion Page ######################### */
+
+
+
+
+    /* ######################### Start our_monthly_CashVan , our_monthly_wholesale , our_monthly_HyperMarket Pages ######################### */
+    /* ============== Start cashVanHeader , wholeSaleHeader , HyperMarketHeader =============== */
+    .cashVanHeader h2,
+    .wholeSaleHeader h2,
+    .HyperMarketHeader h2 {
+        margin: 45px 0 0 8px;
+        font-size: 27px;
+    }
+    /* ============== End cashVanHeader, wholeSaleHeader , HyperMarketHeader =============== */
+    /* ============== Start products_CashVan_Sections , products_WholeSale_Sections , products_HyperMarket_Sections =============== */
+    .products_CashVan_Sections,
+    .products_WholeSale_Sections,
+    .products_HyperMarket_Sections {
+        padding: 85px 0 50px;
+    }
+
+    .products_CashVan_Sections .row:nth-child(2),
+    .products_WholeSale_Sections .row:nth-child(2),
+    .products_HyperMarket_Sections .row:nth-child(2) {
+        margin-top: 15px;
+    }
+
+    .products_CashVan_Sections .cashVanProd .prodImg img,
+    .products_WholeSale_Sections .wholeSaleProd .prodImg img,
+    .products_HyperMarket_Sections .hyperMarketProd .prodImg img {
+        height: 110px;
+        width: 90px;
+    }
+
+    .products_CashVan_Sections .cashVanProd p,
+    .products_WholeSale_Sections .wholeSaleProd p,
+    .products_HyperMarket_Sections .hyperMarketProd p {
+        margin: 5px 0 20px 15px;
+    }
+    /* ============== End products_CashVan_Sections , products_WholeSale_Sections , products_HyperMarket_Sections =============== */
+    /* ######################### Start our_monthly_CashVan , our_monthly_wholesale , our_monthly_HyperMarket Pages ######################### */
+
+
+
+
+    /* ######################### Start directContact Page ######################### */
+    /* ============== Start ourBranches =============== */
+    .ourBranches {
+        padding: 70px 0 10px;
+    }
+
+    .ourBranches .total_info {
+        padding: 50px 30px;
+    }
+
+    .ourBranches .total_info .info_left,
+    .ourBranches .total_info .info_right {
+        padding: 0;
+    }
+
+    .ourBranches .total_info .info_left .branchInfo {
+        padding-left: 20px;
+    }
+
+    .ourBranches .total_info .info_left .branchInfo h2,
+    .ourBranches .total_info .info_left .branchInfo i {
+        font-size: 22px;
+    }
+
+    .info_left .InfoPhones {
+        width: 35%;
+        margin-bottom: 35px;
+    }
+
+    .ourBranches .total_info .info_right {
+        height: 400px;
+    }
+    /* ============== End ourBranches =============== */
+    /* ######################### End directContact Page ######################### */
+
+
+
+
+
+    
+    /* ######################### Start ourSuccess Page ######################### */
+    /* ============== Start ourStory =============== */
+    .ourStory h1 {
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+
+    .ourStory .ourStoryInfo {
+        padding: 150px 100px 20px;
+    }
+
+    .ourStory .ourStoryInfo .ourStoryInfoLeft {
+        top: 50px;
+        left: 0px;
+        padding: 120px 0;
+        height: 30%;
+        width: 100%;
+    }
+
+    .ourStory .ourStoryInfo .ourStoryRightOuter {
+        margin-top: 170px;
+    }
+
+    .ourStoryArticle {
+        padding: 20px 0;
+        font-size: 20px;
+    } 
+    /* ============== End ourStory =============== */
+    /* ============== Start ourMissionVision =============== */
+    .ourMissionVision .ourVision {
+        border: none;
+    }
+
+    .ourMissionVision .ourVision p,
+    .ourMissionVision .ourMission p {
+        line-height: 25px;
+    } 
+    /* ============== Start ourMissionVision =============== */
+    /* ######################### End ourSuccess Page ######################### */
+
+}
+
+/* ################ Small devices (landscape phones, less than 768px) ################ */
+@media (max-width: 767.98px) { 
+    /* ######################### Start Global Sections ######################### */
+    /* ============== Start header =============== */
+    header h1 {
+        font-size: 40px;
+        padding: 0 120px;
+    }
+    /* ============== End header =============== */
+    /* ============== End footer =============== */
+    footer .footer_section:nth-child(2) {
+        padding-right: 12px !important;
+        padding-left: 20px;
+    }
+
+    footer .footer_section:nth-child(2) p {
+        font-size: 16px;
+    }
+    footer .footer_section:nth-child(3) span {
+        margin-top: 13px !important;
+    }
+
+    footer .footer_section:nth-child(3) ul {
+        margin-top: 10px;
+    }
+
+    footer .footer_section:nth-child(3) ul i {
+        margin-bottom: 15px !important;
+    }
+    /* ============== End footer =============== */
+    /* ######################### End Global Sections ######################### */
+
+
+
+
+    /* ######################### Start home Page ######################### */
+    /* ============== Start homeMainProducts =============== */
+    .homeMainProducts .totalHomeProducts .productSection img {
+        width: 100px;
+        height: 100px;
+    }
+    /* ============== End homeMainProducts =============== */
+    /* ============== Start homeAboutUs =============== */
+    .homeAboutUs {
+        padding: 40px 0;
+    }
+
+    .homeAboutUs .homeAboutUsHeader {
+        margin-bottom: 30px;
+    }
+
+    .homeAboutUs .homeAboutUsLeft {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .homeAboutUs .homeAboutUsLeft img {
+        width: 92%;
+    }
+
+    .homeAboutUs .homeAboutUsRight {
+        margin-top: 10px;
+    }
+
+    .homeAboutUs .homeAboutUsRight h2 {
+        font-size: 25px;
+        margin: 0;
+    }
+
+    .homeAboutUs .homeAboutUsRight p {
+        font-size: 16px;
+        margin: 0;
+    }
+    /* ============== End homeAboutUs =============== */
+    /* ######################### End home Page ######################### */
+
+
+
+
+
+    /* ######################### Start ourMonthlyPromotion Page #########################  */
+    /* ============== Start products_Sections =============== */
+    .products_Sections {
+        padding: 70px 0 30px;
+    }
+
+    .products_Sections .productSection h2 {
+        font-size: 18px;
+        width: 170px;
+        margin-top: -45px;
+    }
+
+    .products_Sections .productSection .total_products {
+        padding: 70px 20px 75px;
+        margin-top: 0px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .products_Sections .productSection .total_products div {
+        padding: 25px;
+        margin: 20px 0;
+    }
+
+    .products_Sections .productSection .total_products div img {
+        width: 100px;
+        height: 85px;
+    }
+    /* ============== End products_Sections =============== */
+    /* ######################### End ourMonthlyPromotion Page #########################  */
+
+
+
+
+    /* ######################### Start our_monthly_CashVan , our_monthly_wholesale , our_monthly_HyperMarket Pages ######################### */
+    /* ============== Start cashVanHeader , wholeSaleHeader , HyperMarketHeader =============== */ 
+    .cashVanHeader h2,
+    .wholeSaleHeader h2,
+    .HyperMarketHeader h2 {
+        margin: 45px 0 0 8px;
+        font-size: 25px;
+    }
+    /* ============== End cashVanHeader , wholeSaleHeader , HyperMarketHeader =============== */
+    /* ============== Start products_CashVan_Sections , products_WholeSale_Sections , products_HyperMarket_Sections =============== */
+    .products_CashVan_Sections .cashVanProd,
+    .products_WholeSale_Sections .wholeSaleProd,
+    .products_HyperMarket_Sections .hyperMarketProd {
+        margin: 5px 0;
+    }
+
+    .products_CashVan_Sections .cashVanProd p,
+    .products_WholeSale_Sections .wholeSaleProd p,
+    .products_HyperMarket_Sections .hyperMarketProd p {
+        margin: 10px 0 25px 0px;
+        padding: 0 30px;
+        line-height: 25px;
+        text-align: center;
+        font-size: 18px;
+    }
+    /* ============== End products_CashVan_Sections , products_WholeSale_Sections , products_HyperMarket_Sections =============== */
+    /* ######################### Start our_monthly_CashVan , our_monthly_wholesale , our_monthly_HyperMarket Pages ######################### */
+
+
+
+
+    /* ######################### Start directContact Page #########################  */
+    /* ============== Start ourBranches =============== */
+    .info_left .InfoPhones {
+        width: 50%;
+    }
+    /* ============== End ourBranches =============== */
+    /* ######################### End directContact Page #########################  */
+
+
+
+
+
+    /* ######################### Start ourSuccess Page #########################  */
+    /* ============== Start ourStory =============== */
+    .ourStory .ourStoryInfo {
+        padding: 150px 20px 20px;
+    }
+
+    .ourStoryArticle {
+        padding: 10px 0 20px !important;
+        font-size: 18px;
+    }  
+
+    .ourStoryArticle p {
+        margin: 0 !important;
+    }
+    /* ============== End ourStory =============== */
+    /* ######################### End ourSuccess Page ######################### */
+}
+
+/* ################ Extra small devices (portrait phones, less than 576px) ################ */
+@media (max-width: 575.98px) { 
+    /* ######################### Start Global Sections ######################### */
+    /* ============== Start Navbar ===============  */
+    .navChange  {
+        padding: 0 10px;
+    }
+
+    .navbar .navbar-brand img {
+        height: 60px !important;
+        width: 100px !important;
+    }
+ 
+    .navbar .navChange .navbar-toggler {
+        margin-right: 10px;
+    }
+    /* ============== End Navbar ===============  */
+    /* ============== Start First_Navbar ===============  */
+    .First_Navbar ul {
+        margin-right: 10px;
+    }
+
+    .First_Navbar ul i {
+        font-size: 13px;
+    }
+    /* ============== End First_Navbar ===============  */
+    /* ============== Start header =============== */
+    header h1 {
+        font-size: 35px;
+        padding: 0 45px;
+    }
+    /* ============== End header =============== */
+    /* ============== End footer =============== */
+    footer .footer_section:nth-child(3) span {
+        margin-top: 22px !important;
+        font-size: 15px;
+    }
+
+    footer .footer_section:nth-child(3) h2 {
+        margin-bottom: -10px;
+    }
+
+    footer .footer_section:nth-child(3) ul {
+        margin-top: 15px;
+    }
+
+    footer .footer_section:nth-child(3) ul i {
+        margin-bottom: 12px !important;
+    }
+
+    footer .footer_section {
+        border: none;
+        margin: 10px 0;
+    }
+
+    footer .footer_section:nth-child(4) h2 {
+        margin-top: -20px;
+    }
+    /* ============== End footer =============== */
+    /* ######################### End Global Sections ######################### */
+
+
+
+
+    /* ######################### Start home Page ######################### */
+    /* ============== Start homeMain =============== */
+    .homeMain {
+        height: 500px;
+    }
+    /* ============== End homeMain =============== */
+    /* ============== Start homeAboutUs =============== */
+    .homeAboutUs {
+        padding: 40px 0;
+    }
+
+    .homeAboutUs .homeAboutUsHeader {
+        margin-bottom: 25px;
+        font-size: 28px;
+    }
+
+    .homeAboutUs .homeAboutUsRight {
+        padding-left: 4%;
+        padding-right: 20px;
+    }
+
+    .homeAboutUs .homeAboutUsRight h2 {
+        font-size: 22px;
+        margin: 3px;
+    }
+
+    .homeAboutUs .homeAboutUsRight p {
+        font-size: 15px;
+    }
+    /* ============== End homeAboutUs =============== */
+    /* ============== Start whereToBuyProd =============== */
+
+    .whereToBuyProd {
+        padding: 120px 0;
+    }
+
+    .whereToBuyProd h2 {
+        font-size: 20px;
+    }
+    
+    .whereToBuyProd .whereToBuyImg img {
+        width: 100px;
+        height: 120px;
+    }
+    /* ============== End whereToBuyProd =============== */
+    /* ============== End whereToBuyProd =============== */
+    .ourBlogs h2 {
+        font-size: 27px;
+        margin-top: 30px;
+    }
+
+    .ourBlogs .products_slider_ourBlogs {
+        padding: 80px 0 170px;
+    }
+
+    .ourBlogs .owl-item .item {
+        /* background: red; */
+        padding: 0px 15px;
+    } 
+    /* ============== End whereToBuyProd =============== */
+    /* ######################### End home Page ######################### */
+
+
+    
+    /* ######################### Start ourMonthlyPromotion Page #########################  */
+    /* ============== Start products_Sections =============== */
+    .products_Sections {
+        padding: 70px 0 20px;
+    }
+
+    .products_Sections .productSection .total_products {
+        padding: 40px 40px 75px !important;
+    }
+
+    .products_Sections .productSection .total_products div {
+        padding: 30px;
+        margin: 15px;
+    }
+
+    .products_Sections .productSection .total_products div img {
+        width: 100px;
+        height: 85px;
+    }
+
+    .products_Sections .productSection .readMoreProBtn {
+        padding: 5px 20px;
+    }
+    /* ============== End products_Sections =============== */
+    /* ######################### End ourMonthlyPromotion Page #########################  */
+
+
+
+
+    
+
+    /* ######################### Start directContact Page #########################  */
+    /* ============== Start ourBranches =============== */
+    .ourBranches {
+        padding: 70px 0 10px;
+    }
+
+    .ourBranches .total_info {
+        padding: 40px 15px;
+    }
+
+    .ourBranches .total_info .allBranchesBtns {
+        flex-wrap: wrap;
+    }
+
+    .ourBranches .total_info .info_left,
+    .ourBranches .total_info .info_right {
+        padding: 0;
+    }
+
+    .ourBranches .total_info .info_left .branchInfo {
+        padding-left: 20px;
+    }
+
+    .ourBranches .total_info .info_left .branchInfo h2,
+    .ourBranches .total_info .info_left .branchInfo i {
+        font-size: 20px;
+        margin-bottom: 0px;
+    }
+
+    .ourBranches .total_info .info_left .branchInfo p {
+        font-size: 16px;
+    }
+
+    .info_left .InfoPhones {
+        width: 100%;
+        flex-flow: column;
+    }
+
+    .info_left .InfoPhones .InfoPhoneIcon {
+        border: none;
+        margin-bottom: 10px
+    }
+
+    .info_left .InfoPhones .InfoPhoneIcon i {
+        font-size: 30px;
+    }
+
+    .directContactFormSection h2 {
+        font-size: 30px;
+    }
+    /* ============== End ourBranches =============== */
+    /* ######################### End directContact Page #########################  */
+
+
+
+
+    /* ######################### Start ourSuccess Page #########################  */
+    /* ============== Start ourStory =============== */
+    .ourStory h1 {
+        font-size: 30px;
+        margin-bottom: 5px;
+    }
+
+    .ourStory .ourStoryInfo {
+        padding: 150px 0px 20px;
+    }
+
+    .ourStory .ourStoryInfo p {
+        line-height: 28px !important;
+    }
+
+    .ourStory .ourStoryInfo .ourStoryInfoLeft {
+        padding: 140px 10px 130px;
+    } 
+
+    .ourStory .ourStoryInfo .ourStoryInfoLeft h2,
+    .ourStory .ourStoryInfo .ourStoryInfoLeft h2:nth-child(2),
+    .ourStory .ourStoryInfo .ourStoryRightOuter h2 {
+        font-size: 22px;
+    }
+
+    .ourStory .ourStoryInfo .ourStoryInfoLeft p,
+    .ourStory .ourStoryInfo .ourStoryRightOuter p {
+        font-size: 18px;
+        line-height: 25px !important;
+    }
+
+    .ourStory .ourStoryInfo .ourStoryRightOuter {
+        margin-top: 200px;
+    }
+
+    .ourStoryArticle {
+        padding: 10px 0 20px !important;
+        font-size: 18px;
+    }  
+
+    .ourStoryArticle p {
+        font-size: 16px !important;
+        line-height: 23px !important;
+    }
+    /* ============== End ourStory =============== */
+    /* ============== Start ourMissionVision =============== */
+    .ourMissionVision .ourVision,
+    .ourMissionVision .ourMission {
+        padding: 0 25px;
+    }
+
+    .ourMissionVision .ourVision h2,
+    .ourMissionVision .ourMission h2 {
+        font-size: 28px;
+    }
+
+    .ourMissionVision .ourVision p,
+    .ourMissionVision .ourMission p {
+        font-size: 18px;
+    }  
+    /* ============== Start ourMissionVision =============== */
+    /* ######################### End ourSuccess Page ######################### */
+}
+
+
+
+
+
+
