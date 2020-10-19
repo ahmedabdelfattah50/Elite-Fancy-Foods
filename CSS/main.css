@@ -639,10 +639,9 @@ footer .footer_section:nth-child(5) i:hover {
     background-size: cover;
 }
 
-/* ########## change the background of this section ########## */
 .products_HyperMarket_Sections {
     padding: 100px 0 70px;
-    background-image: url("../images/our_monthly_hyperMarket/hyperMarketTotalBackground.svg");
+    background-image: url("../images/our_monthly_hyperMarket/hyperMarketTotalBackground.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
