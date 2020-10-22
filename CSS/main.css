@@ -3,6 +3,10 @@
     margin: 0;
     padding: 0;   
 }
+ 
+body {
+    overflow: hidden;
+}
 /* ============== Start Navbar =============== */
 .navbar {
     transition: 0.3s ease-in-out;
@@ -49,6 +53,17 @@
     transform: scale(0.8,0.8) !important;
 }
 
+.navChange .nav-item .ourBrandsMenu a {
+    padding: 4px 15px;
+    font-weight: 500;
+}
+
+.navChange .nav-item .ourBrandsMenu a img {
+    width: 32px;
+    height: 32px;
+    transform: scale(1) !important;
+}
+
 .navbar .navbar-brand img {
     height: 72.5px;
     width: 125px;
@@ -85,14 +100,33 @@
 }
 
 .dropdown .dropdown-menu {
-    border: none;
-    border-bottom: 4px solid #007C39;
     border-radius: 0;
+    background: transparent;
+    background-image: url('../images/global/menuBackground.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    border: none;
+    padding: 20px 0;
 }
 
 .nav-item .dropdown-menu a:hover {
     background: #007C39;
     color: #fff;
+}
+
+.nav-item .ourBrandsMenu a {
+    padding: 4px 15px;
+    font-weight: 500;
+}
+
+.nav-item .ourBrandsMenu a:hover {
+    background: #4dad7a;
+}
+
+.nav-item .ourBrandsMenu a img {
+    width: 32px;
+    height: 32px;
 }
 /* ============== End Navbar =============== */
 /* ============== Start First_Navbar =============== */
@@ -140,6 +174,8 @@
     border-bottom: 4px solid #007C39;
     border-radius: 0;
     z-index: 5000 !important;
+    background-image: none;
+    background: #fff;
 }
 
 .First_Navbar .nav-item .dropdown-menu a:hover {
@@ -147,6 +183,9 @@
     color: #fff;
 }
 /* ============== End First_Navbar =============== */
+
+
+
 /* ============== Start header =============== */
 header {
     background: #277e2bb2;
@@ -165,7 +204,6 @@ header h1 {
 /* ============== Start go_up icon =============== */
 .go_up {
     position: fixed;
-    z-index: 5;
     right: 40px;
     top: 90%;
     padding: 15px 10px;
@@ -175,16 +213,17 @@ header h1 {
     font-size: 20px;
     cursor: pointer;
     display: none;
+    z-index: 55 !important;
 }
 /* ============== End go_up icon =============== */
 /* ============== Start footer =============== */
 footer {
-    padding: 50px 0 20px;
+    padding: 30px 0 20px;
     box-shadow: 0 0 10px #ddd;
 }
 
 footer .footer_section {
-    padding: 10px 30px 0;
+    padding: 10px 25px 0;
     border-right: 2px solid #007C39;
 }
 
@@ -213,13 +252,13 @@ footer .footer_section:nth-child(2) p {
     margin-bottom: 0;
 }
 
-footer .footer_section:nth-child(3) {
-    padding: 10px 15px 0 40px;
+footer .footer_section:nth-child(3) ul {
+    height: 120px;
+    padding: 5px 0;
 }
 
 footer .footer_section:nth-child(3) i {
     font-size: 20px;
-    margin: 10px 0;
     color: #007C39;
     cursor: pointer;
 }
@@ -228,10 +267,15 @@ footer .footer_section:nth-child(3) i:hover {
     color: #EBB300;
 }
 
+footer .footer_section:nth-child(3) .total_data {
+    height: 120px
+}
+
 footer .footer_section:nth-child(3) span {
-    font-size: 17px;
+    font-size: 18px;
     color: #007C39;
-    margin: 6px 0 0 15px;
+    margin-left: 15px;
+    margin-top: 0 !important;
     font-weight: 600;
 }
 
@@ -243,9 +287,13 @@ footer .footer_icons {
     border: none;
 }
 
+footer .footer_section:nth-child(4) {
+    padding: 10px 20px 0;
+}
+
 footer .footer_section:nth-child(4) a {
     color: #007C39;
-    font-size: 17px;
+    font-size: 18px;
     font-weight: 600;
     line-height: 30px;
     text-decoration: none;
@@ -290,18 +338,208 @@ footer .footer_section:nth-child(5) i:hover {
     background: #007C39;
 }
 /* ============== End secondFooter =============== */
+/* ============== Start homeAllLayer , contactAllLayer , newsEventsLayer , eventsLayer , cashVanLayer , HyperLayer , WholesaleLayer , NewsLayer , monthlyLayer , SuccessLayer =============== */
+.homeAllLayer,
+.contactAllLayer,
+.newsEventsLayer,
+.eventsLayer,
+.cashVanLayer,
+.HyperLayer,
+.WholesaleLayer,
+.NewsLayer,
+.monthlyLayer,
+.SuccessLayer {
+    background: #007c3a7c;
+    position: absolute;
+    top: 5%;
+    bottom: 0;
+    width: 100%;
+    display: none;
+    z-index: 50 !important;
+}
 
+.homeAllLayer {
+    height: 293%;
+}
+
+.contactAllLayer {
+    height: 217%;
+}
+
+.newsEventsLayer {
+    height: 234%;
+}
+
+.eventsLayer {
+    height: 227%;
+}
+
+.cashVanLayer,
+.HyperLayer,
+.WholesaleLayer {
+    height: 160%;
+}
+
+.NewsLayer {
+    height: 207%;
+}
+
+.monthlyLayer {
+    height: 251%;
+}
+
+.SuccessLayer {
+    height: 256%;
+}
+/* ============== End contactAllLayer , contactAllLayer , newsEventsLayer , eventsLayer , cashVanLayer , HyperLayer , WholesaleLayer , NewsLayer , monthlyLayer , SuccessLayer =============== */
+/* ===== Start load spinner ===== */
+.page_over_lay {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;    height: 100%;
+    top: 0;    left: 0;
+    z-index: 99999;
+    background: rgb(150,51,51);
+    background: linear-gradient(157deg, rgb(59, 150, 51) 10%, rgb(238, 234, 229) 65%);
+}
+.sk-folding-cube {
+    position: relative;
+    margin: 20px auto;
+    width: 40px;    height: 40px;
+    -webkit-transform: rotateZ(45deg);
+        -moz-transform: rotateZ(45deg);
+            -o-transform: rotateZ(45deg);
+                -ms-transform: rotateZ(45deg);
+                    transform: rotateZ(45deg);
+}
+.sk-folding-cube .sk-cube {
+    position: relative;
+    float: left;
+    width: 50%;    height: 50%;
+    -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+            -o-transform: scale(1.1);
+                -ms-transform: scale(1.1);
+                    transform: scale(1.1); 
+}
+.sk-folding-cube .sk-cube:before {
+    position: absolute;
+    content: '';
+    top: 0;    left: 0;
+    width: 100%;    height: 100%;
+    -webkit-animation: sk-foldCubeAngle 2.4s infinite linear both;
+        -moz-animation: sk-foldCubeAngle 2.4s infinite linear both;
+            -o-animation: sk-foldCubeAngle 2.4s infinite linear both;
+                -ms-animation: sk-foldCubeAngle 2.4s infinite linear both;
+                    animation: sk-foldCubeAngle 2.4s infinite linear both;
+    -webkit-transform-origin: 100% 100%;
+        -moz-transform-origin: 100% 100%;
+            -o-transform-origin: 100% 100%;
+                -ms-transform-origin: 100% 100%;
+                    transform-origin: 100% 100%;
+    background:#007C39;
+}
+.sk-folding-cube .sk-cube2 {
+    -webkit-transform: scale(1.1) rotateZ(90deg);
+        -moz-transform: scale(1.1) rotateZ(90deg);
+            -o-transform: scale(1.1) rotateZ(90deg);
+                -ms-transform: scale(1.1) rotateZ(90deg);
+                    transform: scale(1.1) rotateZ(90deg);
+}
+.sk-folding-cube .sk-cube3 {
+    -webkit-transform: scale(1.1) rotateZ(180deg);
+        -moz-transform: scale(1.1) rotateZ(180deg);
+            -o-transform: scale(1.1) rotateZ(180deg);
+                -ms-transform: scale(1.1) rotateZ(180deg);
+                    transform: scale(1.1) rotateZ(180deg);
+}
+.sk-folding-cube .sk-cube4 {
+    -webkit-transform: scale(1.1) rotateZ(270deg);
+        -moz-transform: scale(1.1) rotateZ(270deg);
+            -o-transform: scale(1.1) rotateZ(270deg);
+                -ms-transform: scale(1.1) rotateZ(270deg);
+                    transform: scale(1.1) rotateZ(270deg);
+}
+  .sk-folding-cube .sk-cube2:before {
+    -webkit-animation-delay: 0.3s;
+        -moz-animation-delay: 0.3s;
+            -o-animation-delay: 0.3s;
+                -ms-animation-delay: 0.3s;
+                    animation-delay: 0.3s;
+}
+.sk-folding-cube .sk-cube3:before {
+    -webkit-animation-delay: 0.6s;
+        -moz-animation-delay: 0.6s;
+            -o-animation-delay: 0.6s;
+                -ms-animation-delay: 0.6s;
+                    animation-delay: 0.6s; 
+}
+.sk-folding-cube .sk-cube4:before {
+    -webkit-animation-delay: 0.9s;
+        -moz-animation-delay: 0.9s;
+            -o-animation-delay: 0.9s;
+                -ms-animation-delay: 0.9s;
+                    animation-delay: 0.9s;
+}
+@-webkit-keyframes sk-foldCubeAngle {
+    0%, 10% {
+        -webkit-transform: perspective(140px) rotateX(-180deg);
+            -moz-transform: perspective(140px) rotateX(-180deg);
+                -o-transform: perspective(140px) rotateX(-180deg);
+                    -ms-transform: perspective(140px) rotateX(-180deg);
+                        transform: perspective(140px) rotateX(-180deg);
+      opacity: 0; 
+    } 25%, 75% {
+        -webkit-transform: perspective(140px) rotateX(0deg);
+            -moz-transform: perspective(140px) rotateX(0deg);
+                -o-transform: perspective(140px) rotateX(0deg);
+                    -ms-transform: perspective(140px) rotateX(0deg);
+                        transform: perspective(140px) rotateX(0deg);
+      opacity: 1; 
+    } 90%, 100% {
+        -webkit-transform: perspective(140px) rotateY(180deg);
+            -moz-transform: perspective(140px) rotateX(180deg);
+                -o-transform: perspective(140px) rotateX(180deg);
+                    -ms-transform: perspective(140px) rotateX(180deg);
+                        transform: perspective(140px) rotateY(180deg);
+      opacity: 0; 
+    } 
+}
+@keyframes sk-foldCubeAngle {
+    0%, 10% {
+        -webkit-transform: perspective(140px) rotateX(-180deg);
+            -moz-transform: perspective(140px) rotateX(-180deg);
+                -o-transform: perspective(140px) rotateX(-180deg);
+                    -ms-transform: perspective(140px) rotateX(-180deg);
+                        transform: perspective(140px) rotateX(-180deg);
+      opacity: 0; 
+    } 25%, 75% {
+        -webkit-transform: perspective(140px) rotateX(0deg);
+            -moz-transform: perspective(140px) rotateX(0deg);
+                -o-transform: perspective(140px) rotateX(0deg);
+                    -ms-transform: perspective(140px) rotateX(0deg);
+                        transform: perspective(140px) rotateX(0deg);
+      opacity: 1; 
+    } 90%, 100% {
+        -webkit-transform: perspective(140px) rotateY(180deg);
+            -moz-transform: perspective(140px) rotateX(180deg);
+                -o-transform: perspective(140px) rotateX(180deg);
+                    -ms-transform: perspective(140px) rotateX(180deg);
+                        transform: perspective(140px) rotateY(180deg);
+      opacity: 0; 
+    }
+}
+/* ===== End load spinner ===== */
 /* ######################### End Global Sections ######################### */
-
-
-
-
 
 /* ######################### Start home Page ######################### */
 /* ============== Start homeMain =============== */
 .homeMain {
     height: 700px;
-    background-image: url("../images/home/homeMain_Background.svg");
+    background: rgb(130, 204, 87);
+    background-image: url("../images/home/homeMain_Background.png");
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
@@ -309,13 +547,17 @@ footer .footer_section:nth-child(5) i:hover {
 }
 /* ============== End homeMain =============== */
 /* ============== Start homeMainProducts =============== */
+.homeMainProducts {
+    position: relative;
+}
+
 .homeMainProducts .totalHomeProducts {
     position: relative;
     margin-top: -45px;
 }
 
 .homeMainProducts .totalHomeProducts .productSection {
-    background-image: url("../images/home/productCard.svg");
+    background-image: url("../images/home/productCard.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 185px;
@@ -340,6 +582,7 @@ footer .footer_section:nth-child(5) i:hover {
 /* ============== Start homeAboutUs =============== */
 .homeAboutUs {
     padding: 70px 0;
+    position: relative;
 }
 
 .homeAboutUs .homeAboutUsHeader {
@@ -369,7 +612,7 @@ footer .footer_section:nth-child(5) i:hover {
 /* ============== End homeAboutUs =============== */
 /* ============== Start whereToBuyProd =============== */
 .whereToBuyProd {
-    background-image: url("../images/home/homeWhereToBuyBackground.svg");
+    background-image: url("../images/home/homeWhereToBuyBackground.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -511,13 +754,10 @@ footer .footer_section:nth-child(5) i:hover {
 /* ============== End ourBlogs =============== */
 /* ######################### End home Page ######################### */
 
-
-
-
 /* ######################### Start ourMonthlyPromotion Page ######################### */
 /* ============== Start header =============== */
 .ourMonthPromHeader {
-    background-image: url("../images/our_monthly_promotion/header_background.svg");
+    background-image: url("../images/our_monthly_promotion/header_background.png");
 }
 /* ============== End header =============== */
 /* ============== Start products_Sections =============== */
@@ -540,7 +780,7 @@ footer .footer_section:nth-child(5) i:hover {
 }
 
 .products_Sections .productSection .total_products {
-    background-image: url("../images/our_monthly_promotion/total_products.svg");
+    background-image: url("../images/our_monthly_promotion/total_products.png");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -581,20 +821,14 @@ footer .footer_section:nth-child(5) i:hover {
     box-shadow: 0 0 20px #007C39;
 }
 /* ============== End products_Sections =============== */
-
 /* ######################### End ourMonthlyPromotion Page ######################### */
-
-
-
-
-
 
 /* ######################### Start our_monthly_CashVan , our_monthly_wholesale , our_monthly_HyperMarket Pages ######################### */
 /* ============== Start header =============== */
 .ourMonthCashVanHeader,
 .ourMonthWholeSaleHeader,
 .ourMonthHyperMarketHeader {
-    background-image: url("../images/our_monthly_promotion/header_background.svg");
+    background-image: url("../images/our_monthly_promotion/header_background.png");
 }
 /* ============== End header =============== */
 /* ============== Start cashVanHeader , wholeSaleHeader , HyperMarketHeader =============== */
@@ -618,7 +852,9 @@ footer .footer_section:nth-child(5) i:hover {
 
 .cashVanHeader h2,
 .wholeSaleHeader h2,
-.HyperMarketHeader h2 {
+.HyperMarketHeader h2,
+.ourNewsHeader h2,
+.NewsAndEventsHeader h2 {
     position: relative;
     margin: 45px 0 0 -10px;
     color: #007C39;
@@ -627,14 +863,14 @@ footer .footer_section:nth-child(5) i:hover {
 /* ============== Start products_CashVan_Sections , products_WholeSale_Sections , products_HyperMarket_Sections =============== */
 .products_CashVan_Sections {
     padding: 100px 0 70px;
-    background-image: url("../images/our_monthly_CashVan/cashVanTotalBackground.svg");
+    background-image: url("../images/our_monthly_CashVan/cashVanTotalBackground.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .products_WholeSale_Sections {
     padding: 100px 0 70px;
-    background-image: url("../images/our_monthly_wholesale/wholesaleTotalBackground.svg");
+    background-image: url("../images/our_monthly_wholesale/wholesaleTotalBackground.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -687,18 +923,10 @@ footer .footer_section:nth-child(5) i:hover {
 /* ============== End products_CashVan_Sections , products_WholeSale_Sections , products_HyperMarket_Sections =============== */
 /* ######################### Start our_monthly_CashVan , our_monthly_wholesale Pages ######################### */
 
-
-
-
-
-
-
-
-
 /* ######################### Start directContact Page ######################### */
 /* ============== Start header =============== */
 .directContact {
-    background-image: url("../images/direct_contact/header_background.svg");
+    background-image: url("../images/direct_contact/header_background.png");
 }
 
 .directContact h1 {
@@ -707,7 +935,7 @@ footer .footer_section:nth-child(5) i:hover {
 /* ============== End header =============== */
 /* ============== Start ourBranches =============== */
 .ourBranches {
-    background-image: url("../images/direct_contact/our_Branches_Background.svg");
+    background-image: url("../images/direct_contact/our_Branches_Background.png");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 100px 0 20px;
@@ -848,11 +1076,6 @@ footer .footer_section:nth-child(5) i:hover {
 /* ============== End ourBranches =============== */
 /* ######################### End directContact Page ######################### */
 
-
-
-
-
-
 /* ######################### Start ourSuccess Page ######################### */
 /* ============== Start ourStory =============== */
 .ourStory {
@@ -867,7 +1090,7 @@ footer .footer_section:nth-child(5) i:hover {
 
 .ourStory .ourStoryInfo {
     padding: 150px 100px;
-    background-image: url("../images/our_success/ourStory_Background.svg");
+    background-image: url("../images/our_success/ourStory_Background.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -965,7 +1188,6 @@ footer .footer_section:nth-child(5) i:hover {
 }
 /* ============== Start ourMissionVision =============== */
 /* ============== Start ourClients =============== */
-
 .ourClients {
     padding: 70px 0;
 }
@@ -1015,12 +1237,453 @@ footer .footer_section:nth-child(5) i:hover {
 /* ============== End ourClients =============== */
 /* ######################### End ourSuccess Page ######################### */
 
+/* ######################### Start our_events Page ######################### */
+/* ============== Start header =============== */
+.ourEventsHeader {
+    background-image: url("../images/our_events/eventsHeader_background.png");
+}
+/* ============== End header =============== */
+/* ============== Start eliteEvents =============== */
+.eliteEvents {
+    padding: 100px 0; 
+}
 
+.eliteEvents .eventDescrip {
+    padding: 0;
+    position: relative;
+}
 
+.eliteEvents .eventDescrip .eventImg {
+    padding: 200px 0;
+    background-image: url("../images/our_events/eventDescripImg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
 
+.eliteEvents .eventDescrip .eventImg ul {
+    position: absolute;
+    top: 200px;
+}
+
+.eliteEvents .eventDescrip .eventImg ul div {
+    background: #EBB300;
+    color: #fff;
+    padding: 2px 10px;
+}
+
+.eliteEvents .eventArticle {
+    margin-top: 10px;
+}
+
+.eliteEvents .eventArticle h2 {
+    color: #007C39;
+}
+
+.eliteEvents .eventArticle p {
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.eliteEvents .eventDescrip .eventImg ul div:nth-child(2),
+.eliteEvents .eventDescrip .eventImg ul div:nth-child(4) {
+    background: #007C39;
+}
+
+.eliteEvents .eventDescrip .eventImg ul div p {
+    margin: 0;
+}
+
+.eliteEvents .eventDescrip .eventImg ul div p:nth-child(1) {
+    margin-bottom: -5px;
+}
+
+.eliteEvents .eventsSearching .searchInput {
+    position: relative;
+}
+
+.eliteEvents .eventsSearching .searchInput input {
+    width: 100%;
+    border: 2px solid #007C39;
+    margin: 30px 0 10px;
+    padding: 0 30px 0 10px;
+}
+
+.eliteEvents .eventsSearching .searchInput img {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    margin: 35px 0 0 -28px;
+}
+
+.eliteEvents .eventsSearching .searchSection {
+    margin: 10px 0;
+}
+
+.eliteEvents .eventsSearching .searchSection .secImg {
+    padding: 0;
+}
+
+.eliteEvents .eventsSearching .searchSection .secImg img {
+    width: 100%;
+}
+
+.eliteEvents .eventsSearching .searchSection p {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0;
+}
+/* ============== End eliteEvents =============== */
+/* ============== Start eventRegistration =============== */
+.eventRegistration {
+    padding: 30px 0 60px;
+    box-shadow: 0 0 10px rgb(143, 142, 142);
+}
+
+.eventRegistration .eventRegisterTitle h2 {
+    color: #007C39;
+    font-size: 27px;
+}
+
+.eventRegistration .eventRegisterTitle p {
+    font-size: 20px;
+}
+
+.eventRegistration .totalEventRegs {
+    padding: 40px 0;
+}
+
+.eventRegistration .event_info {
+    padding-top: 30px;
+}
+
+.eventRegistration .event_info h2 {
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.eventRegistration .event_info ul div {
+    margin: 10px 0;
+}
+
+.eventRegistration .event_info ul div img {
+    height: 25px;
+    width: 25px;
+}
+
+.eventRegistration .event_info ul div p {
+    margin: 0;
+    margin-left: 10px;
+    color: #007C39;
+    font-size:17px;
+    font-weight: 500;
+}
+
+.eventRegistration .event_info ul div span {
+    color: #000;
+    position: absolute;    
+    font-weight: normal;
+    left: 40%;
+}
+
+.eventRegistration form {
+    padding-top: 30px;
+    padding: 30px 40px;
+    box-shadow: 0 0 20px rgb(129, 127, 127);
+}
+
+.eventRegistration form h2 {
+    font-size: 25px;
+    margin-bottom: 30px;
+    color: #007C39;
+}
+
+.eventRegistration form input {
+    border: none;
+    border-radius: 0;
+    font-size: 17px;
+    border-bottom: 2px solid #ddd;
+    padding-left: 0;
+}
+
+.eventRegistration form input[type='submit'] {
+    padding-left: 30px;
+    border: none;
+}
+
+.eventRegistration form input:focus {
+    outline: none;
+}
+
+.eventRegistration form input:active {
+    outline: none;
+}
+
+.eventRegistration form input::placeholder {
+    color: #007C39;
+}
+/* ============== End eventRegistration =============== */
+/* ######################### End our_events Page ######################### */
+
+/* ######################### Start our_news Page ######################### */
+/* ============== Start header =============== */
+.ourNewsHeader {
+    background-image: url("../images/our_news/newsHeader_background.png");
+}
+/* ============== End header =============== */
+/* ============== Start eliteNews =============== */
+.eliteNews {
+    padding: 70px 0 20px;
+}
+
+.eliteNews .mainPoster {
+    background-image: url("../images/our_news/mainPoster_Background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 250px 0;
+}
+
+.eliteNews .mainPoster ul {
+    position: absolute;
+    bottom: -15px;
+}
+
+.eliteNews .mainPoster ul div {
+    padding: 2px 25px;
+}
+
+.eliteNews .mainPoster ul div p {
+    margin: 0;
+    color: #fff;
+    font-size: 20px;
+}
+
+.eliteNews .mainPoster ul div:nth-child(1) {
+    background: #007C39;
+}
+
+.eliteNews .mainPoster ul div:nth-child(2) {
+    background: #EBB300;
+}
+
+.eliteNews .newsArticle {
+    padding: 10px 0 0;
+}
+
+.eliteNews .newsArticle .newsArticleHeading {
+    margin-bottom: 20px;
+}
+
+.eliteNews .newsArticle .newsArticleHeading h2 {
+    color: #007C39;
+}
+
+.eliteNews .newsArticle .newsArticleHeading span {
+    color: #007C39;
+    font-size: 17px;
+}
+
+.eliteNews .newsArticle .newsArticleHeading span i {
+    color: #EBB300;
+}
+
+.eliteNews .newsArticle p {
+    font-size: 18px;
+}
+/* ============== End eliteNews =============== */
+/* ============== Start moreNews =============== */
+.moreNews {
+    padding-bottom: 70px;
+}
+
+.moreNews h2 {
+    color: #007C39;
+    margin: 20px 0 -20px;
+    font-size: 32px;
+}
+
+.moreNews .products_slider_ourNews {
+    margin-top: 40px;
+}
+
+.moreNews .carousel-caption {
+    padding-bottom: 0;
+}
+
+.moreNews .carousel-indicators {
+    display: none;
+    padding-bottom: 0;
+}
+
+.moreNews .carousel-control-prev img,
+.moreNews .carousel-control-next img {
+    height: 30px;
+    width: 30px;
+    transition: 0.3s ease-in-out;
+}
+
+.moreNews .carousel-control-prev:hover img ,
+.moreNews .carousel-control-next:hover img {
+    transform: scale(1.2);
+}
+
+.moreNews .carousel-control-prev, 
+.moreNews .carousel-control-next {
+    transition: 0.3s ease-in-out;
+}
+
+.moreNews .products_slider_ourNews {
+    padding: 70px 0 200px 0;
+}
+
+.moreNews .products_slider_ourNews .parahSection {
+    margin-top: -250px;
+    padding: 0 250px;
+}
+
+.moreNews .row .owl-ourNews {
+    width: 100%;
+    margin-top: -50px;
+    padding-bottom: 10px;
+}
+
+.moreNews .owl-ourNews .item {
+    padding: 10px 0px 5px; 
+    z-index: -2;
+    background: #fff;
+    box-shadow: 0 0 10px #ddd;
+    margin: 7px 10px;
+}
+
+.moreNews .owl-ourNews .item .imgSection {
+    padding: 0;
+    overflow: hidden;
+}
+     
+.moreNews .owl-ourNews .item:hover img {
+    transform: scale(1.1);
+}
+
+.moreNews .owl-ourNews img {
+    height: 120px;
+    transition: 0.3s ease-in-out;
+}
+
+.moreNews .owl-ourNews .owl-item .itemPara {
+    background: #CAE4CF;
+    margin: 7px 5px 0;
+    padding: 5px;
+}
+
+.moreNews .owl-ourNews .owl-item p {
+    margin: 0;
+    color: #000 !important;
+}
+
+.owl-carousel .owl-nav {
+    position: absolute;
+    display: flex !important;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.owl-carousel .owl-nav img {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.owl-carousel .owl-nav button:nth-child(1) {
+    margin-left: -40px;
+    margin-top: -230px;
+}
+
+.owl-carousel .owl-nav button:nth-child(2) {
+    margin-right: -40px;
+    margin-top: -230px;
+}
+
+.moreNews .owl-ourNews .owl-item {
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    position: relative;
+}
+
+.moreNews .owl-theme .owl-dots {
+    display: none;
+} 
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background: none !important;
+    color: #000;
+}
+
+.owl-theme .owl-nav [class*=owl-]:focus {
+    outline: none;
+}
+/* ============== End moreNews =============== */
+/* ######################### End our_news Page ######################### */
+
+/* ######################### Start NewsAndEvents Page ######################### */
+/* ============== Start header =============== */
+.NewsAndEventsHeader {
+    padding: 200px 0;
+    background-image: url("../images/NewsAndEvents/news_events_HeaderBackground.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+/* ============== End header =============== */
+/* ============== Start NewsAndEvents =============== */
+.NewsAndEvents {
+    padding: 100px 0;
+}
+
+.NewsAndEvents h2 {
+    color: #007C39;
+    padding-left: 20px;
+    font-weight: 700;
+}
+
+.NewsAndEvents .productSection {
+    box-shadow: 0 0 15px rgb(170, 167, 167);
+    margin: 10px;
+    padding: 0;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.NewsAndEvents .productSection .proImgSection {
+    padding: 20px 0;
+}
+
+.NewsAndEvents .productSection .proImgSection img {
+    width: 70%;
+    height: 150px;
+    transition: 0.3s ease-in-out;
+}
+
+.NewsAndEvents .productSection:hover img {
+    transform: scale(1.2);
+}
+
+.NewsAndEvents .productSection .proParaSection {
+    padding: 15px;
+    background: #CAE4CF;
+}
+
+.NewsAndEvents .productSection .proParaSection p {
+    margin: 0;
+    line-height: 20px;
+}
+/* ============== End NewsAndEvents =============== */
+/* ######################### Start NewsAndEvents Page ######################### */
 
 
 /* ################$$$$$ Start the responsive of the pages $$$$$################ */
+
 
 /* ################ Large devices (desktops, less than 1200px) ################ */
 @media (max-width: 1199.98px) {
@@ -1062,55 +1725,77 @@ footer .footer_section:nth-child(5) i:hover {
     /* ============== End go_up icon =============== */
     /* ============== Start footer =============== */
     footer .footer_section {
-        padding: 10px 20px 0;
+        padding: 10px 15px 0;
     }
 
     footer .footer_section h2 {
         font-size: 20px;
     }
 
-    footer .footer_section:nth-child(2) {
-        padding-right: 7px;
-        padding-left: 10px; 
-    }
-
     footer .footer_section:nth-child(2) p {
-        font-size: 16px;
-    }
-
-    footer .footer_section:nth-child(3) {
-        padding: 10px 5px 0 20px;
-    }
-
-    footer .footer_section:nth-child(3) i {
-        font-size: 18px;
+        font-size: 15px;
     }
 
     footer .footer_section:nth-child(3) span {
         font-size: 16px;
-        margin: 5px 0 0 12px;
-    }
-
-    footer .footer_section:nth-child(3) i:nth-child(2) {
-        font-size: 22px
     }
 
     footer .footer_section:nth-child(4) a {
-        font-size: 16px;
+        font-size: 17px;
     }
 
     footer .footer_section:nth-child(5) i {
-        font-size: 27px;
-    }
+        font-size: 25px;
+    } 
     /* ============== End footer =============== */
     /* ============== Start secondFooter =============== */
     .secondFooter {
         padding: 7px 0;
     }
     /* ============== End secondFooter =============== */
+    /* ============== Start homeAllLayer =============== */
+    .homeAllLayer {
+        height: 310%;
+    }
+    /* ============== End NewsAndEvents =============== */
+    /* ============== Start contactAllLayer =============== */
+    .contactAllLayer {
+        height: 211%;
+    }
+    /* ============== End contactAllLayer =============== */
+    /* ============== Start newsEventsLayer =============== */
+    .newsEventsLayer {
+        height: 238%;
+    }
+    /* ============== End newsEventsLayer =============== */
+    /* ============== End eventsLayer =============== */
+    .eventsLayer {
+        height: 225%;
+    }
+    /* ============== End eventsLayer =============== */
+    /* ============== Start cashVanLayer , HyperLayer , WholesaleLayer =============== */
+    .cashVanLayer,
+    .HyperLayer,
+    .WholesaleLayer {
+        height: 155%;
+    }
+    /* ============== End cashVanLayer , HyperLayer , WholesaleLayer =============== */
+    /* ============== Start NewsLayer =============== */
+    .NewsLayer {
+        height: 210%;
+    }
+    /* ============== End NewsLayer =============== */
+    /* ============== Start monthlyLayer =============== */
+    .monthlyLayer {
+        height: 236%;
+    }
+    /* ============== End monthlyLayer =============== */
+    /* ============== Start SuccessLayer =============== */
+    .SuccessLayer {
+        height: 252%;
+    }
+    /* ============== End monthlyLayer =============== */
     /* ######################### End Global Sections ######################### */
-
-
 
     /* ######################### Start home Page ######################### */
     /* ============== Start whereToBuyProd =============== */
@@ -1119,9 +1804,6 @@ footer .footer_section:nth-child(5) i:hover {
     }
     /* ============== End whereToBuyProd =============== */
     /* ######################### End home Page ######################### */
-
-
-
 
     /* ######################### Start ourMonthlyPromotion Page ######################### */
     /* ============== Start products_Sections =============== */
@@ -1143,7 +1825,6 @@ footer .footer_section:nth-child(5) i:hover {
     /* ============== End products_Sections =============== */
     /* ######################### End ourMonthlyPromotion Page ######################### */
 
-
     /* ######################### Start our_monthly_CashVan , our_monthly_wholesale , our_monthly_HyperMarket Pages ######################### */
     /* ============== Start cashVanHeader , wholeSaleHeader , HyperMarketHeader =============== */
     .cashVanHeader .headerContaining,
@@ -1156,7 +1837,9 @@ footer .footer_section:nth-child(5) i:hover {
 
     .cashVanHeader h2,
     .wholeSaleHeader h2,
-    .HyperMarketHeader h2 {
+    .HyperMarketHeader h2,
+    .ourNewsHeader h2,
+    .NewsAndEventsHeader h2 {
         margin: 45px 0 0 10px;
         font-size: 28px;
     }
@@ -1176,8 +1859,6 @@ footer .footer_section:nth-child(5) i:hover {
     }
     /* ============== End products_CashVan_Sections , products_WholeSale_Sections , products_HyperMarket_Sections =============== */
     /* ######################### Start our_monthly_CashVan , our_monthly_wholesale , our_monthly_HyperMarket Pags ######################### */
-
-
 
     /* ######################### Start directContact Page ######################### */
     /* ============== Start ourBranches =============== */
@@ -1216,11 +1897,6 @@ footer .footer_section:nth-child(5) i:hover {
     /* ============== End ourBranches =============== */
     /* ######################### End directContact Page ######################### */
 
-
-
-
-
-
     /* ######################### Start ourSuccess Page ######################### */
     /* ============== Start ourStory =============== */
     .ourStory {
@@ -1256,10 +1932,66 @@ footer .footer_section:nth-child(5) i:hover {
     }
     /* ============== Start ourMissionVision =============== */
     /* ######################### End ourSuccess Page #########################  */
+
+    /* ######################### Start our_events Page ######################### */
+    /* ============== Start eliteEvents =============== */
+    .eliteEvents {
+        padding: 100px 0 70px; 
+    }
+
+    .eliteEvents .eventDescrip {
+        padding-left: 17px;
+    }
+
+    .eliteEvents .eventDescrip .eventImg ul div {
+        padding: 2px 15px;
+    }
+
+    .eliteEvents .eventArticle h2 {
+        font-size: 28px;
+    }
+
+    .eliteEvents .eventArticle p {
+        font-size: 17px;
+    }
+
+    .eliteEvents .eventsSearching .searchSection {
+        margin: 15px 0;
+    }
+
+    .eliteEvents .eventsSearching .searchSection .secImg {
+        padding-right: 10px;
+    }
+
+    .eliteEvents .eventsSearching .searchSection p {
+        padding: 0;
+    }
+    /* ============== End eliteEvents =============== */
+    /* ============== Start eventRegistration =============== */
+    .eventRegistration .event_info div span {
+        left: 43% !important;
+    }
+    .eventRegistration form {
+        margin-right: 15px !important;
+    }
+    /* ============== End eventRegistration =============== */
+    /* ######################### End our_events Page ######################### */
+
+    /* ######################### Start NewsAndEvents Page ######################### */
+    /* ============== Start NewsAndEvents =============== */
+    .NewsAndEvents h2 {
+        font-size: 30px;
+    }
+
+    .NewsAndEvents .productSection {
+        margin: 7px;
+    } 
+    /* ============== End NewsAndEvents =============== */
+    /* ######################### Start NewsAndEvents Page ######################### */
 }
 
 /* ################ Medium devices (tablets, less than 992px) ################ */
-@media (max-width: 991.98px) { 
+@media (max-width: 991.98px) {
     /* ######################### Start Global Sections ######################### */
     /* ============== Start Navbar =============== */
     .navbar .navbar-toggler {
@@ -1300,6 +2032,10 @@ footer .footer_section:nth-child(5) i:hover {
         color: #fff;
         background: #007C39;
     } 
+
+    .nav-item .ourBrandsMenu a:hover {
+        background: #4dad7a !important;
+    }
     /* ============== End Navbar =============== */
     /* ============== Start header =============== */
     header h1 {
@@ -1323,6 +2059,10 @@ footer .footer_section:nth-child(5) i:hover {
         padding-left: 30px;
     }
 
+    footer .footer_section:nth-child(2) p {
+        margin-bottom: 16px;
+    }
+
     footer .footer_section:nth-child(3) span {
         margin-top: 12px;
     }
@@ -1335,17 +2075,65 @@ footer .footer_section:nth-child(5) i:hover {
         margin-top: 17px;
     }
 
-    footer .footer_section .contact_info ul {
-        margin-top: 5px;
+    footer .footer_section .contact_info span {
+        font-size: 17px;
     }
-
+    
     footer .footer_section .contact_info ul i {
         font-size: 20px;
     }
+
+    footer .footer_section:nth-child(4) a {
+        font-size: 17px;
+    }
+
+    footer .footer_section:nth-child(5) {
+        margin: 0;
+    }
     /* ============== End footer =============== */
+    /* ============== Start homeAllLayer =============== */
+    .homeAllLayer {
+        height: 298%;
+    }
+    /* ============== End NewsAndEvents =============== */
+    /* ============== Start contactAllLayer =============== */
+    .contactAllLayer {
+        height: 265%;
+    }
+    /* ============== End contactAllLayer =============== */
+    /* ============== Start newsEventsLayer =============== */
+    .newsEventsLayer {
+        height: 371%;
+    }
+    /* ============== End newsEventsLayer =============== */
+    /* ============== Start eventsLayer =============== */
+    .eventsLayer {
+        height: 213%;
+    }
+    /* ============== End eventsLayer =============== */
+    /* ============== Start cashVanLayer , HyperLayer , WholesaleLayer =============== */
+    .cashVanLayer,
+    .HyperLayer,
+    .WholesaleLayer {
+        height: 209%;
+    }
+    /* ============== End cashVanLayer , HyperLayer , WholesaleLayer =============== */
+    /* ============== Start NewsLayer =============== */
+    .NewsLayer {
+        height: 192%;
+    }
+    /* ============== End NewsLayer =============== */
+    /* ============== Start monthlyLayer =============== */
+    .monthlyLayer {
+        height: 220%;
+    }
+    /* ============== End monthlyLayer =============== */
+    /* ============== Start SuccessLayer =============== */
+    .SuccessLayer {
+        height: 322%;
+    }
+    /* ============== End monthlyLayer =============== */
     /* ######################### End Global Sections ######################### */
-
-
 
     /* ######################### Start home Page ######################### */
     /* ============== Start homeMain =============== */
@@ -1369,8 +2157,6 @@ footer .footer_section:nth-child(5) i:hover {
     }
     /* ============== End ourBlogs =============== */
     /* ######################### End home Page ######################### */
-
-
 
     /* ######################### Start ourMonthlyPromotion Page #########################  */
     /* ============== Start products_Sections =============== */
@@ -1398,14 +2184,13 @@ footer .footer_section:nth-child(5) i:hover {
     /* ============== End products_Sections =============== */
     /* ######################### End ourMonthlyPromotion Page ######################### */
 
-
-
-
     /* ######################### Start our_monthly_CashVan , our_monthly_wholesale , our_monthly_HyperMarket Pages ######################### */
     /* ============== Start cashVanHeader , wholeSaleHeader , HyperMarketHeader =============== */
     .cashVanHeader h2,
     .wholeSaleHeader h2,
-    .HyperMarketHeader h2 {
+    .HyperMarketHeader h2,
+    .ourNewsHeader h2,
+    .NewsAndEventsHeader h2 {
         margin: 45px 0 0 8px;
         font-size: 27px;
     }
@@ -1437,9 +2222,6 @@ footer .footer_section:nth-child(5) i:hover {
     }
     /* ============== End products_CashVan_Sections , products_WholeSale_Sections , products_HyperMarket_Sections =============== */
     /* ######################### Start our_monthly_CashVan , our_monthly_wholesale , our_monthly_HyperMarket Pages ######################### */
-
-
-
 
     /* ######################### Start directContact Page ######################### */
     /* ============== Start ourBranches =============== */
@@ -1476,11 +2258,6 @@ footer .footer_section:nth-child(5) i:hover {
     /* ============== End ourBranches =============== */
     /* ######################### End directContact Page ######################### */
 
-
-
-
-
-    
     /* ######################### Start ourSuccess Page ######################### */
     /* ============== Start ourStory =============== */
     .ourStory h1 {
@@ -1521,6 +2298,85 @@ footer .footer_section:nth-child(5) i:hover {
     /* ============== Start ourMissionVision =============== */
     /* ######################### End ourSuccess Page ######################### */
 
+    /* ######################### Start our_events Page ######################### */
+    /* ============== Start eliteEvents =============== */
+    .eliteEvents {
+        padding: 70px 0; 
+    }
+    /* ============== End eliteEvents =============== */
+    /* ============== Start eventRegistration =============== */
+    .eventRegistration .totalEventRegs {
+        padding-top: 0;
+    }
+    
+    .eventRegistration .event_info {
+        padding: 20px 50px 10px;
+    }
+
+    .eventRegistration form {
+        margin-right: 0px !important;
+        margin-top: 20px;
+    }
+    /* ============== End eventRegistration =============== */
+    /* ######################### End our_events Page ######################### */
+   
+    /* ######################### Start our_news Page ######################### */
+    /* ============== Start moreNews =============== */
+    .moreNews h2 {
+        font-size: 30px;
+    }
+    /* ============== End moreNews =============== */
+    /* ######################### End our_news Page ######################### */
+
+    /* ######################### Start our_news Page ######################### */
+    /* ============== Start eliteNews =============== */
+    .eliteNews .mainPoster {
+        padding: 200px 0;
+    }
+
+    .eliteNews .newsArticle .newsArticleHeading h2 {
+        font-size: 27px;
+    }
+
+    .eliteNews .newsArticle p {
+        font-size: 17px;
+    }
+    /* ============== End eliteNews =============== */
+    /* ============== Start moreNews =============== */
+    .moreNews {
+        padding-bottom: 40px;
+    }
+
+    .moreNews h2 {
+        margin: 10px 0 -30px;
+        font-size: 28px;
+    }
+
+    .moreNews .owl-ourNews .owl-item .itemPara {
+        background: #CAE4CF;
+        margin: 7px 7px 0;
+        padding: 5px;
+    }
+
+    .owl-carousel .owl-nav img {
+        width: 22px;
+        height: 22px;
+    }
+    /* ============== End moreNews =============== */
+    /* ######################### End our_news Page ######################### */
+
+    /* ######################### Start NewsAndEvents Page ######################### */
+    /* ============== Start NewsAndEvents =============== */
+    .NewsAndEvents h2 {
+        padding-left: 22px;
+        margin: 10px 0 -5px;
+    }
+
+    .NewsAndEvents .productSection {
+        margin: 20px;
+    } 
+    /* ============== End NewsAndEvents =============== */
+    /* ######################### Start NewsAndEvents Page ######################### */
 }
 
 /* ################ Small devices (landscape phones, less than 768px) ################ */
@@ -1532,31 +2388,49 @@ footer .footer_section:nth-child(5) i:hover {
         padding: 0 120px;
     }
     /* ============== End header =============== */
-    /* ============== End footer =============== */
-    footer .footer_section:nth-child(2) {
-        padding-right: 12px !important;
-        padding-left: 20px;
+    /* ============== Start homeAllLayer =============== */
+    .homeAllLayer {
+        height: 347%;
     }
-
-    footer .footer_section:nth-child(2) p {
-        font-size: 16px;
+    /* ============== End NewsAndEvents =============== */
+    /* ============== Start contactAllLayer =============== */
+    .contactAllLayer {
+        height: 282%;
     }
-    footer .footer_section:nth-child(3) span {
-        margin-top: 13px !important;
+    /* ============== End contactAllLayer =============== */
+    /* ============== Start newsEventsLayer =============== */
+    .newsEventsLayer {
+        height: 374%;
     }
-
-    footer .footer_section:nth-child(3) ul {
-        margin-top: 10px;
+    /* ============== End newsEventsLayer =============== */
+    /* ============== Start eventsLayer =============== */
+    .eventsLayer {
+        height: 211%;
     }
-
-    footer .footer_section:nth-child(3) ul i {
-        margin-bottom: 15px !important;
+    /* ============== End eventsLayer =============== */
+    /* ============== Start cashVanLayer , HyperLayer , WholesaleLayer =============== */
+    .cashVanLayer,
+    .HyperLayer,
+    .WholesaleLayer {
+        height: 433%;
     }
-    /* ============== End footer =============== */
+    /* ============== End cashVanLayer , HyperLayer , WholesaleLayer =============== */
+    /* ============== Start NewsLayer =============== */
+    .NewsLayer {
+        height: 189%;
+    }
+    /* ============== End NewsLayer =============== */
+    /* ============== Start monthlyLayer =============== */
+    .monthlyLayer {
+        height: 197%;
+    }
+    /* ============== End monthlyLayer =============== */
+    /* ============== Start SuccessLayer =============== */
+    .SuccessLayer {
+        height: 325%;
+    }
+    /* ============== End monthlyLayer =============== */
     /* ######################### End Global Sections ######################### */
-
-
-
 
     /* ######################### Start home Page ######################### */
     /* ============== Start homeMainProducts =============== */
@@ -1600,10 +2474,6 @@ footer .footer_section:nth-child(5) i:hover {
     /* ============== End homeAboutUs =============== */
     /* ######################### End home Page ######################### */
 
-
-
-
-
     /* ######################### Start ourMonthlyPromotion Page #########################  */
     /* ============== Start products_Sections =============== */
     .products_Sections {
@@ -1635,14 +2505,13 @@ footer .footer_section:nth-child(5) i:hover {
     /* ============== End products_Sections =============== */
     /* ######################### End ourMonthlyPromotion Page #########################  */
 
-
-
-
     /* ######################### Start our_monthly_CashVan , our_monthly_wholesale , our_monthly_HyperMarket Pages ######################### */
     /* ============== Start cashVanHeader , wholeSaleHeader , HyperMarketHeader =============== */ 
     .cashVanHeader h2,
     .wholeSaleHeader h2,
-    .HyperMarketHeader h2 {
+    .HyperMarketHeader h2,
+    .ourNewsHeader h2,
+    .NewsAndEventsHeader h2 {
         margin: 45px 0 0 8px;
         font-size: 25px;
     }
@@ -1666,9 +2535,6 @@ footer .footer_section:nth-child(5) i:hover {
     /* ============== End products_CashVan_Sections , products_WholeSale_Sections , products_HyperMarket_Sections =============== */
     /* ######################### Start our_monthly_CashVan , our_monthly_wholesale , our_monthly_HyperMarket Pages ######################### */
 
-
-
-
     /* ######################### Start directContact Page #########################  */
     /* ============== Start ourBranches =============== */
     .info_left .InfoPhones {
@@ -1676,10 +2542,6 @@ footer .footer_section:nth-child(5) i:hover {
     }
     /* ============== End ourBranches =============== */
     /* ######################### End directContact Page #########################  */
-
-
-
-
 
     /* ######################### Start ourSuccess Page #########################  */
     /* ============== Start ourStory =============== */
@@ -1697,6 +2559,93 @@ footer .footer_section:nth-child(5) i:hover {
     }
     /* ============== End ourStory =============== */
     /* ######################### End ourSuccess Page ######################### */
+
+    /* ######################### Start our_events Page ######################### */
+    /* ============== Start eliteEvents =============== */
+    .eliteEvents {
+        padding: 70px 0; 
+    }
+    /* ============== End eliteEvents =============== */
+    /* ============== Start eventRegistration =============== */
+    .eventRegistration .totalEventRegs {
+        padding-top: 0;
+    }
+
+    .eventRegistration .event_info {
+        padding: 20px 10px 10px;
+    }
+
+    .eventRegistration form {
+        margin-right: 0px !important;
+        margin-top: 20px;
+    }
+    /* ============== End eventRegistration =============== */
+    /* ######################### End our_events Page ######################### */
+
+    /* ######################### Start our_news Page ######################### */
+    /* ============== Start eliteNews =============== */
+    .eliteNews .mainPoster {
+        padding: 180px 0;
+    }
+
+    .eliteNews .newsArticle .newsArticleHeading {
+        margin-bottom: 10px;
+    } 
+
+    .eliteNews .newsArticle .newsArticleHeading h2 {
+        font-size: 27px;
+    }
+
+    .eliteNews .newsArticle p {
+        font-size: 17px;
+    }
+    /* ============== End eliteNews =============== */
+    /* ============== Start moreNews =============== */
+    .moreNews {
+        padding-bottom: 40px;
+    }
+
+    .moreNews h2 {
+        margin: -5px 0 -50px;
+        font-size: 28px;
+    }
+
+    .moreNews .owl-ourNews .item {
+        margin: 7px 40px;
+    } 
+
+    .owl-carousel .owl-nav button:nth-child(1) {
+        margin-top: -220px;
+    }
+
+    .owl-carousel .owl-nav button:nth-child(2) {
+        margin-top: -220px;
+    }
+    /* ============== End moreNews =============== */
+    /* ######################### End our_news Page ######################### */
+    
+    /* ######################### Start NewsAndEvents Page ######################### */
+    /* ============== Start header =============== */
+    .NewsAndEventsHeader {
+        padding: 150px 0;
+    } 
+    /* ============== End header =============== */
+    /* ============== Start NewsAndEvents =============== */
+    .NewsAndEvents {
+        padding: 50px 0;
+    }
+
+    .NewsAndEvents h2 {
+        padding-left: 8px;
+        margin: 10px 0 -5px;
+        font-size: 27px;
+    }
+
+    .NewsAndEvents .productSection {
+        margin: 20px;
+    } 
+    /* ============== End NewsAndEvents =============== */
+    /* ######################### Start NewsAndEvents Page ######################### */
 }
 
 /* ################ Extra small devices (portrait phones, less than 576px) ################ */
@@ -1728,40 +2677,29 @@ footer .footer_section:nth-child(5) i:hover {
     /* ============== Start header =============== */
     header h1 {
         font-size: 35px;
-        padding: 0 45px;
+        padding: 0 42px;
     }
     /* ============== End header =============== */
-    /* ============== End footer =============== */
-    footer .footer_section:nth-child(3) span {
-        margin-top: 22px !important;
-        font-size: 15px;
-    }
-
-    footer .footer_section:nth-child(3) h2 {
-        margin-bottom: -10px;
-    }
-
-    footer .footer_section:nth-child(3) ul {
-        margin-top: 15px;
-    }
-
-    footer .footer_section:nth-child(3) ul i {
-        margin-bottom: 12px !important;
-    }
-
+    /* ============== Start footer =============== */
     footer .footer_section {
         border: none;
         margin: 10px 0;
     }
-
-    footer .footer_section:nth-child(4) h2 {
-        margin-top: -20px;
-    }
     /* ============== End footer =============== */
+    /* ============== Start cashVanLayer , HyperLayer , WholesaleLayer , NewsLayer , monthlyLayer , eventsLayer , newsEventsLayer , homeAllLayer , SuccessLayer =============== */
+    .cashVanLayer,
+    .HyperLayer,
+    .eventsLayer,
+    .WholesaleLayer,
+    .NewsLayer,
+    .monthlyLayer ,
+    .newsEventsLayer,
+    .homeAllLayer,
+    .SuccessLayer {
+        height: 0%;
+    }
+    /* ============== End cashVanLayer , HyperLayer , WholesaleLayer , NewsLayer , monthlyLayer , eventsLayer , newsEventsLayer , homeAllLayer , SuccessLayer =============== */
     /* ######################### End Global Sections ######################### */
-
-
-
 
     /* ######################### Start home Page ######################### */
     /* ============== Start homeMain =============== */
@@ -1794,7 +2732,6 @@ footer .footer_section:nth-child(5) i:hover {
     }
     /* ============== End homeAboutUs =============== */
     /* ============== Start whereToBuyProd =============== */
-
     .whereToBuyProd {
         padding: 120px 0;
     }
@@ -1819,14 +2756,11 @@ footer .footer_section:nth-child(5) i:hover {
     }
 
     .ourBlogs .owl-item .item {
-        /* background: red; */
         padding: 0px 15px;
     } 
     /* ============== End whereToBuyProd =============== */
     /* ######################### End home Page ######################### */
 
-
-    
     /* ######################### Start ourMonthlyPromotion Page #########################  */
     /* ============== Start products_Sections =============== */
     .products_Sections {
@@ -1852,11 +2786,6 @@ footer .footer_section:nth-child(5) i:hover {
     }
     /* ============== End products_Sections =============== */
     /* ######################### End ourMonthlyPromotion Page #########################  */
-
-
-
-
-    
 
     /* ######################### Start directContact Page #########################  */
     /* ============== Start ourBranches =============== */
@@ -1910,9 +2839,6 @@ footer .footer_section:nth-child(5) i:hover {
     }
     /* ============== End ourBranches =============== */
     /* ######################### End directContact Page #########################  */
-
-
-
 
     /* ######################### Start ourSuccess Page #########################  */
     /* ============== Start ourStory =============== */
@@ -1976,6 +2902,171 @@ footer .footer_section:nth-child(5) i:hover {
     }  
     /* ============== Start ourMissionVision =============== */
     /* ######################### End ourSuccess Page ######################### */
+
+    /* ######################### Start our_events Page ######################### */
+    /* ============== Start eliteEvents =============== */
+    .eliteEvents {
+        padding: 70px 0 50px; 
+    }
+
+    .eliteEvents .eventDescrip {
+        padding-right: 17px !important;
+    }
+
+    .eliteEvents .eventDescrip .eventImg {
+        background-position: center center;
+    }
+
+    .eliteEvents .eventsSearching p {
+        font-weight: normal !important;
+    }
+
+    .eliteEvents .eventDescrip .eventImg ul div {
+        padding: 2px 20px;
+    }
+
+    .eliteEvents .eventArticle h2 {
+        font-size: 25px;
+    }
+    /* ============== End eliteEvents =============== */
+    /* ============== Start eventRegistration =============== */
+    .eventRegistration {
+        padding-bottom: 30px;
+    }
+
+    .eventRegistration .eventRegisterTitle h2 {
+        font-size: 23px;
+    }
+
+    .eventRegistration .eventRegisterTitle p {
+        font-size: 15px;
+    }
+
+    .eventRegistration .totalEventRegs {
+        padding-top: 0;
+    }
+
+    .eventRegistration .event_info {
+        padding: 20px 10px 10px;
+    }
+
+    .eventRegistration .event_info h2 {
+        margin-bottom: 10px;
+        font-size: 23px;
+    }
+
+    .eventRegistration .event_info ul p {
+        font-size: 16px !important;
+    }
+
+    .eventRegistration .event_info ul span {
+        left: 130px !important;
+    }
+
+    .eventRegistration form {
+        padding: 30px 20px; 
+    }
+
+    .eventRegistration form h2 {
+        font-size: 20px !important;
+    }
+
+    .eventRegistration form input[type='submit'] {
+        padding: 5px 20px;
+    }
+    /* ============== End eventRegistration =============== */
+    /* ######################### End our_events Page ######################### */
+
+    /* ######################### Start our_news Page ######################### */
+    /* ============== End moreNews =============== */
+    .moreNews h2 {
+        font-size: 27px;
+        margin-top: 30px;
+    }
+
+    .moreNews .products_slider_ourNews {
+        padding: 80px 0 170px;
+    }
+
+    .moreNews .owl-item .item {
+        padding: 0px 15px;
+    } 
+    /* ============== End moreNews =============== */
+    /* ######################### End our_news Page ######################### */
+
+    /* ######################### Start our_news Page ######################### */
+    /* ============== Start eliteNews =============== */
+    .eliteNews .row {
+        justify-content: center !important;
+        align-items: center;
+    } 
+
+    .eliteNews .mainPoster { 
+        padding: 150px 0;
+        background-position: center left;
+    }
+
+    .eliteNews .mainPoster ul div {
+        padding: 2px 20px;
+    }
+    
+    .eliteNews .mainPoster ul div p {
+        font-size: 17px;
+    }
+    
+    .eliteNews .newsArticle .newsArticleHeading h2 {
+        font-size: 22px;
+    }
+
+    .eliteNews .newsArticle p {
+        font-size: 16px;
+        line-height: 22px;
+    } 
+    /* ============== End eliteNews =============== */
+    /* ============== Start moreNews =============== */
+    .moreNews {
+        padding: 0px 0 20px;
+    }
+
+    .moreNews h2 {
+        margin: -5px 0 -1%;
+        font-size: 23px;
+    }
+
+    .moreNews .products_slider_ourNews {
+        margin-top: 0;
+    }
+
+    .moreNews .owl-ourNews .item {
+        padding-top: 0 !important;
+        margin: 100px 0 10px !important;
+        padding: 7px 0;
+    } 
+
+    .moreNews .owl-ourNews .item .itemPara {
+        padding: 0 5px;
+    }
+
+    .owl-carousel .owl-nav img {
+        width: 18px;
+        height: 18px;
+    }
+    /* ============== End moreNews =============== */
+    /* ######################### End our_news Page ######################### */
+
+    /* ######################### Start NewsAndEvents Page ######################### */
+    /* ============== Start NewsAndEvents =============== */
+    .NewsAndEvents h2 {
+        margin: 15px 0;
+        text-align: center;
+        color: red;
+    }
+
+    .NewsAndEvents .productSection {
+        margin: 10px;
+    } 
+    /* ============== End NewsAndEvents =============== */
+    /* ######################### Start NewsAndEvents Page ######################### */
 }
 
 
