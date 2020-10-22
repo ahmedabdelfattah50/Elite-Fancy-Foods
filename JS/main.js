@@ -1,11 +1,11 @@
-// $(window).on('load', function(){
-//     $('.page_over_lay .sk-folding-cube').fadeOut(1200, function(){
-//         $(this).parent().fadeOut(700,function(){
-//             $('body').css({'overflow':'auto' , 'overflow-X':'hidden !important'});
-//             $(this).remove();
-//         });
-//     });
-// });
+$(window).on('load', function(){
+    $('.page_over_lay .sk-folding-cube').fadeOut(1500, function(){
+        $(this).parent().fadeOut(700,function(){
+            $('body').css({'overflow':'auto' , 'overflow-X':'hidden !important'});
+            $(this).remove();
+        });
+    });
+});
 
 $(document).ready(function(){
     // ################# Global #################    
@@ -53,246 +53,88 @@ $(document).ready(function(){
         },1000);
     });
 
-    // ################# Home Page #################
-    // ================ this for slider by owl plugin
-    /*const nextIcon_1 = "<img src='./images/main_page/right_arrow_green.png'>",
-          prevIcon_1 = "<img src='./images/main_page/left_arrow_green.png'>",
-          nextIcon = "<img src='./images/main_page/right_arrow.png'>",
-          prevIcon = "<img src='./images/main_page/left_arrow.png'>";
+    // ################# Global ################# 
 
+    $('.navbar .dropdown a').click(function(){
+        $('.homeAllLayer').toggle();
+    }); 
 
-    $('.owl-one').owlCarousel({
-        loop:false,
-        nav:false,
-        autoplay:false,
-        center: false,
-        addClassActive: false,
-        responsive:{
-            0:{
-                items:1
-            },
-            567:{
-                items:1
-            },
-            768:{
-                items:2
-            },
-            910:{
-                items:2
-            },
-            995:{
-                items:3
-            },
-            1198:{
-                items:4
-            },
-            1400:{
-                items:5
-            }
-        }
-    })
+    $('.homeAllLayer').click(function(){
+        $(this).hide();
+    });
 
-    $('.owl-one_1').owlCarousel({
-        loop:false,
-        nav:false,
-        autoplay:false,
-        center: false,
-        addClassActive: false,
-        responsive:{
-            0:{
-                items:1
-            },
-            567:{
-                items:1
-            },
-            768:{
-                items:2
-            },
-            910:{
-                items:2
-            },
-            995:{
-                items:3
-            },
-            1198:{
-                items:3
-            },
-            1400:{
-                items:4
-            }
-        }
-    })
+    $('.navbar .dropdown a').click(function(){
+        $('.contactAllLayer').toggle();
+    }); 
 
-    $('.owl-one_2').owlCarousel({
-        loop:false,
-        nav:false,
-        autoplay:false,
-        center: false,
-        addClassActive: false,
-        responsive:{
-            0:{
-                items:1
-            },
-            567:{
-                items:1
-            },
-            768:{
-                items:2
-            },
-            841:{
-                items:3
-            },
-            1400:{
-                items:5
-            },
-            1500:{
-                items:6
-            }
-        }
-    })
+    $('.contactAllLayer').click(function(){
+        $(this).hide();
+    });
 
-    $('.owl-two').owlCarousel({
-        loop:true,
-        margin:10,
-        nav:true,
-        autoplay:true,
-        navText: [
-            prevIcon_1,
-            nextIcon_1
-        ],
-        responsive:{
-            0:{
-                items:1
-            },
-            567:{
-                items:2
-            },
-            768:{
-                items:3
-            },
-            1000:{
-                items:3
-            }
-        }
-    })
+    $('.navbar .dropdown a').click(function(){
+        $('.newsEventsLayer').toggle();
+    }); 
 
-    $('.owl-three').owlCarousel({
-        loop:true,
-        margin:10,
-        nav:true,
-        autoplay:true,
-        center: true,
-        addClassActive: false,
-        navText: [
-            prevIcon,
-            nextIcon
-        ],
-        responsive:{
-            0:{
-                items:1
-            },
-            567:{
-                items:1
-            },
-            768:{
-                items:3
-            },
-            1000:{
-                items:3
-            }
-        }
-    })*/
+    $('.newsEventsLayer').click(function(){
+        $(this).hide();
+    });
 
-    // ################# about_us Page #################    
-    /*const nextIconInfo = "<img src='./images/about_us/right_arrow.svg'>",
-    prevIconInfo = "<img src='./images/about_us/left_arrow.svg'>";
-    
-    $('.owl-four').owlCarousel({
-        loop:true,
-        nav:true,
-        autoplay:true,
-        center: false,
-        addClassActive: false,
-        navText: [
-            prevIconInfo,
-            nextIconInfo
-        ],
-        responsive:{
-            0:{
-                items:1
-            },
-            567:{
-                items:1
-            },
-            768:{
-                items:2
-            },
-            1000:{
-                items:3
-            }
-        }
-    })*/
+    $('.navbar .dropdown a').click(function(){
+        $('.eventsLayer').toggle();
+    }); 
 
-    // ################# Careers Page #################    
-    // const nextIconInfo = "<img src='./images/about_us/right_arrow.svg'>",
-    // prevIconInfo = "<img src='./images/about_us/left_arrow.svg'>";
-    
-    /*$('.owl-five').owlCarousel({
-        loop:true,
-        nav:false,
-        autoplay:true,
-        center:true,
-        addClassActive: false,
-        responsive:{
-            0:{
-                // loop: false,
-                autoplay:true,
-                center: true,
-                addClassActive: false,
-                items:1.2
-            },
-            567:{
-                loop: true,
-                center: true,
-                addClassActive: true,
-                autoplay:true,
-                items:2
-            },
-            768:{
-                items:2
-            },
-            910:{
-                items:2
-            },
-            995:{
-                items:3
-            },
-            1198:{
-                items:3
-            },
-            1400:{
-                items:4
-            }
-        }
-    })
+    $('.eventsLayer').click(function(){
+        $(this).hide();
+    });
 
-    var $itemSliderFive = $('.career_slider .owl-five .owl-item');
+    $('.navbar .dropdown a').click(function(){
+        $('.cashVanLayer').toggle();
+    }); 
 
-    $itemSliderFive.click(function(){
-        var $myTarget = $(this).children('.item').data('target');
-        $(".sliderTotalArticles .slider_article"+$myTarget).show(200).siblings().hide(200);
-    }); */
-    // ============== Start account_manager ===============
+    $('.cashVanLayer').click(function(){
+        $(this).hide();
+    });
 
-    /*var accountManagerImg = $('.account_manager .accountManagerSection img');
+    $('.navbar .dropdown a').click(function(){
+        $('.HyperLayer').toggle();
+    }); 
 
-    $(accountManagerImg).click(function(){
-        $(this).parent().addClass('changePosition');
-        $('.account_manager .applyNowMessage').show(300);
-    });*/
+    $('.HyperLayer').click(function(){
+        $(this).hide();
+    });
 
+    $('.navbar .dropdown a').click(function(){
+        $('.WholesaleLayer').toggle();
+    }); 
 
-    // ################# balls product Page #################    
+    $('.WholesaleLayer').click(function(){
+        $(this).hide();
+    });
+
+    $('.navbar .dropdown a').click(function(){
+        $('.NewsLayer').toggle();
+    }); 
+
+    $('.NewsLayer').click(function(){
+        $(this).hide();
+    });
+
+    $('.navbar .dropdown a').click(function(){
+        $('.monthlyLayer').toggle();
+    }); 
+
+    $('.monthlyLayer').click(function(){
+        $(this).hide();
+    });
+
+    $('.navbar .dropdown a').click(function(){
+        $('.SuccessLayer').toggle();
+    }); 
+
+    $('.SuccessLayer').click(function(){
+        $(this).hide();
+    });
+    // ################# home Page #################    
 
     const nextIconBalls = "<img src='./images/home/arrow_rightHome.svg'>",
           prevIconBalls = "<img src='./images/home/arrow_leftHome.svg'>";
@@ -332,20 +174,21 @@ $(document).ready(function(){
         }
     })
 
-    // ################# rings product Page #################    
 
-   /* const nextIconRings = "<img src='./images/rings_products/right_arrow.png'>",
-          prevIconRings = "<img src='./images/rings_products/left_arrow.png'>";
+    // ################# ourNews Page #################    
 
-    $('.owl-seven').owlCarousel({
+    const nextIconNews = "<img src='./images/our_news/rightArrow.png'>",
+          prevIconNews = "<img src='./images/our_news/leftArrow.png'>";
+
+    $('.owl-ourNews').owlCarousel({
         loop:true,
         nav:true,
         autoplay:false,
         center: false,
         addClassActive: false,
         navText: [
-            prevIconRings,
-            nextIconRings
+            prevIconNews,
+            nextIconNews
         ],
         responsive:{
             0:{
@@ -364,89 +207,11 @@ $(document).ready(function(){
                 items:3
             },
             1198:{
-                items:4
-            },
-            1400:{
-                items:5
-            }
-        }
-    })*/
-
-    // ################# Can product Page #################    
-
-    /*const nextIconCan = "<img src='./images/can_products/right_arrow.png'>",
-          prevIconCan = "<img src='./images/can_products/left_arrow.png'>";
-
-    $('.owl-eight').owlCarousel({
-        loop:true,
-        nav:true,
-        autoplay:false,
-        center: false,
-        navText: [
-            prevIconCan,
-            nextIconCan
-        ],
-        addClassActive: false,
-        responsive:{
-            0:{
-                items:1
-            },
-            567:{
-                items:1
-            },
-            768:{
-                items:2
-            },
-            841:{
                 items:3
             },
             1400:{
-                items:5
-            },
-            1500:{
-                items:6
-            }
-        } 
-    })*/
-
-    // ################# Puffs product Page #################    
-
-    /*const nextIconPuffs = "<img src='./images/puffs_products/right_arrow.png'>",
-          prevIconPuffs = "<img src='./images/puffs_products/left_arrow.png'>";
-
-    $('.owl-nine').owlCarousel({
-        loop:true,
-        nav:true,
-        autoplay:false,
-        center: false,
-        addClassActive: false,
-        navText: [
-            prevIconPuffs,
-            nextIconPuffs
-        ],
-        responsive:{
-            0:{
-                items:1
-            },
-            567:{
-                items:1
-            },
-            768:{
-                items:2
-            },
-            910:{
-                items:2
-            },
-            995:{
-                items:3
-            },
-            1198:{
                 items:4
-            },
-            1400:{
-                items:5
             }
         }
     })
-*/
 });
