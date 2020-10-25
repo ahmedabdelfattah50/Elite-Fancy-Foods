@@ -4,9 +4,9 @@
     padding: 0;   
 }
  
-body {
+/* body {
     overflow: hidden;
-}
+} */
 /* ============== Start Navbar =============== */
 .navbar {
     transition: 0.3s ease-in-out;
@@ -1077,70 +1077,120 @@ footer .footer_section:nth-child(5) i:hover {
 /* ######################### End directContact Page ######################### */
 
 /* ######################### Start ourSuccess Page ######################### */
-/* ============== Start ourStory =============== */
-.ourStory {
-    padding: 100px 0 50px;
+/* ============== Start ourStorySlider =============== */
+.ourStorySlider {
+    padding: 35px 0 10px;
 }
 
-.ourStory h1 {
+.ourStorySlider h1 {
     color: #007C39;
     font-size: 35px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
-.ourStory .ourStoryInfo {
-    padding: 150px 100px;
-    background-image: url("../images/our_success/ourStory_Background.png");
-    background-repeat: no-repeat;
+.ourStorySlider .carousel-inner .carousel-caption {
+    color: #000;
+}
+
+.ourStorySlider .carousel-indicators li {
+    border-radius: 50%;
+    height: 11px;
+    width: 11px;
+    transition: 0.3s ease-in-out;
+}
+
+.ourStorySlider .carousel-indicators li.active {
+    transform: scale(1.2);
+}
+
+.ourStorySlider .ourStorySlide1,
+.ourStorySlider .ourStorySlide2,
+.ourStorySlider .ourStorySlide3 {
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center center;
+    padding: 270px 0;
     position: relative;
 }
 
-.ourStory .ourStoryInfo .ourStoryInfoLeft {
+.ourStorySlider .ourStorySlide1 {
+    background: #13ca68;
+    background-image: url("../images/our_success/ourStory_Background.png");
+}
+
+.ourStorySlider .ourStorySlide2 {
+    background: #13ca68;
+    background-image: url("../images/our_success/ourStory_Background.png");
+}
+
+.ourStorySlider .ourStorySlide3 {
+    background: #13ca68;
+    background-image: url("../images/our_success/ourStory_Background.png");
+}
+
+.ourStorySlider .ourStoryInfo {
+    padding: 150px 0px;
+    position: relative;
+    margin-bottom: -40px;
+}
+
+.ourStorySlider .ourStoryInfo .ourStoryInfoLeft {
     position: absolute;
-    top: 0;
-    left: 60px;
+    top: 0px;
+    left: -35px;
     padding: 0 20px;
     background: rgba(255, 255, 255, 0.418);
     height: 100%;
-    width: 40%;
+    width: 45%;
+    margin: 0;
 }
 
-.ourStory .ourStoryInfo .ourStoryInfoLeft h2 {
+.ourStorySlider .ourStoryInfo .ourStoryInfoLeft h2 {
     color: #007C39;
     text-transform: uppercase;
     font-weight: 700;
     margin-bottom: -5px;
 }
 
-.ourStory .ourStoryInfo .ourStoryInfoLeft h2:nth-child(2) {
+.ourStorySlider .ourStoryInfo .ourStoryInfoLeft h2:nth-child(2) {
     font-weight: normal;
     margin-bottom: 10px;
 }
 
-.ourStory .ourStoryInfo .ourStoryInfoLeft p {
+.ourStorySlider .ourStoryInfo .ourStoryInfoLeft p {
     font-size: 20px;
     line-height: 30px;
 }
 
-.ourStory .ourStoryInfo .ourStoryRightOuter h2 {
+.ourStorySlider .ourStoryInfo .ourStoryRightOuter {
+    width: 105%;
+}
+
+.ourStorySlider .ourStoryInfo .ourStoryRightOuter h2 {
     color: #fff;
     text-transform: uppercase;
     font-weight: normal;
 }
 
-.ourStory .ourStoryInfo .ourStoryRightOuter p {
+.ourStorySlider .ourStoryInfo .ourStoryRightOuter p {
     font-size: 20px;
     line-height: 30px;
     color: #fff;
 }
 
-.ourStoryArticle {
-    padding: 40px 0;
+.ourStorySlider .carousel-control-prev {
+    width: 100px;
+}
+
+.ourStorySlider .carousel-control-next {
+    width: 100px;
+}
+
+.ourStorySlider .ourStoryArticle {
+    padding: 20px 0;
     font-size: 20px;
 }
-/* ============== End ourStory =============== */
+/* ============== End ourStorySlider =============== */
 /* ============== Start ourMissionVision =============== */
 .ourMissionVision {
     background-image: url("../images/our_success/ourMissionVision_Background.png");
@@ -1898,33 +1948,11 @@ footer .footer_section:nth-child(5) i:hover {
     /* ######################### End directContact Page ######################### */
 
     /* ######################### Start ourSuccess Page ######################### */
-    /* ============== Start ourStory =============== */
-    .ourStory {
-        padding: 70px 0 20px;
+    /* ============== Start ourStorySlider =============== */
+    .ourStorySlider .ourStoryInfo .ourStoryInfoLeft {
+        width: 50%;
     }
-
-    .ourStory h1 {
-        font-size: 35px;
-        margin-bottom: 25px;
-    }
-
-    .ourStory .ourStoryInfo .ourStoryInfoLeft h2 {
-        font-size: 30px;
-    }
-
-    .ourStory .ourStoryInfo .ourStoryInfoLeft h2:nth-child(2) {
-        margin-bottom: 5px; 
-        font-size: 27px;
-    }
-
-    .ourStory .ourStoryInfo .ourStoryRightOuter h2 {
-        margin-bottom: 5px; 
-    }
-
-    .ourStory .ourStoryArticle {
-        padding: 30px 0;
-    }
-    /* ============== End ourStory =============== */
+    /* ============== End ourStorySlider =============== */
     /* ============== Start ourMissionVision =============== */
     .ourMissionVision .ourVision .imgContain img:hover ,
     .ourMissionVision .ourMission .imgContain img:hover {
@@ -2259,33 +2287,83 @@ footer .footer_section:nth-child(5) i:hover {
     /* ######################### End directContact Page ######################### */
 
     /* ######################### Start ourSuccess Page ######################### */
-    /* ============== Start ourStory =============== */
-    .ourStory h1 {
-        font-size: 35px;
-        margin-bottom: 20px;
+    /* ============== Start ourStorySlider =============== */
+    .ourStorySlider h1 {
+        font-size: 30px;
+        margin: -10px 0 15px;        
     }
 
-    .ourStory .ourStoryInfo {
-        padding: 150px 100px 20px;
+    .ourStorySlider .carousel-inner .carousel-caption {
+        color: #000;
+        padding: 0;
     }
 
-    .ourStory .ourStoryInfo .ourStoryInfoLeft {
-        top: 50px;
+    .ourStorySlider .carousel-indicators {
+        margin: 0;
+    }
+
+    .ourStorySlider .carousel-indicators li {
+        border-radius: 50%;
+        height: 9px;
+        width: 9px;
+        transition: 0.3s ease-in-out;
+    }
+
+    .ourStorySlider .ourStorySlide1,
+    .ourStorySlider .ourStorySlide2,
+    .ourStorySlider .ourStorySlide3 {
+        padding: 170px 0 300px;
+    }
+
+    .ourStorySlider .ourStoryInfo {
+        padding: 0px 0px;
+        position: relative;
+        margin-bottom: 0px;
+        margin-bottom: 30px;
+    }
+
+    .ourStorySlider .ourStoryInfo .ourStoryInfoLeft {
         left: 0px;
-        padding: 120px 0;
-        height: 30%;
+        height: 55%;
         width: 100%;
+        margin-top: -20px;
     }
 
-    .ourStory .ourStoryInfo .ourStoryRightOuter {
-        margin-top: 170px;
+    .ourStorySlider .ourStoryInfo .ourStoryInfoLeft h2 {
+        margin-bottom: -5px;
+        font-size: 25px;
     }
 
-    .ourStoryArticle {
-        padding: 20px 0;
+    .ourStorySlider .ourStoryInfo .ourStoryInfoLeft h2:nth-child(2) {
+        margin-bottom: 0px;
+        font-size: 28px;
+    }
+
+    .ourStorySlider .ourStoryInfo .ourStoryInfoLeft p {
+        line-height: 25px;
+    }
+
+    .ourStorySlider .ourStoryInfo .ourStoryRightOuter {
+        width: 100%;
+        text-align: center;
+        margin-top: 200px;
+    }
+
+    .ourStorySlider .ourStoryInfo .ourStoryRightOuter h2 {
+        font-size: 28px;
+        margin-bottom: 0;
+    }
+
+    .ourStorySlider .ourStoryInfo .ourStoryRightOuter p {
+        line-height: 25px;
+        margin: 0;
+    }
+
+    .ourStorySlider .ourStoryArticle {
+        padding: 10px 0;
         font-size: 20px;
-    } 
-    /* ============== End ourStory =============== */
+    }
+    /* ============== End ourStorySlider =============== */
     /* ============== Start ourMissionVision =============== */
     .ourMissionVision .ourVision {
         border: none;
@@ -2544,20 +2622,81 @@ footer .footer_section:nth-child(5) i:hover {
     /* ######################### End directContact Page #########################  */
 
     /* ######################### Start ourSuccess Page #########################  */
-    /* ============== Start ourStory =============== */
-    .ourStory .ourStoryInfo {
-        padding: 150px 20px 20px;
+    /* ============== Start ourStorySlider =============== */
+    .ourStorySlider h1 {
+        font-size: 27px;
+        margin: -13px 0 13px;        
     }
 
-    .ourStoryArticle {
-        padding: 10px 0 20px !important;
+    .ourStorySlider .carousel-inner .carousel-caption {
+        color: #000;
+        padding: 0;
+    }
+
+    .ourStorySlider .carousel-indicators {
+        margin: 0;
+    }
+
+    .ourStorySlider .carousel-indicators li {
+        border-radius: 50%;
+        height: 9px;
+        width: 9px;
+        transition: 0.3s ease-in-out;
+    }
+
+    .ourStorySlider .ourStorySlide1,
+    .ourStorySlider .ourStorySlide2,
+    .ourStorySlider .ourStorySlide3 {
+        padding: 150px 0 310px;
+    }
+
+    .ourStorySlider .ourStoryInfo {
+        padding: 0px 0px;
+        position: relative;
+        margin-bottom: 0px;
+        margin-bottom: 30px;
+    }
+
+    .ourStorySlider .ourStoryInfo .ourStoryInfoLeft {
+        left: 0px;
+        height: 55%;
+        width: 100%;
+        margin-top: -20px;
+        padding: 0 10px;
+    }
+
+    .ourStorySlider .ourStoryInfo .ourStoryInfoLeft h2 {
+        font-size: 23px;
+    }
+
+    .ourStorySlider .ourStoryInfo .ourStoryInfoLeft h2:nth-child(2) {
+        font-size: 24px;
+    }
+
+    .ourStorySlider .ourStoryInfo .ourStoryInfoLeft p {
         font-size: 18px;
-    }  
-
-    .ourStoryArticle p {
-        margin: 0 !important;
+        line-height: 22px;
+        margin: 0;
     }
-    /* ============== End ourStory =============== */
+
+    .ourStorySlider .ourStoryInfo .ourStoryRightOuter {
+        margin-top: 180px;
+    }
+
+    .ourStorySlider .ourStoryInfo .ourStoryRightOuter h2 {
+        font-size: 25px;
+    }
+
+    .ourStorySlider .ourStoryInfo .ourStoryRightOuter p {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .ourStorySlider .ourStoryArticle {
+        padding: 10px 0;
+        font-size: 20px;
+    }
+    /* ============== End ourStorySlider =============== */
     /* ######################### End ourSuccess Page ######################### */
 
     /* ######################### Start our_events Page ######################### */
@@ -2841,51 +2980,85 @@ footer .footer_section:nth-child(5) i:hover {
     /* ######################### End directContact Page #########################  */
 
     /* ######################### Start ourSuccess Page #########################  */
-    /* ============== Start ourStory =============== */
-    .ourStory h1 {
-        font-size: 30px;
-        margin-bottom: 5px;
+    /* ============== Start ourStorySlider =============== */
+    .ourStorySlider h1 {
+        font-size: 27px;
+        margin: -13px 0 13px;        
     }
 
-    .ourStory .ourStoryInfo {
-        padding: 150px 0px 20px;
+    .ourStorySlider .carousel-inner .carousel-caption {
+        padding: 0;
     }
 
-    .ourStory .ourStoryInfo p {
-        line-height: 28px !important;
+    .ourStorySlider .carousel-indicators li {
+        height: 7px;
+        width: 7px;
     }
 
-    .ourStory .ourStoryInfo .ourStoryInfoLeft {
-        padding: 140px 10px 130px;
-    } 
+    .ourStorySlider .ourStorySlide1,
+    .ourStorySlider .ourStorySlide2,
+    .ourStorySlider .ourStorySlide3 {
+        padding: 250px 0;
+        background-position: center right;
+    }
 
-    .ourStory .ourStoryInfo .ourStoryInfoLeft h2,
-    .ourStory .ourStoryInfo .ourStoryInfoLeft h2:nth-child(2),
-    .ourStory .ourStoryInfo .ourStoryRightOuter h2 {
+    .ourStorySlider .ourStoryInfo .ourStoryInfoLeft {
+        width: 144%;
+        padding: 100px 10px;
+        margin: -400px 0 0 -22%;
+    }
+
+    .ourStorySlider .ourStoryInfo .ourStoryInfoLeft h2 {
+        font-size: 20px;
+    }
+
+    .ourStorySlider .ourStoryInfo .ourStoryInfoLeft h2:nth-child(2) {
         font-size: 22px;
     }
 
-    .ourStory .ourStoryInfo .ourStoryInfoLeft p,
-    .ourStory .ourStoryInfo .ourStoryRightOuter p {
-        font-size: 18px;
-        line-height: 25px !important;
+    .ourStorySlider .ourStoryInfo .ourStoryInfoLeft p {
+        font-size: 17px;
+        line-height: 22px;
+        margin: 0;
+    } 
+
+    .ourStorySlider .ourStoryInfo .ourStoryRightOuter {
+        width: 144% !important;
+        position: absolute;
+        margin-top: 0px;
+        margin: -170px 0 0 -22%;
     }
 
-    .ourStory .ourStoryInfo .ourStoryRightOuter {
-        margin-top: 200px;
+    .ourStorySlider .ourStoryInfo .ourStoryRightOuter h2 {
+        font-size: 22px;
     }
 
-    .ourStoryArticle {
-        padding: 10px 0 20px !important;
-        font-size: 18px;
-    }  
-
-    .ourStoryArticle p {
-        font-size: 16px !important;
-        line-height: 23px !important;
+    .ourStorySlider .ourStoryInfo .ourStoryRightOuter p {
+        font-size: 17px;
+        line-height: 20px;
     }
-    /* ============== End ourStory =============== */
+
+    .ourStorySlider .carousel-control-prev,
+    .ourStorySlider .carousel-control-next {
+        margin-top: 465px;
+        z-index: 20;
+    }
+
+    .ourStorySlider .carousel-control-prev .carousel-control-prev-icon ,
+    .ourStorySlider .carousel-control-next .carousel-control-next-icon {
+        height: 17px !important;
+        width: 17px !important;
+    }
+
+    .ourStorySlider .ourStoryArticle p {
+        font-size: 17px !important;
+    }
+    /* ============== End ourStorySlider =============== */
     /* ============== Start ourMissionVision =============== */
+    .ourMissionVision {
+        padding: 30px 0;
+    }
+
     .ourMissionVision .ourVision,
     .ourMissionVision .ourMission {
         padding: 0 25px;
@@ -3067,9 +3240,3 @@ footer .footer_section:nth-child(5) i:hover {
     /* ============== End NewsAndEvents =============== */
     /* ######################### Start NewsAndEvents Page ######################### */
 }
-
-
-
-
-
-
