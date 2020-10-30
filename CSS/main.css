@@ -831,16 +831,18 @@ footer .footer_section:nth-child(5) i:hover {
     background-image: url("../images/our_monthly_promotion/header_background.png");
 }
 /* ============== End header =============== */
-/* ============== Start cashVanHeader , wholeSaleHeader , HyperMarketHeader =============== */
+/* ============== Start cashVanHeader , wholeSaleHeader , HyperMarketHeader , OurTeamHeader =============== */
 .cashVanHeader,
 .wholeSaleHeader,
-.HyperMarketHeader {
+.HyperMarketHeader,
+.OurTeamHeader {
     padding: 50px 0 40px;
 }
 
 .cashVanHeader .headerContaining,
 .wholeSaleHeader .headerContaining,
-.HyperMarketHeader .headerContaining {
+.HyperMarketHeader .headerContaining,
+.OurTeamHeader .headerContaining {
     position: absolute;
     background-image: url("../images/global/header_curve.png");
     background-size: cover;
@@ -854,32 +856,32 @@ footer .footer_section:nth-child(5) i:hover {
 .wholeSaleHeader h2,
 .HyperMarketHeader h2,
 .ourNewsHeader h2,
-.NewsAndEventsHeader h2 {
+.NewsAndEventsHeader h2,
+.OurTeamHeader h2 {
     position: relative;
     margin: 45px 0 0 -10px;
     color: #007C39;
 }
-/* ============== End cashVanHeader , wholeSaleHeader , HyperMarketHeader =============== */
+/* ============== End cashVanHeader , wholeSaleHeader , HyperMarketHeader , OurTeamHeader =============== */
 /* ============== Start products_CashVan_Sections , products_WholeSale_Sections , products_HyperMarket_Sections =============== */
-.products_CashVan_Sections {
+.products_CashVan_Sections,
+.products_WholeSale_Sections,
+.products_HyperMarket_Sections {
     padding: 100px 0 70px;
-    background-image: url("../images/our_monthly_CashVan/cashVanTotalBackground.png");
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.products_CashVan_Sections {
+    background-image: url("../images/our_monthly_CashVan/cashVanTotalBackground.png");
 }
 
 .products_WholeSale_Sections {
-    padding: 100px 0 70px;
     background-image: url("../images/our_monthly_wholesale/wholesaleTotalBackground.png");
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .products_HyperMarket_Sections {
-    padding: 100px 0 70px;
     background-image: url("../images/our_monthly_hyperMarket/hyperMarketTotalBackground.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .products_CashVan_Sections .cashVanProd .prodImg,
@@ -1729,9 +1731,244 @@ footer .footer_section:nth-child(5) i:hover {
     line-height: 20px;
 }
 /* ============== End NewsAndEvents =============== */
-/* ######################### Start NewsAndEvents Page ######################### */
+/* ######################### End NewsAndEvents Page ######################### */
 
+/* ######################### Start ourTeam Page ######################### */
+/* ============== Start header =============== */
+.OurTeamHeaderMain {
+    background-image: url("../images/our_team/ourTeamHeaderBackground.png");
+}
+/* ============== End header =============== */
+/* ============== Start ourTeamMembers =============== */
+.ourTeamMembers {
+    padding: 80px 0 70px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../images/our_team/woodGreen.png");
+}
 
+.ourTeamMembers .teamMemberSection {
+    padding: 40px 50px;
+}
+
+.ourTeamMembers .teamMemberSection .memberInfo {
+    background: #fff;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 0 15px rgb(112, 110, 110);
+    position: relative;
+    overflow: hidden;
+}
+
+.ourTeamMembers .teamMemberSection .memberInfo img {
+    height: 100%;
+    width: 100%;
+    transition: 0.3s ease-in-out;
+}
+
+.ourTeamMembers .memberLayerData {
+    position: absolute;
+    background: #007c3a8c;
+    height: 0%;
+    width: 100%;
+    bottom: -70px;
+    transition: 0.3s ease-in-out;
+    color: #fff;
+} 
+
+.ourTeamMembers .memberLayerData p {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.ourTeamMembers .memberLayerData span {
+    font-size: 18px;
+}
+
+.ourTeamMembers .memberLayerData ul {
+    width: 100%;
+    padding: 10px 0 0;
+    margin-bottom: -10px;
+}
+
+.ourTeamMembers .memberLayerData ul a {
+    color: #007C39;
+    text-decoration: none;
+    height: 40px;
+    width: 40px;
+    background: #fff;
+    margin: 0 2px;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+}
+
+.ourTeamMembers .memberLayerData ul a:hover {
+    color: #fff;
+    background: #007C39;
+}
+
+.ourTeamMembers .teamMemberSection .memberInfo:hover .memberLayerData {
+    height: 100%;
+    bottom: 0px;
+}
+
+.ourTeamMembers .teamMemberSection .memberInfo:hover img {
+    transform: scale(1.2) rotate(10deg);
+}
+/* ============== Start ourTeamMembers =============== */
+/* ######################### End ourTeam Page ######################### */
+
+/* ######################### Start whereToBuy Page ######################### */
+/* ============== Start header =============== */
+.whereToBuyHeaderMain {
+    background-image: url("../images/whereToBuy/whereToBuyHeader.png");
+}
+
+.whereToBuyHeaderMain h1 {
+    padding: 40px 0;
+}
+/* ============== End header =============== */
+/* ============== Start ourTeamMembers =============== */
+.whereToBuyProducts {
+    padding: 60px 0 70px;
+    border-top: 7px solid #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-image: url("../images/whereToBuy/woodGreen.png");
+}
+
+.whereToBuyProducts .totalProdsHeader {
+    color: #007C39;
+    margin-bottom: 20px;
+}
+
+.whereToBuyProducts .productSection {
+    padding: 40px 50px;
+}
+
+.whereToBuyProducts .productSection .memberInfo {
+    background: #fff;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 0 0 15px rgb(112, 110, 110);
+}
+
+.whereToBuyProducts .productSection .memberInfo img {
+    height: 100px;
+    width: 100px;
+    transition: 0.3s ease-in-out;
+}
+
+.whereToBuyProducts .productSection .memberInfo:hover img {
+    transform: scale(1.2) rotate(10deg);
+}
+/* ============== Start whereToBuyProducts =============== */
+/* ######################### End whereToBuy Page ######################### */
+
+/* ######################### Start whereToBuyProduct Page ######################### */
+/* ============== Start OurProdHeader =============== */
+.OurProdHeader {
+    padding: 70px 0 40px;
+}
+
+.OurProdHeader .headerContaining {
+    position: absolute;
+    background-image: url("../images/whereToBuy/productPage/circleHeader.png");
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 125px;
+    margin-top: 54px;
+}
+
+.OurProdHeader .headerContaining img {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    transition: 0.3s ease-in-out;
+}
+
+.OurProdHeader .headerContaining:hover img {
+    transform: scale(1.2) rotate(20deg);
+}
+
+.OurProdHeader p {
+    position: absolute;
+    margin-top: 80px;
+    font-weight: 700;
+    font-size: 16px;
+}
+/* ============== End OurProdHeader =============== */
+/* ============== Start prodImgs =============== */
+.prodImgs {
+    background-image: url("../images/whereToBuy/woodGreen.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 100px 0 50px;
+}
+
+.prodImgs .owl-three {
+    margin-top: 30px;
+}
+
+.owl-carousel .owl-stage-outer {
+    padding: 60px 0;
+}
+
+.prodImgs .owl-three .owl-item {
+    display: flex;
+    justify-content: center;
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.prodImgs .owl-three .owl-item.center {
+    transform: scale(1.5);
+    z-index: 5;
+    box-shadow: 0 0 10px rgb(68, 67, 67);
+}
+
+.prodImgs .owl-next {
+    margin-right: -35px !important;
+    margin-bottom: 60px !important;
+}
+
+.prodImgs .owl-prev {
+    margin-left: -35px !important;
+    margin-bottom: 60px !important;
+}
+
+.prodImgs .owl-next img,
+.prodImgs .owl-prev img {
+    height: 25px;
+    width: 25px;
+}
+
+.prodsArticle {
+    margin-top: 40px;
+}
+
+.prodsArticle h2 {
+    color: #007C39;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.prodsArticle p {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.prodImgs .owl-theme .owl-dots {
+    display: none !important;
+}
+/* ============== Start prodImgs =============== */
+/* ######################### End whereToBuyProduct Page ######################### */
 /* ################$$$$$ Start the responsive of the pages $$$$$################ */
 
 
@@ -1876,10 +2113,11 @@ footer .footer_section:nth-child(5) i:hover {
     /* ######################### End ourMonthlyPromotion Page ######################### */
 
     /* ######################### Start our_monthly_CashVan , our_monthly_wholesale , our_monthly_HyperMarket Pages ######################### */
-    /* ============== Start cashVanHeader , wholeSaleHeader , HyperMarketHeader =============== */
+    /* ============== Start cashVanHeader , wholeSaleHeader , HyperMarketHeader , OurTeamHeader =============== */
     .cashVanHeader .headerContaining,
     .wholeSaleHeader .headerContaining,
-    .HyperMarketHeader .headerContaining {
+    .HyperMarketHeader .headerContaining,
+    .OurTeamHeader .headerContaining {
         width: 270px;
         height: 120px;
         margin-top: 54px;
@@ -1889,11 +2127,12 @@ footer .footer_section:nth-child(5) i:hover {
     .wholeSaleHeader h2,
     .HyperMarketHeader h2,
     .ourNewsHeader h2,
-    .NewsAndEventsHeader h2 {
+    .NewsAndEventsHeader h2,
+    .OurTeamHeader h2 {
         margin: 45px 0 0 10px;
         font-size: 28px;
     }
-    /* ============== End cashVanHeader , wholeSaleHeader , HyperMarketHeader =============== */
+    /* ============== End cashVanHeader , wholeSaleHeader , HyperMarketHeader , OurTeamHeader =============== */
     /* ============== Start products_CashVan_Sections , products_WholeSale_Sections , products_HyperMarket_Sections =============== */
     .products_CashVan_Sections .cashVanProd .prodImg,
     .products_WholeSale_Sections .wholeSaleProd .prodImg,
@@ -2016,6 +2255,46 @@ footer .footer_section:nth-child(5) i:hover {
     } 
     /* ============== End NewsAndEvents =============== */
     /* ######################### Start NewsAndEvents Page ######################### */
+
+    /* ######################### Start ourTeam Page ######################### */
+    /* ============== Start ourTeamMembers =============== */
+    .ourTeamMembers {
+        padding: 70px 0;
+    }
+
+    .ourTeamMembers .teamMemberSection {
+        padding: 40px;
+    }
+
+    .ourTeamMembers .memberLayerData p {
+        font-size: 20px;
+    }
+
+    .ourTeamMembers .memberLayerData span {
+        font-size: 16px;
+    }
+    /* ============== Start ourTeamMembers =============== */
+    /* ######################### End ourTeam Page ######################### */
+
+    /* ######################### Start whereToBuyProduct Page ######################### */
+    /* ============== Start prodImgs =============== */
+    .prodImgs .owl-next {
+        margin-right: -25px !important;
+        margin-bottom: 60px !important;
+    }
+
+    .prodImgs .owl-prev {
+        margin-left: -25px !important;
+        margin-bottom: 60px !important;
+    }
+
+    .prodImgs .owl-next img,
+    .prodImgs .owl-prev img {
+        height: 18px;
+        width: 18px;
+    }
+    /* ============== Start prodImgs =============== */
+    /* ######################### End whereToBuyProduct Page ######################### */
 }
 
 /* ################ Medium devices (tablets, less than 992px) ################ */
@@ -2213,16 +2492,17 @@ footer .footer_section:nth-child(5) i:hover {
     /* ######################### End ourMonthlyPromotion Page ######################### */
 
     /* ######################### Start our_monthly_CashVan , our_monthly_wholesale , our_monthly_HyperMarket Pages ######################### */
-    /* ============== Start cashVanHeader , wholeSaleHeader , HyperMarketHeader =============== */
+    /* ============== Start cashVanHeader , wholeSaleHeader , HyperMarketHeader , OurTeamHeader =============== */
     .cashVanHeader h2,
     .wholeSaleHeader h2,
     .HyperMarketHeader h2,
     .ourNewsHeader h2,
-    .NewsAndEventsHeader h2 {
+    .NewsAndEventsHeader h2,
+    .OurTeamHeader h2 {
         margin: 45px 0 0 8px;
         font-size: 27px;
     }
-    /* ============== End cashVanHeader, wholeSaleHeader , HyperMarketHeader =============== */
+    /* ============== End cashVanHeader, wholeSaleHeader , HyperMarketHeader , OurTeamHeader =============== */
     /* ============== Start products_CashVan_Sections , products_WholeSale_Sections , products_HyperMarket_Sections =============== */
     .products_CashVan_Sections,
     .products_WholeSale_Sections,
@@ -2455,6 +2735,41 @@ footer .footer_section:nth-child(5) i:hover {
     } 
     /* ============== End NewsAndEvents =============== */
     /* ######################### Start NewsAndEvents Page ######################### */
+
+    /* ######################### Start ourTeam Page ######################### */
+    /* ============== Start ourTeamMembers =============== */
+    .ourTeamMembers {
+        padding: 70px 0 50px;
+    }
+
+    .ourTeamMembers .teamMemberSection {
+        padding: 40px;
+    }
+
+    .ourTeamMembers .memberLayerData span {
+        font-size: 18px;
+    }
+    /* ============== Start ourTeamMembers =============== */
+    /* ######################### End ourTeam Page ######################### */
+    /* ######################### Start whereToBuyProduct Page ######################### */
+    /* ============== Start prodImgs =============== */
+    .prodImgs .owl-next {
+        margin-right: -30px !important;
+        margin-bottom: 60px !important;
+    }
+
+    .prodImgs .owl-prev {
+        margin-left: -30px !important;
+        margin-bottom: 60px !important;
+    }
+
+    .prodImgs .owl-next img,
+    .prodImgs .owl-prev img {
+        height: 20px;
+        width: 20px;
+    }
+    /* ============== Start prodImgs =============== */
+    /* ######################### End whereToBuyProduct Page ######################### */
 }
 
 /* ################ Small devices (landscape phones, less than 768px) ################ */
@@ -2584,16 +2899,17 @@ footer .footer_section:nth-child(5) i:hover {
     /* ######################### End ourMonthlyPromotion Page #########################  */
 
     /* ######################### Start our_monthly_CashVan , our_monthly_wholesale , our_monthly_HyperMarket Pages ######################### */
-    /* ============== Start cashVanHeader , wholeSaleHeader , HyperMarketHeader =============== */ 
+    /* ============== Start cashVanHeader , wholeSaleHeader , HyperMarketHeader , OurTeamHeader =============== */ 
     .cashVanHeader h2,
     .wholeSaleHeader h2,
     .HyperMarketHeader h2,
     .ourNewsHeader h2,
-    .NewsAndEventsHeader h2 {
+    .NewsAndEventsHeader h2,
+    .OurTeamHeader h2 {
         margin: 45px 0 0 8px;
         font-size: 25px;
     }
-    /* ============== End cashVanHeader , wholeSaleHeader , HyperMarketHeader =============== */
+    /* ============== End cashVanHeader , wholeSaleHeader , HyperMarketHeader , OurTeamHeader =============== */
     /* ============== Start products_CashVan_Sections , products_WholeSale_Sections , products_HyperMarket_Sections =============== */
     .products_CashVan_Sections .cashVanProd,
     .products_WholeSale_Sections .wholeSaleProd,
@@ -2785,6 +3101,63 @@ footer .footer_section:nth-child(5) i:hover {
     } 
     /* ============== End NewsAndEvents =============== */
     /* ######################### Start NewsAndEvents Page ######################### */
+
+    /* ######################### Start ourTeam Page ######################### */
+    /* ============== Start ourTeamMembers =============== */
+    .ourTeamMembers .teamMemberSection {
+        padding: 25px;
+    }
+
+    .ourTeamMembers .memberLayerData p {
+        font-size: 18px;
+    }
+
+    .ourTeamMembers .memberLayerData span {
+        font-size: 16px;
+    }
+    /* ============== Start ourTeamMembers =============== */
+    /* ######################### End ourTeam Page ######################### */
+
+    /* ######################### Start whereToBuyProduct Page ######################### */
+    /* ============== Start OurProdHeader =============== */
+    .OurProdHeader {
+        padding: 50px 0 30px;
+    }
+    /* ============== End OurProdHeader =============== */
+    /* ============== Start prodImgs =============== */
+    .prodImgs .owl-three {
+        margin-top: -10px;
+    }
+
+    .prodImgs .owl-next {
+        margin-right: 200px !important;
+        margin-bottom: 10px !important;
+        height: 100%;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+    }
+
+    .prodImgs .owl-prev {
+        margin-left: 200px !important;
+        margin-bottom:10px !important;
+        height: 100%;
+        left: 0;
+        bottom: 0;
+        position: absolute;
+    }
+
+    .prodImgs .owl-next img,
+    .prodImgs .owl-prev img {
+        height: 20px;
+        width: 20px;
+    }
+
+    .prodsArticle h2 {
+        margin-top: 10px;
+    }
+    /* ============== Start prodImgs =============== */
+    /* ######################### End whereToBuyProduct Page ######################### */
 }
 
 /* ################ Extra small devices (portrait phones, less than 576px) ################ */
@@ -3239,4 +3612,81 @@ footer .footer_section:nth-child(5) i:hover {
     } 
     /* ============== End NewsAndEvents =============== */
     /* ######################### Start NewsAndEvents Page ######################### */
+
+    /* ######################### Start ourTeam Page ######################### */
+    /* ============== Start ourTeamMembers =============== */
+    .ourTeamMembers .teamMemberSection {
+        padding: 25px 0;
+    }
+    /* ============== Start ourTeamMembers =============== */
+    /* ######################### End ourTeam Page ######################### */
+
+    /* ######################### Start whereToBuy Page ######################### */
+    /* ============== Start header =============== */
+    .whereToBuyHeaderMain {
+        background-image: url("../images/whereToBuy/whereToBuyHeader.png");
+    }
+
+    .whereToBuyHeaderMain h1 {
+        padding: 40px 0;
+    }
+    /* ============== End header =============== */
+    /* ============== Start ourTeamMembers =============== */
+    .whereToBuyProducts {
+        padding: 50px 0 40px;
+    }
+
+    .whereToBuyProducts .totalProdsHeader {
+        margin-bottom: 0px;
+        font-size: 27px;
+    }
+
+    .whereToBuyProducts .productSection .memberInfo {
+        padding: 20px;
+    }
+
+    .whereToBuyProducts .productSection .memberInfo img {
+        height: 70px;
+        width: 70px;
+    }
+
+    .whereToBuyProducts .productSection .memberInfo:hover img {
+        transform: scale(1.1) rotate(10deg);
+    }
+    /* ============== Start whereToBuyProducts =============== */
+    /* ######################### End whereToBuy Page ######################### */
+
+    /* ######################### Start whereToBuyProduct Page ######################### */
+    /* ============== Start OurProdHeader =============== */
+    .OurProdHeader {
+        padding: 50px 0 20px;
+    }
+    /* ============== End OurProdHeader =============== */
+    /* ============== Start prodImgs =============== */
+    .prodImgs .owl-next {
+        margin-right: 100px !important;
+    }
+
+    .prodImgs .owl-prev {
+        margin-left: 100px !important;
+    }
+
+    .prodsArticle h2 {
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    .prodsArticle p {
+        font-weight: normal;
+        line-height: 24px;
+        font-size: 18px;
+    }
+    /* ============== Start prodImgs =============== */
+    /* ######################### End whereToBuyProduct Page ######################### */
 }
+
+
+
+
+
+
