@@ -214,4 +214,38 @@ $(document).ready(function(){
             }
         }
     })
+
+
+    // ################# whereToBuy Page #################    
+
+    const prodNextIcon = "<img src='./images/our_news/rightArrow.png'>",
+          prodPrevIcon = "<img src='./images/our_news/leftArrow.png'>";
+
+    $('.owl-three').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        autoplay:true,
+        center: true,
+        addClassActive: false,
+        navText: [
+            prodPrevIcon,
+            prodNextIcon
+        ],
+        responsive:{
+            0:{
+                items:2
+            },
+            567:{
+                items:3
+            },
+            768:{
+                items:3
+            },
+            1000:{
+                items:5
+            }
+        }
+    })
+    
 });
