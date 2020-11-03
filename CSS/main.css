@@ -1915,10 +1915,6 @@ footer .footer_section:nth-child(5) i:hover {
     margin-top: 30px;
 }
 
-.owl-carousel .owl-stage-outer {
-    padding: 60px 0;
-}
-
 .prodImgs .owl-three .owl-item {
     display: flex;
     justify-content: center;
