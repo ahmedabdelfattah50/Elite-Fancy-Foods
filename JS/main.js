@@ -7,6 +7,7 @@ $(window).on('load', function(){
     });
 });
 
+
 $(document).ready(function(){
     // ################# Global #################    
 
@@ -181,7 +182,7 @@ $(document).ready(function(){
           prevIconNews = "<img src='./images/our_news/leftArrow.png'>";
 
     $('.owl-ourNews').owlCarousel({
-        loop:true,
+        loop:true, 
         nav:true,
         autoplay:false,
         center: false,
