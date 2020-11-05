@@ -1911,7 +1911,7 @@ footer .footer_section:nth-child(5) i:hover {
     padding: 100px 0 50px;
 }
 
-.prodImgs .owl-three {
+.prodImgs .owl-three { 
     margin-top: 30px;
 }
 
@@ -1965,6 +1965,103 @@ footer .footer_section:nth-child(5) i:hover {
 }
 /* ============== Start prodImgs =============== */
 /* ######################### End whereToBuyProduct Page ######################### */
+/* ######################### Start prodInfo Page ######################### */
+/* ============== Start prodInfo =============== */
+.prodInfoSection {
+    padding: 220px 0 50px;
+}
+
+.prodInfoSection .parahSection {
+    margin-top: -250px;
+    padding: 0 300px;
+}
+
+.prodInfoSection .parahSection p {
+    color: #000;
+    font-weight: 600;
+    line-height: 20px;
+    font-size: 18px;
+}
+
+.prodInfoSection .total_info {
+    margin-top: -50px;
+}
+
+.prodInfoSection .product_img {
+    padding-right: 50px;
+}
+
+.prodInfoSection .product_img img {
+    width: 300px;
+    height: 400px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.prodInfoSection .product_img img:hover {
+    transform: scale(1.1);
+}
+
+.prodInfoSection .product_info h2 {
+    color: #1E2A40;
+    font-size: 30px;
+    margin-bottom: -5px;
+}
+
+.prodInfoSection .product_info h1 {
+    /* color: #8C0E12; */
+    color: #007C39;
+    position: relative;
+    font-size: 32px;
+    margin-bottom: 5px;
+    font-weight: 700;
+}   
+
+.prodInfoSection .product_info h1::after {
+    content: '';
+    position: absolute;
+    top: 105%;
+    bottom: 0;
+    left: 0;
+    width: 55%;
+    height: 3px;
+    background: #1E2A40;
+}
+
+.prodInfoSection .product_info p {
+    color: #1E2A40;
+    font-size: 25px;
+}
+
+.prodInfoSection .product_info .prod_description p {
+    color: #1E2A40;
+    font-size: 25px;
+    line-height: 19px;
+}
+
+.prodInfoSection .product_info .prod_description span {
+    color: #1E2A40;
+    font-size: 25px;
+    line-height: 19px;
+    margin-left: 60px;
+}
+
+.prodInfoSection .arrows_links {
+    padding: 0 50px;
+}
+
+.prodInfoSection .arrows_links a { 
+    margin-top: -250px;
+    margin-bottom: 250px;
+    z-index: 50;
+}
+
+.prodInfoSection .arrows_links i {
+    color: #007C39;
+    font-size: 35px;
+}
+/* ============== End prodInfo =============== */
+/* ######################### End prodInfo Page ######################### */
 /* ################$$$$$ Start the responsive of the pages $$$$$################ */
 
 
@@ -2291,6 +2388,71 @@ footer .footer_section:nth-child(5) i:hover {
     }
     /* ============== Start prodImgs =============== */
     /* ######################### End whereToBuyProduct Page ######################### */
+
+    /* ######################### Start prodInfo Page ######################### */
+    /* ============== Start prodInfo =============== */
+    .prodInfoSection .parahSection {
+        padding: 0 200px;
+    }
+
+    .prodInfoSection .total_info {
+        margin-top: -50px;
+    }
+
+    .prodInfoSection .product_img {
+        padding-right: 50px;
+    }
+
+    .prodInfoSection .product_img img {
+        width: 270px;
+        height: 370px;
+    }
+
+    .prodInfoSection .product_img img:hover {
+        transform: scale(1.1);
+    }
+
+    .prodInfoSection .product_info h2 {
+        font-size: 28px;
+        margin-bottom: 5px;
+    }
+
+    .prodInfoSection .product_info h1 {
+        font-size: 32px;
+        margin-top: -10px;
+        padding-bottom: 2px;
+    }   
+
+    .prodInfoSection .product_info h1::after {
+        width: 60%;
+    }
+
+    .prodInfoSection .product_info p {
+        font-size: 22px;
+    }
+
+    .prodInfoSection .product_info .prod_description p {
+        font-size: 22px;
+    }
+
+    .prodInfoSection .product_info .prod_description span {
+        font-size: 22px;
+    }
+
+    .prodInfoSection .arrows_links {
+        padding: 0 50px;
+    }
+
+    .prodInfoSection .arrows_links a { 
+        margin-top: -230px;
+        margin-bottom: 230px;
+    }
+
+    .prodInfoSection .arrows_links i {
+        font-size: 30px;
+    }
+    /* ============== End prodInfo =============== */
+    /* ######################### End prodInfo Page ######################### */
 }
 
 /* ################ Medium devices (tablets, less than 992px) ################ */
@@ -2766,6 +2928,65 @@ footer .footer_section:nth-child(5) i:hover {
     }
     /* ============== Start prodImgs =============== */
     /* ######################### End whereToBuyProduct Page ######################### */
+
+    /* ######################### Start prodInfo Page ######################### */
+    /* ============== Start prodInfo =============== */
+    .prodInfoSection {
+        background-position: center top;
+    }
+
+    .prodInfoSection .parahSection {
+        padding: 0 100px;
+    }
+
+    .prodInfoSection .total_info {
+        margin-top: -50px;
+    }
+
+    .prodInfoSection .product_img {
+        padding: 0px;
+    }
+
+    .prodInfoSection .product_img img {
+        height: 340px;
+    }
+
+    .prodInfoSection .product_info {
+        padding: 30px 0 0 220px;
+    }
+
+    .prodInfoSection .product_info h2 {
+        font-size: 23px;
+    }
+
+    .prodInfoSection .product_info h1 {
+        font-size: 28px;
+    }   
+
+    .prodInfoSection .product_info h1::after {
+        width: 50%;
+        height: 2.7px;
+    }
+
+    .prodInfoSection .product_info p {
+        font-size: 20px;
+    }
+
+    .prodInfoSection .product_info .prod_description p {
+        font-size: 20px;
+        line-height: 15px;
+    }
+
+    .prodInfoSection .product_info .prod_description span {
+        font-size: 20px;
+    }
+
+    .prodInfoSection .arrows_links a { 
+        margin-top: -320px;
+        margin-bottom: 320px;
+    }
+    /* ============== End prodInfo =============== */
+    /* ######################### End prodInfo Page ######################### */
 }
 
 /* ################ Small devices (landscape phones, less than 768px) ################ */
@@ -3154,6 +3375,56 @@ footer .footer_section:nth-child(5) i:hover {
     }
     /* ============== Start prodImgs =============== */
     /* ######################### End whereToBuyProduct Page ######################### */
+
+    /* ######################### Start prodInfo Page ######################### */
+    /* ============== Start prodInfo =============== */
+    .prodInfoSection {
+        background-position: center center;
+    }
+
+    .prodInfoSection .parahSection {
+        padding: 0 50px;
+    }
+
+    .prodInfoSection .total_info {
+        margin-top: -50px;
+    }
+
+    .prodInfoSection .product_img {
+        padding: 0px;
+    }
+
+    .prodInfoSection .product_img img {
+        height: 300px;
+        width: 250px;
+    }
+
+    .prodInfoSection .product_info {
+        padding: 35px 0 0 135px;
+    }
+
+    .prodInfoSection .product_info h2 {
+        font-size: 20px;
+    }
+
+    .prodInfoSection .product_info h1 {
+        font-size: 25px;
+    }
+
+    .prodInfoSection .product_info h1::after {
+        width: 58%;
+        height: 2.7px;
+    }
+
+    .prodInfoSection .arrows_links {
+        padding: 0 20px;
+    }
+
+    .prodInfoSection .arrows_links i {
+        font-size: 25px;
+    } 
+    /* ============== End prodInfo =============== */
+    /* ######################### End prodInfo Page ######################### */
 }
 
 /* ################ Extra small devices (portrait phones, less than 576px) ################ */
@@ -3679,6 +3950,85 @@ footer .footer_section:nth-child(5) i:hover {
     }
     /* ============== Start prodImgs =============== */
     /* ######################### End whereToBuyProduct Page ######################### */
+
+    /* ######################### Start prodInfo Page ######################### */
+    /* ============== Start prodInfo =============== */
+    .prodInfoSection {
+        background-position: center center;
+    }
+
+    .prodInfoSection .parahSection {
+        padding: 0 20px;
+    }
+
+    .prodInfoSection .parahSection p {    
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .prodInfoSection .total_info {
+        margin-top: -50px;
+    }
+
+    .prodInfoSection .product_img {
+        padding: 0px;
+        justify-content: center;
+    }
+
+    .prodInfoSection .product_img img {
+        height: 250px;
+        width: 180px;
+    }
+
+    .prodInfoSection .product_info {
+        padding: 30px 20px 0 20px;
+    }
+    
+    .prodInfoSection .product_info h2 {
+        font-size: 18px;
+    }
+
+    .prodInfoSection .product_info h1 {
+        font-size: 22px;
+    }
+
+    .prodInfoSection .product_info h1::after {
+        width: 75%;
+        height: 2.5px;
+    }
+
+    .prodInfoSection .product_info p {
+        font-size: 18px;
+    }
+
+    .prodInfoSection .product_info .prod_description p {
+        font-size: 18px;
+        line-height: 10px;
+    } 
+
+    .prodInfoSection .product_info .prod_description {
+        justify-content: space-between;
+    }
+
+    .prodInfoSection .product_info .prod_description span {
+        margin: 0;
+    }
+
+    .prodInfoSection .arrows_links {
+        padding: 0 20px;
+    }
+
+    .prodInfoSection .arrows_links a { 
+        margin-top: -400px;
+        margin-bottom: 400px;
+    }
+
+    .prodInfoSection .arrows_links i {
+        font-size: 20px;
+    } 
+    /* ============== End prodInfo =============== */
+    /* ######################### End prodInfo Page ######################### */
 }
 
 
