@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8"/> 
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>News&Events</title>
+        <title>Product info</title>
         <link rel="icon" href="images/global/elite_logo.svg">
         <meta name="viewport" content="width=device-width, initial-scale=1 , shrink-to-fit=no">
         <!-- =============== Style files =============== -->
@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="CSS/owl.carousel.min.css">
         <link rel="stylesheet" href="CSS/owl.theme.default.min.css">
         <link rel="stylesheet" type="text/css" media="screen" href="CSS/main.css" />   
-    </head>
+    </head> 
     <body>         
         <!-- ============== Start First_Navbar =============== -->    
         <nav class="First_Navbar navbar-expand-lg">
@@ -57,7 +57,7 @@
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Our Brands 
+                                Our Brands
                             </a>
                             <div class="dropdown-menu ourBrandsMenu" aria-labelledby="navbarDropdownMenuLink">
                                 <a class="dropdown-item justify-content-between align-items-center d-flex text-center" href="#"><img src="images/global/jamHoney.png" alt=""><span>Jam&Honey</span></a>
@@ -67,25 +67,28 @@
                                 <a class="dropdown-item justify-content-between align-items-center d-flex text-center" href="#"><img src="images/global/breads.png" alt=""><span>Breads</span></a>
                                 <a class="dropdown-item justify-content-between align-items-center d-flex text-center" href="#"><img src="images/global/cookies.png" alt=""><span>Cookies</span></a>
                             </div>
-                        </li>
+                        </li> 
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 News&Events
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="NewsAndEvents.html">News&Events</a>
                                 <a class="dropdown-item" href="our_news.html">Our News</a>
                                 <a class="dropdown-item" href="our_events.html">Our Events</a>
                             </div>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Our MonthlyPromotions
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="our_monthly_CashVan.html">Cash Van</a>
-                                <a class="dropdown-item" href="our_monthly_wholesale.html">Wholesale</a>
-                                <a class="dropdown-item" href="our_monthly_HyperMarket.html">Hyper Market</a>
-                                <a class="dropdown-item" href="ourMonthlyPromotion.html">Monthly Promotion</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="our_monthly_CashVan.html">Cash Van</a>
+                                    <a class="dropdown-item" href="our_monthly_wholesale.html">Wholesale</a>
+                                    <a class="dropdown-item" href="our_monthly_HyperMarket.html">Hyper Market</a>
+                                    <a class="dropdown-item" href="ourMonthlyPromotion.html">Monthly Promotion</a>
+                                </div>
                             </div>
                         </li>
                         <li class="nav-item">
@@ -101,133 +104,61 @@
                 </div>
             </div>
         </nav>
-        <!-- ============== End Navbar =============== --> 
-        <!-- ============== Start header =============== --> 
-        <header class="NewsAndEventsHeader">
+        <!-- ============== End Navbar =============== -->
+        <!-- ============== Start prodInfo =============== --> 
+        <!-- 
+            ############ Codes of colors of the prodInfoSection ############
+            color 1: #e8b4b4
+            color 2: #c6e1cb
+            color 3: #ebe2bc
+            color 4: #c4e3db
+            color 5: #e5d2ba
+            color 6: #fbf1d6
+        -->
+        <div class="prodInfoSection" style="background: linear-gradient(0deg, #c6e1cb 0%, #fff 40%);"> 
             <div class="container">
-                <div class="row justify-content-center">
-                    <h1 data-wow-delay="1.5s" class="wow swing text-center">News&Events</h1>
+                <div class="row">
+                    <div class="parahSection d-flex justify-content-center align-items-center">
+                        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    </div>
+                </div>
+                <div class="row total_info">
+                    <div class="product_img d-flex justify-content-lg-end align-items-center col-lg-6 col-sm-12 justify-content-sm-center">
+                        <img src="images/our_monthly_promotion/poultry.svg" alt="">
+                    </div>
+                    <div class="product_info col-lg-6 col-sm-12 d-flex flex-column justify-content-center">
+                        <h2>Breads</h2>
+                        <h1>Big Soy</h1>
+                        <p>Nutritional Values For</p>
+                        <div class="prod_description d-flex">
+                            <p>Protein</p>
+                            <span>0.54 GM</span>
+                        </div>
+                        <div class="prod_description d-flex"> 
+                            <p>Sodium</p>
+                            <span>82 GM</span>
+                        </div>
+                        <div class="prod_description d-flex">
+                            <p>Trans fats</p>
+                            <span>0.54 GM</span>
+                        </div>
+                        <div class="prod_description d-flex">
+                            <p>Energy Per Calories</p>
+                            <span>55.5</span>
+                        </div>
+                        <div class="prod_description d-flex">
+                            <p>Amount Per Serving</p>
+                            <span>Result</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </header>
-        <!-- ============== End header =============== --> 
-        <!-- ============== Start go_up icon =============== -->
-        <i class="fas fa-angle-double-up go_up"><a href="#"></a></i>
-        <!-- ============== End go_up icon =============== -->
-        <!-- ============== Start NewsAndEvents =============== -->
-        <div class="NewsAndEvents">
-            <div class="container">
-                <div class="row justify-content-between">
-                    <div class="newsSectionLeft col-lg-6">
-                        <h2>News</h2>
-                        <div class="row justify-content-center">
-                            <div data-wow-delay="0.8s" class="wow fadeInLeft productSection col-10 col-sm-5">
-                                <div class="proImgSection d-flex justify-content-center">
-                                    <img src="images/NewsAndEvents/pascouts.jpg" alt="">
-                                </div>
-                                <div class="proParaSection">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                </div>
-                            </div>
-                            <div data-wow-delay="0.6s" class="wow fadeInLeft productSection col-10 col-sm-5">
-                                <div class="proImgSection d-flex justify-content-center">
-                                    <img src="images/NewsAndEvents/jamProd.png" alt="">
-                                </div>
-                                <div class="proParaSection">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                </div>
-                            </div>
-                            <div data-wow-delay="1.6s" class="wow fadeInLeft productSection col-10 col-sm-5">
-                                <div class="proImgSection d-flex justify-content-center">
-                                    <img src="images/our_monthly_promotion/big_soy.svg" alt="">
-                                </div>
-                                <div class="proParaSection">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                </div>
-                            </div>
-                            <div data-wow-delay="1.4s" class="wow fadeInLeft productSection col-10 col-sm-5">
-                                <div class="proImgSection d-flex justify-content-center">
-                                    <img src="images/our_monthly_promotion/corn_flex.svg" alt="">
-                                </div>
-                                <div class="proParaSection">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                </div>
-                            </div>
-                            <div data-wow-delay="2.2s" class="wow fadeInLeft productSection col-10 col-sm-5">
-                                <div class="proImgSection d-flex justify-content-center">
-                                    <img src="images/NewsAndEvents/honeyBee.jpg" alt="">
-                                </div>
-                                <div class="proParaSection">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                </div>
-                            </div>
-                            <div data-wow-delay="2s" class="wow fadeInLeft productSection col-10 col-sm-5">
-                                <div class="proImgSection d-flex justify-content-center">
-                                    <img src="images/NewsAndEvents/honeyJars.svg" alt="">
-                                </div>
-                                <div class="proParaSection">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="newsSectionRight col-lg-6">
-                        <h2>Events</h2>
-                        <div class="row justify-content-center">
-                            <div data-wow-delay="0.4s" class="wow fadeInLeft productSection col-10 col-sm-5">
-                                <div class="proImgSection d-flex justify-content-center">
-                                    <img src="images/NewsAndEvents/honeyJars.svg" alt="">
-                                </div>
-                                <div class="proParaSection">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                </div>
-                            </div>
-                            <div data-wow-delay="0.2s" class="wow fadeInLeft productSection col-10 col-sm-5">
-                                <div class="proImgSection d-flex justify-content-center">
-                                    <img src="images/our_monthly_promotion/corn_flex.svg" alt="">
-                                </div>
-                                <div class="proParaSection">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                </div>
-                            </div>
-                            <div data-wow-delay="1.2s" class="wow fadeInLeft productSection col-10 col-sm-5">
-                                <div class="proImgSection d-flex justify-content-center">
-                                    <img src="images/NewsAndEvents/shopping.jpg" alt="">
-                                </div>
-                                <div class="proParaSection">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                </div>
-                            </div>
-                            <div data-wow-delay="1s" class="wow fadeInLeft productSection col-10 col-sm-5">
-                                <div class="proImgSection d-flex justify-content-center">
-                                    <img src="images/NewsAndEvents/event.png" alt="">
-                                </div>
-                                <div class="proParaSection">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                </div>
-                            </div>
-                            <div data-wow-delay="1.8s" class="wow fadeInLeft productSection col-10 col-sm-5">
-                                <div class="proImgSection d-flex justify-content-center">
-                                    <img src="images/NewsAndEvents/soil.svg" alt="">
-                                </div>
-                                <div class="proParaSection">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                </div>
-                            </div>
-                            <div data-wow-delay="1.6s" class="wow fadeInLeft productSection col-10 col-sm-5">
-                                <div class="proImgSection d-flex justify-content-center">
-                                    <img src="images/NewsAndEvents/jamProd.png" alt="">
-                                </div>
-                                <div class="proParaSection">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                </div>
-                            </div>    
-                        </div>
-                    </div>
-                </div>
+            <div class="arrows_links d-flex justify-content-between">
+                <a href="our_monthly_CashVan.html"><i class="fas fa-angle-double-left"></i></a>
+                <a href="our_monthly_CashVan.html"><i class="fas fa-angle-double-right"></i></a>
             </div>
         </div>
-        <!-- ============== End NewsAndEvents =============== -->
+        <!-- ============== End prodInfo =============== --> 
         <!-- ============== Start footer =============== -->
         <footer>
             <div class="container-fluid">
@@ -268,12 +199,12 @@
                         <a href="#"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
-            </div> 
+            </div>
         </footer>
         <!-- ============== End footer =============== -->
-        <!-- ============== Start newsEventsLayer =============== -->
-        <div class="newsEventsLayer"></div>
-        <!-- ============== End newsEventsLayer =============== -->
+        <!-- ============== Start cashVanLayer =============== -->
+        <div class="cashVanLayer"></div>
+        <!-- ============== End cashVanLayer =============== -->
         <!-- ============== Start secondFooter =============== -->
         <div class="secondFooter"></div>
         <!-- ============== End secondFooter =============== -->
