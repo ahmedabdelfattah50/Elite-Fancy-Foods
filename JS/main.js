@@ -5,14 +5,13 @@ $(window).on('load', function(){
             $(this).remove();
         });
     });
-});
-
+}); 
 
 $(document).ready(function(){
     // ################# Global #################    
 
     // this for insilize the init of wow.js plugn
-    new WOW().init(); 
+    new WOW().init();  
     
     var goUp = $('.go_up'),
         navBar = $('.navbar');
@@ -133,6 +132,38 @@ $(document).ready(function(){
     }); 
 
     $('.SuccessLayer').click(function(){
+        $(this).hide();
+    });
+
+    $('.navbar .dropdown a').click(function(){
+        $('.ourTeamLayer').toggle();
+    }); 
+
+    $('.ourTeamLayer').click(function(){ 
+        $(this).hide();
+    });
+
+    $('.navbar .dropdown a').click(function(){
+        $('.whereToBuyLayer').toggle();
+    }); 
+
+    $('.whereToBuyLayer').click(function(){
+        $(this).hide();
+    });
+
+    $('.navbar .dropdown a').click(function(){
+        $('.whereBuyProdLayer').toggle();
+    }); 
+
+    $('.whereBuyProdLayer').click(function(){
+        $(this).hide();
+    });
+
+    $('.navbar .dropdown a').click(function(){
+        $('.barndProdLayer').toggle();
+    }); 
+
+    $('.barndProdLayer').click(function(){
         $(this).hide();
     });
     // ################# home Page #################    
