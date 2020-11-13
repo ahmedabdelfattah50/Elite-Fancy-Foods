@@ -1,10 +1,10 @@
 /* ######################### Start Global Sections #########################  */
 * {
     margin: 0;
-    padding: 0;   
+    padding: 0;    
 }
  
-body {
+body { 
     overflow: hidden;
 }
 /* ============== Start Navbar =============== */
@@ -342,13 +342,17 @@ footer .footer_section:nth-child(5) i:hover {
 .homeAllLayer,
 .contactAllLayer,
 .newsEventsLayer,
-.eventsLayer,
+.eventsLayer, 
 .cashVanLayer,
 .HyperLayer,
 .WholesaleLayer,
 .NewsLayer,
 .monthlyLayer,
-.SuccessLayer {
+.SuccessLayer,
+.ourTeamLayer,
+.whereToBuyLayer,
+.whereBuyProdLayer,
+.barndProdLayer {
     background: #007c3a7c;
     position: absolute;
     top: 5%;
@@ -390,6 +394,22 @@ footer .footer_section:nth-child(5) i:hover {
 
 .SuccessLayer {
     height: 256%;
+}
+
+.ourTeamLayer {
+    height: 212%;
+}
+
+.whereToBuyLayer {
+    height: 189%;
+}
+
+.whereBuyProdLayer {
+    height: 143%;
+}
+
+.barndProdLayer {
+    height: 260.5%;
 }
 /* ============== End contactAllLayer , contactAllLayer , newsEventsLayer , eventsLayer , cashVanLayer , HyperLayer , WholesaleLayer , NewsLayer , monthlyLayer , SuccessLayer =============== */
 /* ===== Start load spinner ===== */
@@ -573,6 +593,11 @@ footer .footer_section:nth-child(5) i:hover {
 
 .homeMainProducts .totalHomeProducts .productSection:hover img {
     transform: scale(1.1) rotate(20deg);
+}
+
+.homeMainProducts .totalHomeProducts .productSection a {
+    text-decoration: none;
+    color: #000;
 }
 
 .homeMainProducts .totalHomeProducts .productSection h2 {
@@ -1915,6 +1940,10 @@ footer .footer_section:nth-child(5) i:hover {
     margin-top: 30px;
 }
 
+.owl-carousel .owl-stage-outer {
+    padding: 60px 0;
+}
+
 .prodImgs .owl-three .owl-item {
     display: flex;
     justify-content: center;
@@ -2009,7 +2038,6 @@ footer .footer_section:nth-child(5) i:hover {
 }
 
 .prodInfoSection .product_info h1 {
-    /* color: #8C0E12; */
     color: #007C39;
     position: relative;
     font-size: 32px;
@@ -2037,7 +2065,7 @@ footer .footer_section:nth-child(5) i:hover {
     color: #1E2A40;
     font-size: 25px;
     line-height: 19px;
-}
+} 
 
 .prodInfoSection .product_info .prod_description span {
     color: #1E2A40;
@@ -2062,6 +2090,123 @@ footer .footer_section:nth-child(5) i:hover {
 }
 /* ============== End prodInfo =============== */
 /* ######################### End prodInfo Page ######################### */
+
+/* ######################### Start brand_prod Page ######################### */
+/* ============== Start brandProMain =============== */
+.brandProMain {
+    padding: 70px 0 30px;
+}
+
+.brandProMain .barndProArticle p {
+    font-size: 19px;
+}
+/* ============== End brandProMain =============== */
+/* ============== Start brandProdHeader =============== */
+.brandProdHeader {
+    padding: 70px 0 40px;
+}
+
+.brandProdHeader .headerContaining {
+    position: absolute;
+    background-image: url("../images/whereToBuy/productPage/circleHeader.png");
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 140px;
+    margin-top: 54px;
+}
+
+.brandProdHeader .headerContaining img {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    transition: 0.3s ease-in-out;
+}
+
+.brandProdHeader .headerContaining:hover img {
+    transform: scale(1.2) rotate(20deg);
+}
+
+.brandProdHeader p {
+    position: absolute;
+    margin-top: 80px;
+    font-weight: 700;
+    font-size: 16px;
+}
+/* ============== End brandProdHeader =============== */
+/* ============== Start brandProdDetails =============== */
+.brandProdDetails {
+    padding: 70px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.brandProdDetails .brandProdTop {
+    background-repeat: no-repeat;
+    background-size: 104% 100%;  
+    padding: 70px 0;
+}
+
+.brandProdDetails .brandProdTop .brandImgContain {
+    padding-right: 40px;
+}
+
+.brandProdDetails .brandProdTop .brandImgContain img {
+    width: 250px;
+    height: 300px;
+    transition: 0.3s ease-in-out;
+}
+
+.brandProdDetails .brandProdTop .brandImgContain img:hover {
+    transform: scale(1.2) rotate(10deg);
+}
+
+.brandProdDetails .brandProdTop .rightBrandCard {
+    padding-right: 50px;
+}
+
+.brandProdDetails .brandProdTop .rightBrandCard p {
+    font-size: 18px;
+}
+
+.brandProdDetails .brandProducts .brandProdCrad {
+    background-image: url("../images/brand_prod/productCard.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px 0 100px;
+    position: relative;
+    overflow: hidden;
+    margin: 40px 0;
+}
+
+.brandProdDetails .brandProducts .brandProdCrad img {
+    width: 140px;
+    height: 120px;
+    z-index: 2;
+    transition: 0.3s ease-in-out;
+}
+
+.brandProdDetails .brandProducts .brandProdCrad img:hover {
+    transform: scale(1.1) rotate(20deg);
+}
+
+.brandProdDetails .brandProducts .brandProdCrad .prodCardLayer {
+    position: absolute;
+    bottom: 4px;
+    width: 77%;
+    height: 50%;
+    left: 25px;
+    padding: 10px;
+    padding-top: 40px;
+}
+
+.brandProdDetails .brandProducts .brandProdCrad .prodCardLayer p {
+    line-height: 20px;
+}
+/* ============== End brandProdDetails =============== */
+/* ######################### End brand_prod Page ######################### */
 /* ################$$$$$ Start the responsive of the pages $$$$$################ */
 
 
@@ -2174,7 +2319,27 @@ footer .footer_section:nth-child(5) i:hover {
     .SuccessLayer {
         height: 252%;
     }
-    /* ============== End monthlyLayer =============== */
+    /* ============== End SuccessLayer =============== */
+    /* ============== Start ourTeamLayer =============== */
+    .ourTeamLayer {
+        height: 193%;
+    }
+    /* ============== End ourTeamLayer =============== */
+    /* ============== Start whereToBuyLayer =============== */
+    .whereToBuyLayer {
+        height: 188%;
+    }
+    /* ============== End whereToBuyLayer =============== */
+    /* ============== Start whereBuyProdLayer =============== */
+    .whereBuyProdLayer {
+        height: 142%;
+    }    
+    /* ============== End whereBuyProdLayer =============== */
+    /* ============== Start barndProdLayer ============== */
+    .barndProdLayer {
+        height: 267%;
+    }
+    /* ============== End barndProdLayer ============== */
     /* ######################### End Global Sections ######################### */
 
     /* ######################### Start home Page ######################### */
@@ -2453,6 +2618,46 @@ footer .footer_section:nth-child(5) i:hover {
     }
     /* ============== End prodInfo =============== */
     /* ######################### End prodInfo Page ######################### */
+
+    /* ######################### Start brand_prod Page ######################### */
+    /* ============== Start brandProdDetails =============== */
+    .brandProdDetails .brandProdTop .brandImgContain {
+        padding-right: 30px;
+    }
+
+    .brandProdDetails .brandProdTop .brandImgContain img {
+        width: 230px;
+        height: 270px;
+    }
+
+    .brandProdDetails .brandProdTop .rightBrandCard p {
+        line-height: 25px;
+    }
+
+    .brandProdDetails .brandProducts .brandProdCrad {
+        padding: 40px 0 140px;
+        margin: 20px 0;
+    } 
+
+    .brandProdDetails .brandProducts .brandProdCrad img {
+        width: 130px;
+        height: 110px;
+    }
+
+    .brandProdDetails .brandProducts .brandProdCrad img:hover {
+        transform: scale(1.1) rotate(10deg);
+    }
+
+    .brandProdDetails .brandProducts .brandProdCrad .prodCardLayer {
+        bottom: 27px;
+        width: 86.5%;
+        height: 50%;
+        left: 27px;
+        padding: 10px;
+        padding-top: 35px;
+    }
+    /* ============== End brandProdDetails =============== */
+    /* ######################### End brand_prod Page ######################### */
 }
 
 /* ################ Medium devices (tablets, less than 992px) ################ */
@@ -2597,7 +2802,27 @@ footer .footer_section:nth-child(5) i:hover {
     .SuccessLayer {
         height: 322%;
     }
-    /* ============== End monthlyLayer =============== */
+    /* ============== End SuccessLayer =============== */
+    /* ============== Start ourTeamLayer =============== */
+    .ourTeamLayer {
+        height: 305.5%;
+    }
+    /* ============== End ourTeamLayer =============== */
+    /* ============== Start whereToBuyLayer =============== */
+    .whereToBuyLayer {
+        height: 187%;
+    }
+    /* ============== End whereToBuyLayer =============== */
+    /* ============== Start whereBuyProdLayer =============== */
+    .whereBuyProdLayer {
+        height: 149.5%;
+    }    
+    /* ============== End whereBuyProdLayer =============== */
+    /* ============== Start barndProdLayer ============== */
+    .barndProdLayer {
+        height: 372%;
+    }
+    /* ============== End barndProdLayer ============== */
     /* ######################### End Global Sections ######################### */
 
     /* ######################### Start home Page ######################### */
@@ -2987,6 +3212,53 @@ footer .footer_section:nth-child(5) i:hover {
     }
     /* ============== End prodInfo =============== */
     /* ######################### End prodInfo Page ######################### */
+
+    /* ######################### Start brand_prod Page ######################### */
+    /* ============== Start brandProMain =============== */
+    .brandProMain {
+        padding: 30px 0;
+    }
+
+    .brandProMain img {
+        margin-top: 20px;
+    }
+    /* ============== End brandProMain =============== */
+    /* ============== Start brandProdHeader =============== */
+    .brandProdHeader {
+        padding: 50px 0 40px;
+    }
+    /* ============== End brandProdHeader =============== */
+    /* ============== Start brandProdDetails =============== */
+    .brandProdDetails {
+        padding: 55px 0 50px;
+    }
+
+    .brandProdDetails .brandProdTop .brandImgContain {
+        padding-right: 0px;
+    }
+
+    .brandProdDetails .brandProdTop .brandImgContain img:hover {
+        transform: scale(1.1) rotate(10deg);
+    } 
+
+    .brandProdDetails .brandProdTop .rightBrandCard {
+        padding: 20px 50px 0;
+    }
+
+    .brandProdDetails .firstProdRow {
+        padding-top: 0px;
+        margin-bottom: 50px;
+    } 
+
+    .brandProdDetails .brandProducts .brandProdCrad {
+        margin: 10px 0;
+    } 
+
+    .brandProdDetails .brandProducts .brandProdCrad img:hover {
+        transform: scale(1.1) rotate(10deg);
+    }
+    /* ============== End brandProdDetails =============== */
+    /* ######################### End brand_prod Page ######################### */
 }
 
 /* ################ Small devices (landscape phones, less than 768px) ################ */
@@ -3039,7 +3311,27 @@ footer .footer_section:nth-child(5) i:hover {
     .SuccessLayer {
         height: 325%;
     }
-    /* ============== End monthlyLayer =============== */
+    /* ============== End SuccessLayer =============== */
+    /* ============== Start ourTeamLayer =============== */
+    .ourTeamLayer {
+        height: 243%;
+    }
+    /* ============== End ourTeamLayer =============== */
+    /* ============== Start whereToBuyLayer =============== */
+    .whereToBuyLayer {
+        height: 247%;
+    }
+    /* ============== End whereToBuyLayer =============== */
+    /* ============== Start whereBuyProdLayer =============== */
+    .whereBuyProdLayer {
+        height: 141.5%;
+    }    
+    /* ============== End whereBuyProdLayer =============== */
+    /* ============== Start barndProdLayer ============== */
+    .barndProdLayer {
+        height: 398%;
+    }
+    /* ============== End barndProdLayer ============== */
     /* ######################### End Global Sections ######################### */
 
     /* ######################### Start home Page ######################### */
@@ -3425,6 +3717,52 @@ footer .footer_section:nth-child(5) i:hover {
     } 
     /* ============== End prodInfo =============== */
     /* ######################### End prodInfo Page ######################### */
+
+    /* ######################### Start brand_prod Page ######################### */
+    /* ============== Start brandProdHeader =============== */
+    .brandProdHeader {
+        padding: 50px 0 30px;
+    }
+    /* ============== End brandProdHeader =============== */
+    /* ######################### End brand_prod Page ######################### */
+
+    /* ######################### Start brand_prod Page ######################### */
+    /* ============== Start brandProMain =============== */
+    .brandProMain {
+        padding: 30px 0;
+    }
+
+    .brandProMain img {
+        margin-top: 20px;
+    }
+    /* ============== End brandProMain =============== */
+    /* ============== Start brandProdHeader =============== */
+    .brandProdHeader {
+        padding: 50px 0 40px;
+    }
+    /* ============== End brandProdHeader =============== */
+    /* ============== Start brandProdDetails =============== */
+    .brandProdDetails .firstProdRow {
+        padding-top: 0px;
+        margin-bottom: 50px;
+    } 
+
+    .brandProdDetails .brandProducts .brandProdCrad {
+        margin: 10px 0;
+        padding-bottom: 100px;
+    } 
+
+    .brandProdDetails .brandProducts .brandProdCrad .prodCardLayer {
+        width: 75%;
+        height: 50%;
+        bottom: 10px;
+    }
+
+    .brandProdDetails .brandProducts .brandProdCrad .prodCardLayer p {
+        margin: 0;
+    }
+    /* ============== End brandProdDetails =============== */
+    /* ######################### End brand_prod Page ######################### */
 }
 
 /* ################ Extra small devices (portrait phones, less than 576px) ################ */
@@ -3478,6 +3816,21 @@ footer .footer_section:nth-child(5) i:hover {
         height: 0%;
     }
     /* ============== End cashVanLayer , HyperLayer , WholesaleLayer , NewsLayer , monthlyLayer , eventsLayer , newsEventsLayer , homeAllLayer , SuccessLayer =============== */
+    /* ============== Start ourTeamLayer =============== */
+    .ourTeamLayer {
+        height:550%;
+    }
+    /* ============== End ourTeamLayer =============== */
+    /* ============== Start whereToBuyLayer =============== */
+    .whereToBuyLayer {
+        height: 210%;
+    }
+    /* ============== End whereToBuyLayer =============== */
+    /* ============== Start barndProdLayer ============== */
+    .barndProdLayer {
+        height:626%;
+    }
+    /* ============== End barndProdLayer ============== */
     /* ######################### End Global Sections ######################### */
 
     /* ######################### Start home Page ######################### */
@@ -4029,6 +4382,137 @@ footer .footer_section:nth-child(5) i:hover {
     } 
     /* ============== End prodInfo =============== */
     /* ######################### End prodInfo Page ######################### */
+
+
+
+
+
+
+    /* ######################### Start brand_prod Page ######################### */
+    
+    /* ######################### End brand_prod Page ######################### */
+
+
+
+
+
+    /* ######################### Start brand_prod Page ######################### */
+    /* ============== Start brandProMain =============== */
+    .brandProMain {
+        padding: 30px 0;
+    }
+
+    .brandProMain img {
+        margin-top: 20px;
+    }
+
+    .brandProMain .barndProArticle h2 {
+        font-size: 27px;
+    }
+    
+    .brandProMain .barndProArticle p {
+        font-size: 17px;
+    }
+    /* ============== End brandProMain =============== */   
+    /* ============== Start brandProdHeader =============== */
+    .brandProdHeader {
+        padding: 50px 0 20px;
+    } 
+
+    .brandProdHeader .headerContaining {
+        width: 300px;
+    }
+    /* ============== End brandProdHeader =============== */
+    /* ============== Start brandProdDetails =============== */
+    .brandProdDetails {
+        padding: 70px 0;
+    }
+
+    .brandProdDetails .brandProdTop {
+        padding: 30px 0;
+        margin-top: 40px;
+        background-image: none !important;
+        background: #fff;
+        border-top-right-radius: 60px;
+        border-bottom-left-radius: 60px;
+        box-shadow: 0 0 30px rgb(63, 62, 62);
+    }
+
+    .brandProdDetails .brandProdTop .brandImgContain {
+        padding: 0;
+    }
+
+    .brandProdDetails .brandProdTop .brandImgContain img {
+        width: 180px;
+        height: 220px;
+        margin-top: 40px;
+    }
+
+    .brandProdDetails .brandProdTop .brandImgContain img:hover {
+        transform: scale(1.2) rotate(10deg);
+    }
+
+    .brandProdDetails .brandProdTop .rightBrandCard {
+        padding: 20px 20px;
+    }
+
+    .brandProdDetails .brandProdTop .rightBrandCard h2 {
+        font-size: 25px;
+        margin-top: 10px;
+    }
+
+    .brandProdDetails .brandProdTop .rightBrandCard p {
+        font-size: 17px;
+    }
+
+    .brandProdDetails .firstProdRow {
+        padding-top: 0px;
+        margin-bottom: 50px;
+    } 
+
+    .brandProdDetails .brandProducts {
+        flex-wrap: wrap !important;
+    }
+
+    .brandProdDetails .brandProducts .brandProdCrad {
+        margin: 50px 0;
+        overflow: visible;
+        background-image: none;
+        background: #fff;
+        border-top-right-radius: 60px;
+        border-bottom-left-radius: 60px;
+        box-shadow: 0 0 30px rgb(63, 62, 62);
+        padding: 40px 0 60px 0;
+    }
+
+    .brandProdDetails .brandProducts .brandProdCrad img {
+        width: 170px;
+        height: 150px;
+    }
+
+    .brandProdDetails .brandProducts .brandProdCrad .prodCardLayer {
+        position: absolute;
+        bottom: -60px;
+        width: 90%;
+        left: 12%;
+        padding: 10px;
+        padding-top: 40px;
+        border: 4px solid rgb(255, 255, 255);
+        box-shadow: 0 0 15px rgb(71, 69, 69);
+        border-top-right-radius: 60px;
+        border-bottom-left-radius: 60px;
+        padding: 0;
+        padding: 70px 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    .brandProdDetails .brandProducts .brandProdCrad .prodCardLayer p {
+        font-size: 17px;
+        margin: 0;
+    }
+    /* ============== End brandProdDetails =============== */
+    /* ######################### End brand_prod Page ######################### */
 }
 
 
