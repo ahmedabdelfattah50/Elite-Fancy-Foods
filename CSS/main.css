@@ -2002,7 +2002,7 @@ footer .footer_section:nth-child(5) i:hover {
 
 /* ######################### Start prodInfo Page ######################### */
 /* ============== Start prodInfo =============== */
-/*.prodInfoSection {
+.prodInfoSection {
     padding: 220px 0 50px;
 }
 
@@ -2080,7 +2080,7 @@ footer .footer_section:nth-child(5) i:hover {
     margin-left: 60px;
 }
 
-.prodInfoSection .arrows_links {
+/* .prodInfoSection .arrows_links {
     padding: 0 50px;
 }
 
@@ -2093,7 +2093,7 @@ footer .footer_section:nth-child(5) i:hover {
 .prodInfoSection .arrows_links i {
     color: #007C39;
     font-size: 35px;
-}*/
+} */
 /* ============== End prodInfo =============== */
 /* ######################### End prodInfo Page ######################### */
 
@@ -2175,15 +2175,16 @@ footer .footer_section:nth-child(5) i:hover {
 
 .productsInfo .carousel-control-prev, 
 .productsInfo .carousel-control-next {
-    transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out; 
 }
 
 .productsInfo .products_slider_total {
     padding: 150px 0;
 }
-
+ 
 .productsInfo .products_slider_total {
-    background: linear-gradient( #fff 20% , #7ca890);
+    /* background: linear-gradient( #fff 20% , #7ca890); */
+    background: linear-gradient(0deg, #c6e1cb 0%, #fff 40%);
 }
  
 .productsInfo .row .owl-prodInfo {
@@ -2699,7 +2700,7 @@ footer .footer_section:nth-child(5) i:hover {
 
     /* ######################### Start prodInfo Page ######################### */
     /* ============== Start prodInfo =============== */
-    /*.prodInfoSection .parahSection {
+    .prodInfoSection .parahSection {
         padding: 0 200px;
     }
 
@@ -2747,7 +2748,7 @@ footer .footer_section:nth-child(5) i:hover {
         font-size: 22px;
     }
 
-    .prodInfoSection .arrows_links {
+    /* .prodInfoSection .arrows_links {
         padding: 0 50px;
     }
 
@@ -2758,7 +2759,7 @@ footer .footer_section:nth-child(5) i:hover {
 
     .prodInfoSection .arrows_links i {
         font-size: 30px;
-    }*/
+    } */
     /* ============== End prodInfo =============== */
     /* ######################### End prodInfo Page ######################### */
 
@@ -3318,7 +3319,7 @@ footer .footer_section:nth-child(5) i:hover {
 
     /* ######################### Start prodInfo Page ######################### */
     /* ============== Start prodInfo =============== */
-    /*.prodInfoSection {
+    .prodInfoSection {
         background-position: center top;
     }
 
@@ -3368,10 +3369,10 @@ footer .footer_section:nth-child(5) i:hover {
         font-size: 20px;
     }
 
-    .prodInfoSection .arrows_links a { 
+    /* .prodInfoSection .arrows_links a { 
         margin-top: -320px;
         margin-bottom: 320px;
-    }*/
+    } */
     /* ============== End prodInfo =============== */
     /* ######################### End prodInfo Page ######################### */
 
@@ -3851,7 +3852,7 @@ footer .footer_section:nth-child(5) i:hover {
 
     /* ######################### Start prodInfo Page ######################### */
     /* ============== Start prodInfo =============== */
-    /*.prodInfoSection {
+    .prodInfoSection {
         background-position: center center;
     }
 
@@ -3889,7 +3890,7 @@ footer .footer_section:nth-child(5) i:hover {
         height: 2.7px;
     }
 
-    .prodInfoSection .arrows_links {
+    /* .prodInfoSection .arrows_links {
         padding: 0 20px;
     }
 
@@ -4518,7 +4519,7 @@ footer .footer_section:nth-child(5) i:hover {
 
     /* ######################### Start prodInfo Page ######################### */
     /* ============== Start prodInfo =============== */
-    /*.prodInfoSection {
+    .prodInfoSection {
         background-position: center center;
     }
 
@@ -4580,7 +4581,7 @@ footer .footer_section:nth-child(5) i:hover {
         margin: 0;
     }
 
-    .prodInfoSection .arrows_links {
+    /* .prodInfoSection .arrows_links {
         padding: 0 20px;
     }
 
@@ -4591,7 +4592,7 @@ footer .footer_section:nth-child(5) i:hover {
 
     .prodInfoSection .arrows_links i {
         font-size: 20px;
-    }*/ 
+    } */
     /* ============== End prodInfo =============== */
     /* ######################### End prodInfo Page ######################### */
 
