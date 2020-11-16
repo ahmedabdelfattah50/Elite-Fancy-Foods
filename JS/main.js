@@ -5,7 +5,7 @@ $(window).on('load', function(){
             $(this).remove();
         });
     });
-}); 
+});  
 
 $(document).ready(function(){
     // ################# Global #################    
@@ -166,6 +166,14 @@ $(document).ready(function(){
     $('.barndProdLayer').click(function(){
         $(this).hide();
     });
+
+    $('.navbar .dropdown a').click(function(){
+        $('.prodTotalLayer').toggle();
+    }); 
+
+    $('.prodTotalLayer').click(function(){
+        $(this).hide();
+    });
     // ################# home Page #################    
 
     const nextIconBalls = "<img src='./images/home/arrow_rightHome.svg'>",
@@ -279,5 +287,54 @@ $(document).ready(function(){
             }
         }
     })
+
+
+    // ################# rings product Page #################    
+
+    const nextIconSlider = "<img src='./images/our_news/rightArrow.png'>",
+          prevIconSlider = "<img src='./images/our_news/leftArrow.png'>";
+
+    $('.owl-prodInfo').owlCarousel({
+        loop:true,
+        nav:true,
+        autoplay:false,
+        center: false,
+        addClassActive: false,
+        navText: [
+            prevIconSlider,
+            nextIconSlider
+        ],
+        responsive:{
+            0:{
+                items:1
+            },
+            567:{
+                items:1
+            },
+            768:{
+                items:2
+            },
+            910:{
+                items:2
+            },
+            995:{
+                items:3
+            },
+            1198:{
+                items:4 
+            },
+            1400:{
+                items:5
+            }
+        }
+    })
+    
+
+    // ================ owl-prodInfo
+
+    $('.owl-prodInfo a').click(function(e){
+        e.preventDefault();
+        alert("Elite Product");
+    });
     
 });
