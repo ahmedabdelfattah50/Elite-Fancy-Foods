@@ -414,7 +414,7 @@ footer .footer_section:nth-child(5) i:hover {
 }
 
 .prodTotalLayer {
-    height: 136.5%;
+    height: 222.5%;
 }
 /* ============== End contactAllLayer , contactAllLayer , newsEventsLayer , eventsLayer , cashVanLayer , HyperLayer , WholesaleLayer , NewsLayer , monthlyLayer , SuccessLayer =============== */
 /* ===== Start load spinner ===== */
@@ -2481,7 +2481,7 @@ footer .footer_section:nth-child(5) i:hover {
     /* ============== End barndProdLayer ============== */
     /* ============== Start prodTotalLayer ============== */
     .prodTotalLayer {
-        height: 122%;
+        height: 204%;
     }
     /* ============== End prodTotalLayer ============== */
     /* ######################### End Global Sections ######################### */
@@ -2983,7 +2983,7 @@ footer .footer_section:nth-child(5) i:hover {
     /* ============== End barndProdLayer ============== */
     /* ============== Start prodTotalLayer ============== */
     .prodTotalLayer {
-        height: 104%;
+        height: 221.5%;
     }
     /* ============== End prodTotalLayer ============== */
     /* ######################### End Global Sections ######################### */
@@ -3511,7 +3511,7 @@ footer .footer_section:nth-child(5) i:hover {
     /* ============== End barndProdLayer ============== */
     /* ============== Start prodTotalLayer ============== */
     .prodTotalLayer {
-        height: 86.5%;
+        height: 198.5%;
     }
     /* ============== End prodTotalLayer ============== */
     /* ######################### End Global Sections ######################### */
@@ -4044,6 +4044,11 @@ footer .footer_section:nth-child(5) i:hover {
         height:626%;
     }
     /* ============== End barndProdLayer ============== */
+    /* ============== Start prodTotalLayer ============== */
+    .prodTotalLayer {
+        height: 177.5%;
+    }
+    /* ============== End prodTotalLayer ============== */
     /* ######################### End Global Sections ######################### */
 
     /* ######################### Start home Page ######################### */
