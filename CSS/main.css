@@ -414,7 +414,7 @@ footer .footer_section:nth-child(5) i:hover {
 }
 
 .prodTotalLayer {
-    height: 222.5%;
+    height: 205%;
 }
 /* ============== End contactAllLayer , contactAllLayer , newsEventsLayer , eventsLayer , cashVanLayer , HyperLayer , WholesaleLayer , NewsLayer , monthlyLayer , SuccessLayer =============== */
 /* ===== Start load spinner ===== */
@@ -2152,8 +2152,23 @@ footer .footer_section:nth-child(5) i:hover {
     margin: 0 10px;
 }
 
-.productsInfo .carousel-caption .owl-stage .owl-item .item:hover {
+/* .productsInfo .carousel-caption .owl-stage .owl-item .item:hover {
     transform: scale(1.2);
+} */
+
+.productsInfo .carousel-caption .owl-stage .owl-item {
+    transition: 0.3s ease-in-out
+}
+
+.productsInfo .carousel-caption .owl-stage .owl-item.center {
+    transform: scale(1.3);
+    z-index: 5;
+    /* transition: 0.3s ease-in-out */
+}
+
+.productsInfo .carousel-caption .owl-stage .owl-item.center img {
+    box-shadow: 0 0 25px #000;
+    border-radius: 10px;
 }
 
 .productsInfo .carousel-indicators {
@@ -2481,7 +2496,7 @@ footer .footer_section:nth-child(5) i:hover {
     /* ============== End barndProdLayer ============== */
     /* ============== Start prodTotalLayer ============== */
     .prodTotalLayer {
-        height: 204%;
+        height: 193.5%;
     }
     /* ============== End prodTotalLayer ============== */
     /* ######################### End Global Sections ######################### */
@@ -2747,19 +2762,6 @@ footer .footer_section:nth-child(5) i:hover {
     .prodInfoSection .product_info .prod_description span {
         font-size: 22px;
     }
-
-    /* .prodInfoSection .arrows_links {
-        padding: 0 50px;
-    }
-
-    .prodInfoSection .arrows_links a { 
-        margin-top: -230px;
-        margin-bottom: 230px;
-    }
-
-    .prodInfoSection .arrows_links i {
-        font-size: 30px;
-    } */
     /* ============== End prodInfo =============== */
     /* ######################### End prodInfo Page ######################### */
 
@@ -2774,6 +2776,14 @@ footer .footer_section:nth-child(5) i:hover {
     
     .productsInfo .rightPalls img {
         margin: -600px -10px 0 0 !important;
+    }
+
+    .productsInfo .carousel-caption .owl-stage .owl-item.center {
+        transform: scale(1.2);
+    }
+
+    .productsInfo .products_slider_total {
+        margin-top: 30px;
     }
     /* ######################### End products_total Page ######################### */
 
@@ -2983,7 +2993,7 @@ footer .footer_section:nth-child(5) i:hover {
     /* ============== End barndProdLayer ============== */
     /* ============== Start prodTotalLayer ============== */
     .prodTotalLayer {
-        height: 221.5%;
+        height: 218.5%;
     }
     /* ============== End prodTotalLayer ============== */
     /* ######################### End Global Sections ######################### */
@@ -3369,16 +3379,12 @@ footer .footer_section:nth-child(5) i:hover {
         font-size: 20px;
     }
 
-    /* .prodInfoSection .arrows_links a { 
-        margin-top: -320px;
-        margin-bottom: 320px;
-    } */
     /* ============== End prodInfo =============== */
     /* ######################### End prodInfo Page ######################### */
 
     /* ######################### Start products_total Page ######################### */
-    .productsInfo .owl-stage-outer {
-        padding: 40px 0 30px;
+    .productsInfo .products_slider_total {
+        margin-top: 60px;
     }
 
     .productsInfo .leftPalls img {
@@ -3387,6 +3393,21 @@ footer .footer_section:nth-child(5) i:hover {
     
     .productsInfo .rightPalls img {
         margin: -200px -30px 0 0 !important;
+    }
+
+    
+    .productsInfo .owl-carousel .owl-nav img {
+        width: 25px;
+        height: 25px;
+        margin-top: -70px;
+    }
+    
+    .productsInfo .owl-item {
+        transform: scale(1);
+    }
+
+    .productsInfo .owl-item.center {
+        transform: scale(1.2) !important;
     }
     /* ######################### End products_total Page ######################### */
 
@@ -3511,7 +3532,7 @@ footer .footer_section:nth-child(5) i:hover {
     /* ============== End barndProdLayer ============== */
     /* ============== Start prodTotalLayer ============== */
     .prodTotalLayer {
-        height: 198.5%;
+        height: 215%;
     }
     /* ============== End prodTotalLayer ============== */
     /* ######################### End Global Sections ######################### */
@@ -3889,23 +3910,10 @@ footer .footer_section:nth-child(5) i:hover {
         width: 58%;
         height: 2.7px;
     }
-
-    /* .prodInfoSection .arrows_links {
-        padding: 0 20px;
-    }
-
-    .prodInfoSection .arrows_links i {
-        font-size: 25px;
-    } */
     /* ============== End prodInfo =============== */
     /* ######################### End prodInfo Page ######################### */
 
     /* ######################### Start products_total Page ######################### */
-    
-    .productsInfo .owl-carousel .owl-stage-outer {
-        padding: 20px 0;
-    }
-
     .productsInfo .owl-prodInfo .item{
         padding: 30px 25%; 
     }
@@ -3929,6 +3937,9 @@ footer .footer_section:nth-child(5) i:hover {
         margin-top: -230px;
     }
 
+    .productsInfo .owl-item.center {
+        transform: scale(1.4) !important;
+    }
     /* ######################### End products_total Page ######################### */
     
     /* ######################### Start brand_prod Page ######################### */
@@ -4046,7 +4057,7 @@ footer .footer_section:nth-child(5) i:hover {
     /* ============== End barndProdLayer ============== */
     /* ============== Start prodTotalLayer ============== */
     .prodTotalLayer {
-        height: 177.5%;
+        height: 175%;
     }
     /* ============== End prodTotalLayer ============== */
     /* ######################### End Global Sections ######################### */
@@ -4585,19 +4596,6 @@ footer .footer_section:nth-child(5) i:hover {
     .prodInfoSection .product_info .prod_description span {
         margin: 0;
     }
-
-    /* .prodInfoSection .arrows_links {
-        padding: 0 20px;
-    }
-
-    .prodInfoSection .arrows_links a { 
-        margin-top: -400px;
-        margin-bottom: 400px;
-    }
-
-    .prodInfoSection .arrows_links i {
-        font-size: 20px;
-    } */
     /* ============== End prodInfo =============== */
     /* ######################### End prodInfo Page ######################### */
 
@@ -4618,6 +4616,22 @@ footer .footer_section:nth-child(5) i:hover {
         width: 22px;
         height: 22px;
         cursor: pointer;
+    }
+ 
+    .productsInfo .carousel-inner {
+        margin-top: -100px;
+    }
+
+    .productsInfo .owl-stage-outer {
+        padding: 30px 0 !important;
+    }
+
+    .productsInfo .owl-item.center {
+        transform: scale(1) !important;
+    }
+
+    .productsInfo .owl-item.center img{ 
+        box-shadow: 0 0 15px #000 !important;
     }
     /* ######################### End products_total Page ######################### */
 
