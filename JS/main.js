@@ -297,9 +297,10 @@ $(document).ready(function(){
     $('.owl-prodInfo').owlCarousel({
         loop:true,
         nav:true,
-        autoplay:false,
-        center: false,
+        autoplay:true,
+        center: true,
         addClassActive: false,
+        autoplayTimeout:3000,
         navText: [
             prevIconSlider,
             nextIconSlider
@@ -336,5 +337,4 @@ $(document).ready(function(){
         e.preventDefault();
         alert("Elite Product");
     });
-    
 });
