@@ -5,7 +5,7 @@ $(window).on('load', function(){
             $(this).remove();
         });
     });
-});  
+});    
 
 $(document).ready(function(){
     // ################# Global #################    
@@ -288,48 +288,34 @@ $(document).ready(function(){
         }
     })
 
+    // ################# totalProds Page #################    
 
-    // ################# rings product Page #################    
-
-    const nextIconSlider = "<img src='./images/our_news/rightArrow.png'>",
-          prevIconSlider = "<img src='./images/our_news/leftArrow.png'>";
-
-    $('.owl-prodInfo').owlCarousel({
-        loop:true,
-        nav:true,
-        autoplay:true,
-        center: true,
-        addClassActive: false,
-        autoplayTimeout:3000,
-        navText: [
-            prevIconSlider,
-            nextIconSlider
-        ],
-        responsive:{
-            0:{
-                items:1
-            },
-            567:{
-                items:1
-            },
-            768:{
-                items:2
-            },
-            910:{
-                items:2
-            },
-            995:{
-                items:3
-            },
-            1198:{
-                items:4 
-            },
-            1400:{
-                items:5
+    $('.owl-prodInfo2').slick({
+        centerMode: true,
+        centerPadding: '60px',
+        slidesToShow: 3,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              centerPadding: '40px',
+              slidesToShow: 3
             }
-        }
-    })
-    
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              centerPadding: '40px',
+              slidesToShow: 1
+            }
+          }
+        ]
+      });
+     
 
     // ================ owl-prodInfo
 
